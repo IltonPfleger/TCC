@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper,english,brazilian,oneside,chapter=TITLE,section=TITLE]{abntex2}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[alf]{abntex2cite}
+
+% Indentar o Primeiro Parágrafo de Cada Seção
+\usepackage{indentfirst}
+
+% Glossário
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+% Margens
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+\setlength{\parindent}{1.25cm}
+
+% Font
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+% Images
+\usetikzlibrary{positioning, arrows.meta, fit, calc}
+
+
+\titulo{Um Hipervisor Tipo-1 Leve de Tempo Real para Sistemas Embarcados RISC-V: Projeto e Implementação em C++}
+\autor{Ilton Pfleger Júnior}
+\local{Florianópolis}
+\data{2027}
+\orientador{Antônio Augusto Fröhlich}
+\instituicao{Universidade Federal de Santa Catarina}
+\tipotrabalho{Trabalho de Conclusão de Curso}
+\preambulo{}
+
+\begin{document}
+
+\imprimircapa
+\imprimirfolhaderosto
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+\input{Glossary.tex}
+\input{Acronyms.tex}
+
+\textual
+
+\input{sections/Introduction.tex}
+\input{sections/TheoreticalBasis/TheoreticalBasis.tex}
+\input{sections/Methodology.tex}
+
+\postextual
+\printglossary
+\bibliography{References}
+
+\end{document}

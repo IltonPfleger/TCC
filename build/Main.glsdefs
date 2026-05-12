@@ -1,0 +1,280 @@
+\glsdefs@newdocentry{riscv}%
+{%
+name={RISC-V},%
+sort={RISC-V},%
+type={main},%
+first={RISC-V},%
+firstplural={RISC-V},%
+text={RISC-V},%
+plural={RISC-V},%
+description={Conjunto de instruções de máquina livre para ser usado para qualquer finalidade, permitindo a qualquer pessoa ou empresa projetar e vender chips RISC-V sem precisar pagar royalties},%
+descriptionplural={Conjunto de instruções de máquina livre para ser usado para qualquer finalidade, permitindo a qualquer pessoa ou empresa projetar e vender chips RISC-V sem precisar pagar royalties},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cpu}%
+{%
+name={CPU},%
+sort={CPU},%
+type={main},%
+first={CPU},%
+firstplural={CPUs},%
+text={CPU},%
+plural={CPUs},%
+description={Parte central do computador, responsável por interpretar e executar instruções, realizar cálculos e processar dados},%
+descriptionplural={Parte central do computador, responsável por interpretar e executar instruções, realizar cálculos e processar dados},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sistema-embarcado}%
+{%
+name={Sistema Embarcado},%
+sort={Sistema Embarcado},%
+type={main},%
+first={sistema embarcado},%
+firstplural={sistemas embarcados},%
+text={sistema embarcado},%
+plural={sistemas embarcados},%
+description={Um computador pequeno feito para executar uma tarefa específica dentro de outro equipamento},%
+descriptionplural={Um computador pequeno feito para executar uma tarefa específica dentro de outro equipamento},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hardware}%
+{%
+name={Hardware},%
+sort={Hardware},%
+type={main},%
+first={hardware},%
+firstplural={hardwares},%
+text={hardware},%
+plural={hardwares},%
+description={Parte física e tangível de um computador},%
+descriptionplural={Parte física e tangível de um computador},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mediador-de-hardware}%
+{%
+name={Mediador de Hardware},%
+sort={Mediador de Hardware},%
+type={main},%
+first={mediador de hardware},%
+firstplural={mediadores de hardware},%
+text={mediador de hardware},%
+plural={mediadores de hardware},%
+description={Um componente de software que encapsula, gerencia e abstrai dispositivos físicos},%
+descriptionplural={Um componente de software que encapsula, gerencia e abstrai dispositivos físicos},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{api}%
+{%
+name={\acronymfont {\glsentryshort {api}}},%
+sort={API},%
+type={acronym},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{so}%
+{%
+name={\acronymfont {\glsentryshort {so}}},%
+sort={SO},%
+type={acronym},%
+first={SO},%
+firstplural={SOs},%
+text={SO},%
+plural={SOs},%
+description={Sistema Operacional},%
+descriptionplural={Sistema Operacional},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistema Operacional},%
+longplural={Sistemas Operacionais},%
+short={SO},%
+shortplural={SOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rtos}%
+{%
+name={\acronymfont {\glsentryshort {rtos}}},%
+sort={RTOS},%
+type={acronym},%
+first={RTOS},%
+firstplural={RTOSs},%
+text={RTOS},%
+plural={RTOSs},%
+description={Sistema Operacional de Tempo Real},%
+descriptionplural={Sistema Operacional de Tempo Real},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistema Operacional de Tempo Real},%
+longplural={Sistemas Operacionais de Tempo Real},%
+short={RTOS},%
+shortplural={RTOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gpos}%
+{%
+name={\acronymfont {\glsentryshort {gpos}}},%
+sort={GPOS},%
+type={acronym},%
+first={GPOS},%
+firstplural={GPOSs},%
+text={GPOS},%
+plural={GPOSs},%
+description={Sistema Operacional de Propósito Geral},%
+descriptionplural={Sistema Operacional de Propósito Geral},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistema Operacional de Propósito Geral},%
+longplural={Sistemas Operacionais de Propósito Geral},%
+short={GPOS},%
+shortplural={GPOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gpu}%
+{%
+name={\acronymfont {\glsentryshort {gpu}}},%
+sort={GPU},%
+type={acronym},%
+first={GPU},%
+firstplural={GPUs},%
+text={GPU},%
+plural={GPUs},%
+description={Unidade de Processamento Gráfico},%
+descriptionplural={Unidade de Processamento Gráfico},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Unidade de Processamento Gráfico},%
+longplural={Unidades de Processamento Gráfico},%
+short={GPU},%
+shortplural={GPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
