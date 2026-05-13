@@ -1,0 +1,153 @@
+\section{Hipervisors}
+
+Um hipervisor, também conhecido como \gls{vmm}, é uma plataforma que cria e executa máquinas virtuais via virtualização.
+Segundo \citeonline{PopekGeraldGoldberg} um \gls{vmm} possuí três características essenciais: primeiro, devem fornecer um ambiente idêntico à máquina original
+para programas; segundo, os programas executados nesse ambiente, na pior das hipóteses, devem apresentar no máximo pequenas reduções
+de velocidade que urgem da camada de virtualização; e por último, os \glspl{vmm} devem deter o contole total sobre os recursos do sistema.
+
+Na visão de \cite{Goldberg}, fundamentalmente, existem dois tipos de hipervisores: 1 e 2.
+
+\subsection{Tipo 1 - Bare Metal}
+
+Hipervisores de tipo 1, também conhecidos como bare metal, são aqueles que executam diretamente sobre o hardware físico, sem a necessidade de um
+sistema operacional hospedeiro intermediário.
+Por operar diretamente sobre o hardware, esse tipo de hipervisor geralmente apresenta melhor desempenho e menor sobrecarga.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        pequeno/.style={
+            draw,
+            thick,
+            fill=blue!5,
+            minimum width=4cm,
+            minimum height=1.2cm,
+            outer sep=0pt
+        }
+    ]
+        \node[pequeno] (apps-so1-1) {Aplicação 1};
+        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
+        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
+
+        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
+        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
+
+        \node[
+            draw,
+            thick,
+            fill=blue!10,
+            minimum width=8.2cm,
+            minimum height=1.5cm,
+            below=0.2cm of apps-so1
+		] (SO1) {\Gls{so} 1};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!10,
+            minimum width=4cm,
+            minimum height=1.5cm,
+            below=0.2cm of apps-so2
+		] (SO2) {\Gls{so} 2};
+
+		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!15,
+            minimum width=12.4cm,
+            minimum height=1.5cm,
+            below=0.2cm of SOs
+		] (HOS) {Hipervisor};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!20,
+            minimum width=12.4cm,
+            minimum height=1.5cm,
+            below=0.2cm of HOS
+		] () {Hardware};
+
+    \end{tikzpicture}
+    \caption{Hipervisor Tipo 1.}
+    \label{fig:hypervisor-type-1}
+\end{figure}
+
+\subsection{Tipo 2}
+
+Diferentemente da solução bare metal, um hipervisor do tipo 2 é executado como um processo dentro de um \gls{so} hospedeiro.
+Porém, apesar de garantir os mesmos recursos do tipo 1, sua arquitetura impõe uma camada intermediária a mais de software, o que restringe a
+eficiência no acesso aos componentes físicos, gerando uma latência adicional e um menor desempenho.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+        pequeno/.style={
+            draw,
+            thick,
+            fill=blue!5,
+            minimum width=4cm,
+            minimum height=1.2cm,
+            outer sep=0pt
+        }
+    ]
+        \node[pequeno] (apps-so1-1) {Aplicação 1};
+        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
+        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
+
+        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
+        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
+
+        \node[
+            draw,
+            thick,
+            fill=blue!10,
+            minimum width=8.2cm,
+            minimum height=1.5cm,
+            below=0.2cm of apps-so1
+		] (SO1) {\Gls{so} 1};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!10,
+            minimum width=4cm,
+            minimum height=1.5cm,
+            below=0.2cm of apps-so2
+		] (SO2) {\Gls{so} 2};
+
+		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!15,
+            minimum width=12.4cm,
+            minimum height=1.5cm,
+            below=0.2cm of SOs
+		] (HOS) {Hipervisor};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!20,
+            minimum width=12.4cm,
+            minimum height=1.5cm,
+            below=0.2cm of HOS
+		] (OS) {\Gls{so}};
+
+		\node[
+            draw,
+            thick,
+            fill=blue!25,
+            minimum width=12.4cm,
+            minimum height=1.5cm,
+            below=0.2cm of OS
+		] () {Hardware};
+
+    \end{tikzpicture}
+    \caption{Hipervisor Tipo 2.}
+    \label{fig:hypervisor-type-2}
+\end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.22)  4 MAY 2026 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.22)  13 MAY 2026 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,14 +925,22 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/usr/share/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+))) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count387
+\float@exts=\toks39
+\float@box=\box70
+\@float@everytoks=\toks40
+\@floatcapt=\box71
+)
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 
 (/usr/share/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip258
 \ABCIauxlen=\skip259
-\c@ABCIaux=\count387
-\c@ABCImax=\count388
+\c@ABCIaux=\count388
+\c@ABCImax=\count389
 
 (/usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
@@ -946,7 +954,7 @@ Package: relsize 2013/03/29 ver 4.1
 \biblabelsep=\skip260
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks39
+\ABCItoken=\toks41
 )
 (/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
@@ -959,24 +967,24 @@ Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks40
-\XKV@tempa@toks=\toks41
-\XKV@tempb@toks=\toks42
+\XKV@toks=\toks42
+\XKV@tempa@toks=\toks43
+\XKV@tempb@toks=\toks44
 )
-\XKV@depth=\count389
+\XKV@depth=\count390
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks43
-\@glsmrest=\toks44
+\@glsmfirst=\toks45
+\@glsmrest=\toks46
 )
 (/usr/share/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks45
+\@emptytoks=\toks47
 \ex@=\dimen317
 )
 (/usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
@@ -1016,19 +1024,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count390
+\inf@bad=\count391
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count391
-\leftroot@=\count392
+\uproot@=\count392
+\leftroot@=\count393
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count393
-\DOTSCASE@=\count394
+\classnum@=\count394
+\DOTSCASE@=\count395
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box70
-\strutbox@=\box71
+\Mathstrutbox@=\box72
+\strutbox@=\box73
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -1036,70 +1044,70 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen319
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count395
+\macc@depth=\count396
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count396
+\c@MaxMatrixCols=\count397
 \dotsspace@=\muskip18
-\c@parentequation=\count397
-\dspbrk@lvl=\count398
-\tag@help=\toks46
-\row@=\count399
-\column@=\count400
-\maxfields@=\count401
-\andhelp@=\toks47
+\c@parentequation=\count398
+\dspbrk@lvl=\count399
+\tag@help=\toks48
+\row@=\count400
+\column@=\count401
+\maxfields@=\count402
+\andhelp@=\toks49
 \eqnshift@=\dimen320
 \alignsep@=\dimen321
 \tagshift@=\dimen322
 \tagwidth@=\dimen323
 \totwidth@=\dimen324
 \lineht@=\dimen325
-\@envbody=\toks48
+\@envbody=\toks50
 \multlinegap=\skip262
 \multlinetaggap=\skip263
-\mathdisplay@stack=\toks49
+\mathdisplay@stack=\toks51
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-\l__datatool_tmpa_int=\count402
-\l__datatool_tmpb_int=\count403
-\l__datatool_tmpc_int=\count404
-\l__datatool_tmpd_int=\count405
-\l__datatool_count_int=\count406
-\l__datatool_tmp_datatype_int=\count407
+\l__datatool_tmpa_int=\count403
+\l__datatool_tmpb_int=\count404
+\l__datatool_tmpc_int=\count405
+\l__datatool_tmpd_int=\count406
+\l__datatool_count_int=\count407
+\l__datatool_tmp_datatype_int=\count408
 \l__datatool_tmpa_dim=\dimen326
 \l__datatool_tmpb_dim=\dimen327
 
 (/usr/share/texmf-dist/tex/latex/datatool/datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@toks=\toks50
-\@dtl@tmpcount=\count408
+\@dtl@toks=\toks52
+\@dtl@tmpcount=\count409
 \dtl@tmplength=\skip264
-\l__datatool_measure_box=\box72
-\dtl@sortresult=\count409
+\l__datatool_measure_box=\box74
+\dtl@sortresult=\count410
 
 (/usr/share/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count410
-\c_datatool_unknown_int=\count411
-\l__datatool_year_int=\count412
-\l__datatool_month_int=\count413
-\l__datatool_day_int=\count414
-\l__datatool_hour_int=\count415
-\l__datatool_minute_int=\count416
-\l__datatool_second_int=\count417
-\l__datatool_tzhour_int=\count418
-\l__datatool_tzminute_int=\count419
-\l__datatool_julian_int=\count420
-\l__datatool_local_julian_int=\count421
-\l__datatool_prefix_int=\count422
-\l__datatool_suffix_int=\count423
-\@dtl@foreach@level=\count424
+\@dtl@datatype=\count411
+\c_datatool_unknown_int=\count412
+\l__datatool_year_int=\count413
+\l__datatool_month_int=\count414
+\l__datatool_day_int=\count415
+\l__datatool_hour_int=\count416
+\l__datatool_minute_int=\count417
+\l__datatool_second_int=\count418
+\l__datatool_tzhour_int=\count419
+\l__datatool_tzminute_int=\count420
+\l__datatool_julian_int=\count421
+\l__datatool_local_julian_int=\count422
+\l__datatool_prefix_int=\count423
+\l__datatool_suffix_int=\count424
+\@dtl@foreach@level=\count425
 
 (/usr/share/texmf-dist/tex/latex/datatool-english/datatool-english.ldf
 File: datatool-english.ldf 2025/03/12 v1.1 (NLCT)
@@ -1115,11 +1123,11 @@ put line 9924.
 Package tracklang Warning: No `datatool' support for dialect `brazilian'  on in
 put line 9924.
 
-\dtl@codeA=\count425
-\dtl@codeB=\count426
+\dtl@codeA=\count426
+\dtl@codeB=\count427
 )
-\gls@level=\count427
-\@gls@tmpb=\toks51
+\gls@level=\count428
+\@gls@tmpb=\toks53
 \gls@tmplen=\skip265
 
 
@@ -1131,10 +1139,10 @@ Package glossaries Warning: Overriding \printglossary on input line 6495.
 Package glossaries Warning: Overriding `theglossary' environment on input line 
 7694.
 
-\glskeylisttok=\toks52
-\glslabeltok=\toks53
-\glsshorttok=\toks54
-\glslongtok=\toks55
+\glskeylisttok=\toks54
+\glslabeltok=\toks55
+\glsshorttok=\toks56
+\glslongtok=\toks57
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2025/11/09 v4.9 (NLCT)
 )
@@ -1151,18 +1159,18 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTright=\skip268
 \LTpre=\skip269
 \LTpost=\skip270
-\LTchunksize=\count428
+\LTchunksize=\count429
 \LTcapwidth=\dimen330
-\LT@head=\box73
-\LT@firsthead=\box74
-\LT@foot=\box75
-\LT@lastfoot=\box76
-\LT@gbox=\box77
-\LT@cols=\count429
-\LT@rows=\count430
-\c@LT@tables=\count431
-\c@LT@chunks=\count432
-\LT@p@ftn=\toks56
+\LT@head=\box75
+\LT@firsthead=\box76
+\LT@foot=\box77
+\LT@lastfoot=\box78
+\LT@gbox=\box79
+\LT@cols=\count430
+\LT@rows=\count431
+\c@LT@tables=\count432
+\c@LT@chunks=\count433
+\LT@p@ftn=\toks58
 )
 \glsdescwidth=\skip271
 \glspagelistwidth=\skip272
@@ -1172,7 +1180,7 @@ Package: glossary-super 2025/11/09 v4.9 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count433
+\c@tracingst=\count434
 \ST@wd=\dimen331
 \ST@rightskip=\skip273
 \ST@leftskip=\skip274
@@ -1186,11 +1194,11 @@ Package: supertabular 2025/06/26 v4.2d the supertabular environment
 \ST@prevht=\dimen338
 \ST@toadd=\dimen339
 \ST@dimen=\dimen340
-\ST@pbox=\box78
+\ST@pbox=\box80
 ))
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2025/11/09 v4.9 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count434
+\l__glossaries_tree_max_known_level_int=\count435
 \l__glossaries_tree_offset_dim=\dimen341
 \l__glossaries_tree_namewidth_dim=\dimen342
 \l__glossaries_tree_symbolwidth_dim=\dimen343
@@ -1200,18 +1208,18 @@ Package: glossary-tree 2025/11/09 v4.9 (NLCT)
 \l__glossaries_tree_symbolwidth_padding_dim=\dimen347
 \l__glossaries_tree_namesymbolwidth_dim=\dimen348
 \l__glossaries_tree_namesymbolwidth_padding_dim=\dimen349
-\l__glossaries_tree_level_int=\count435
+\l__glossaries_tree_level_int=\count436
 \glstreeindent=\skip276
 ))
 \glswrite=\write5
 \glo@main@file=\write6
 \openout6 = `Main.glo'.
 
-Package glossaries Info: Writing glossary file Main.glo on input line 13.
+Package glossaries Info: Writing glossary file Main.glo on input line 14.
 \glo@acronym@file=\write7
 \openout7 = `Main.acn'.
 
-Package glossaries Info: Writing glossary file Main.acn on input line 13.
+Package glossaries Info: Writing glossary file Main.acn on input line 14.
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 positioning.code.tex
@@ -1237,26 +1245,26 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-Package hyperref Info: Link coloring OFF on input line 39.
-\myptabbox=\box79
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+Package hyperref Info: Link coloring OFF on input line 40.
+\myptabbox=\box81
 \myptabboxwidth=\skip277
 
 *geometry* driver: auto-detecting
@@ -1295,17 +1303,17 @@ Package hyperref Info: Link coloring OFF on input line 39.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count436
+\scratchcounter=\count437
 \scratchdimen=\dimen354
-\scratchbox=\box80
-\nofMPsegments=\count437
-\nofMParguments=\count438
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count439
+\scratchbox=\box82
+\nofMPsegments=\count438
+\nofMParguments=\count439
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count440
 \MPscratchDim=\dimen355
-\MPnumerator=\count440
-\makeMPintoPDFobject=\count441
-\everyMPtoPDFconversion=\toks58
+\MPnumerator=\count441
+\makeMPintoPDFobject=\count442
+\everyMPtoPDFconversion=\toks60
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1324,7 +1332,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 
+l.44 
       [1
 
 
@@ -1345,26 +1353,31 @@ Cap\'{\i }tulo 1.
 
 ]
 Cap\'{\i }tulo 2.
-(./sections/TheoreticalBasis/PrivilegeLevels.tex)
-(./sections/TheoreticalBasis/Virtualization.tex [5
+(./sections/TheoreticalBasis/EPOS.tex)
+(./sections/TheoreticalBasis/Virtualization.tex)
+(./sections/TheoreticalBasis/Hypervisors.tex [5
 
-]
+])
+(./sections/TheoreticalBasis/RISC-V.tex
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 94.
- [6]))
-(./sections/Methodology.tex [7]
-Cap\'{\i }tulo 3.
-) (build/Main.gls [8
-
-]) (build/Main.bbl [9
-
-
-]
+(babel)             Reported on input line 6.
+ [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 
+    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 
+    ]) (./sections/TheoreticalBasis/TrapAndEmulate.tex)
+(./sections/TheoreticalBasis/VirtIO.tex)) (build/Main.gls) (build/Main.bbl
+[7] [8]
 bibitemlist
-
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
-
-) [10
+) [9
 
 ]
 \tf@lof=\write9
@@ -1380,13 +1393,29 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34719 strings out of 468981
- 669289 string characters out of 5459923
- 1207807 words of memory out of 5000000
- 62948 multiletter control sequences out of 15000+600000
- 633303 words of font info for 59 fonts, out of 8000000 for 9000
+ 34914 strings out of 468981
+ 672535 string characters out of 5459923
+ 1210675 words of memory out of 5000000
+ 63127 multiletter control sequences out of 15000+600000
+ 633650 words of font info for 60 fonts, out of 8000000 for 9000
  266 hyphenation exceptions out of 8191
- 99i,12n,107p,2487b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,2487b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:csr} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:risc} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:isa} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:vmm} has been referenced but does not exist, re
+placed by a fixed one
+
 
 pdfTeX warning (dest): name{glo:so} has been referenced but does not exist, rep
 laced by a fixed one
@@ -1402,11 +1431,12 @@ eplaced by a fixed one
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb>
-Output written on build/Main.pdf (11 pages, 79396 bytes).
+sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on build/Main.pdf (10 pages, 103147 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

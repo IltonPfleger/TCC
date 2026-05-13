@@ -1,9 +1,10 @@
 \chapter{Introdução}
 
-\Glspl{sistema-embarcado} tornaram-se a espinha dorsal da infraestrutura tecnológica moderna, estando presentes em uma ampla variedade de aplicações,
-desde dispositivos médicos e sistemas de automação industrial até plataformas automotivas e missões espaciais. Diferentemente da computação de propósito geral,
-esses sistemas frequentemente operam sob requisitos estritos de tempo real, nos quais a corretude do comportamento não depende apenas do resultado lógico produzido,
-mas também do instante exato em que esse resultado é disponibilizado.
+Sistemas críticos estão presentes em uma ampla gama de aplicações, que vão desde dispositivos médicos e sistemas de automação industrial
+até plataformas automotivas e missões espaciais. Diferentemente da computação de propósito geral, esses sistemas operam sob rigorosos requisitos
+de tempo real, nos quais a corretude do comportamento não depende apenas da precisão lógica dos resultados produzidos, mas também do momento
+exato em que esses resultados são disponibilizados. Em muitos casos, atrasos mínimos ou falhas temporais podem comprometer a segurança, a
+confiabilidade e até mesmo a integridade física de pessoas e equipamentos.
 
 Tradicionalmente, a garantia desse determinismo esteve associada ao uso de plataformas dedicadas, nas quais \glspl{rtos} são empregados para assegurar
 previsibilidade temporal, isolamento entre tarefas e cumprimento de restrições rígidas de escalonamento. Entretanto, a evolução do software contemporâneo
@@ -16,13 +17,14 @@ conflitantes: de um lado, aplicações críticas, sensíveis a prazos temporais 
 orientadas a funcionalidades avançadas e dependentes de ambientes generalistas.
 
 Nesse cenário, técnicas de virtualização surgem como uma alternativa promissora, pois permitem a coexistência de múltiplos ambientes de execução sobre o
-mesmo hardware. Dessa forma, torna-se possível executar aplicações críticas e não críticas de maneira controlada, reduzindo custos de integração e aumentando
-o aproveitamento da plataforma.
+mesmo hardware. Dessa forma, torna-se possível executar aplicações críticas e não críticas de maneira controlada, reduzindo custos de integração e
+aumentando o aproveitamento da plataforma.
 
-Paralelamente, a arquitetura aberta \gls{riscv} vem ganhando relevância no domínio de \glspl{sistema-embarcado} devido à sua flexibilidade, modularidade e independência
+Paralelamente, a arquitetura aberta RISC-V vem ganhando relevância  devido à sua flexibilidade, modularidade e independência
 tecnológica. Seu conjunto de instruções extensível, aliado à ausência de barreiras proprietárias, favorece tanto a pesquisa acadêmica quanto o desenvolvimento
 industrial, especialmente em soluções customizadas e de baixo custo.
 
-Por isso, este trabalho propõe o projeto e a implementação, em linguagem C++, de uma base de virtualização para \glspl{sistema-embarcado} baseados em \gls{riscv},
-com foco em previsibilidade temporal, isolamento entre cargas de trabalho e baixo custo de execução. Busca-se, assim, contribuir para a viabilização de
-plataformas embarcadas capazes de integrar aplicações heterogêneas sem comprometer requisitos críticos de desempenho e confiabilidade.
+Por isso, este trabalho propõe o projeto e a implementação, em linguagem C++, de uma base de virtualização para sistemas baseados
+em RISC-V, com foco em previsibilidade temporal, isolamento entre cargas de trabalho e baixo custo de execução. Busca-se, assim, contribuir para
+a viabilização de plataformas embarcadas capazes de integrar aplicações heterogêneas sem comprometer requisitos críticos de desempenho
+e confiabilidade.

@@ -28,10 +28,19 @@ Por isso, a maioria dos processadores e \glspl{so} adotam, no mínimo, uma divis
     \label{fig:niveis-privilegio}
 \end{figure}
 
-O modo usuário é destinado à execução da maioria das aplicações. Nesse nível, os programas operam com acesso restrito aos recursos do sistema, sem executar instruções privilegiadas
-nem acessar diretamente componentes críticos da máquina.
+O modo usuário é destinado à execução da maioria das aplicações. Nesse nível, os programas operam com acesso restrito aos recursos
+da máquina e não podem executar instruções privilegiadas.
 
-Já o modo supervisor é destinado à execução do próprio \gls{so}, dispondo de acesso total aos recursos do sistema. Nesse nível, o sistema operacional gerencia memória, dispositivos
-e processos, atuando como intermediário entre os programas em modo usuário e o hardware.
+Diferentemente do modo usuário, este nível detém autoridade para executar qualquer instrução. Tal fato lhe permite a manipulação direta do
+estado da máquina.
+Nessa posição, o \gls{so} deixa de ser um mero programa para se tornar o gestor soberano dos recursos, atuando como um mediador que oferece
+abstrações seguras às aplicações e garante a integridade do sistema contra falhas ou acessos indevidos vindos do nível de usuário.
+
+As instruções privilegiadas são operações de baixo nível que podem alterar o estado global da máquina ou gerenciar recursos críticos, como
+configurar \gls{mmu}, habilitar ou desabilitar interrupções e acessar registradores de controle do processador.
+O hardware é projetado para permitir a execução dessas instruções apenas quando o processador está no modo supervisor. Caso uma aplicação
+em outro modo tente executar uma instrução privilegiada, o processador impede a operação e a trata como uma tentativa de violação.
+
+
 
 

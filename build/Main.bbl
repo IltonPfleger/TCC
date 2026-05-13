@@ -5,4 +5,25 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Goldberg 1973]{Goldberg}
+\abntrefinfo{Goldberg}{GOLDBERG}{1973}
+{GOLDBERG, R.~P. Architectural principles for virtual computer systems. In:  .
+  [s.n.], 1973. Dispon{\'\i}vel em:
+  \url{https://apps.dtic.mil/sti/tr/pdf/AD0772809.pdf}.}
+
+\bibitem[International 2024]{RISCVUnprivilegedISA}
+\abntrefinfo{International}{INTERNATIONAL}{2024}
+{INTERNATIONAL, R.-V. \emph{The RISC-V Instruction Set Manual, Volume I:
+  Unprivileged ISA}. 2024.
+  \url{https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf}.}
+
+\bibitem[Popek e Goldberg 1974]{PopekGeraldGoldberg}
+\abntrefinfo{Popek e Goldberg}{POPEK; GOLDBERG}{1974}
+{POPEK, G.~J.; GOLDBERG, R.~P. Formal requirements for virtualizable third
+  generation architectures.
+\emph{Commun. ACM}, Association for Computing Machinery, New York, NY, USA,
+  v.~17, n.~7, p. 412–421, jul. 1974.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/361011.361073}.}
+
 \end{thebibliography}

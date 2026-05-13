@@ -1,7 +1,4 @@
-This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
-Scanning style file ./Main.ist...........................done (27 attributes redefined, 0 ignored).
-Scanning input file Main.glo....done (11 entries accepted, 0 rejected).
-Sorting entries....done (42 comparisons).
-Generating output file Main.gls....done (15 lines written, 0 warnings).
-Output written in Main.gls.
-Transcript written in Main.glg.
+Warning: File 'Main.glo' is empty.
+Have you used any entries defined in glossary 'main'?
+Remember to use package option 'nomain' if you
+don't want to use the main glossary.

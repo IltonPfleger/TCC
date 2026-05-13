@@ -1,0 +1,53 @@
+\section{RISC-V}
+
+O RISC-V é uma \gls{isa} baseada nos princípios da arquitetura \acrshort{risc} (\acrlong{risc}). Diferentemente de arquiteturas proprietárias,
+o RISC-V possui uma especificação aberta e livre de royalties, o que permite sua utilização tanto em contextos acadêmicos quanto em aplicações
+comerciais.
+
+Essa \gls{isa} define um conjunto básico de instruções, responsável pelas funcionalidades essenciais do processador. No entanto, sua
+principal característica é a modularidade, permitindo que diferentes extensões sejam incorporadas conforme as necessidades da aplicação.
+Dessa forma, é possível adaptar a arquitetura para cenários variados, desde sistemas embarcados com restrições de recursos até sistemas de
+alto desempenho.
+
+\subsection{Extensões}
+
+\begin{description}
+
+\item[I]
+Instruções básicas para operações com números inteiros. Conforme descrito em \cite{RISCVUnprivilegedISA}, essa extensão deve estar presente em
+qualquer implementação RISC-V, pois define operações fundamentais de aritmética e manipulação de registradores.
+
+\item[Zicsr]
+Adiciona suporte às instruções de acesso e manipulação de \glspl{csr}.
+
+\item[H]
+Adiciona suporte em hardware à virtualização. Porém, apesar de existir, é muito recente e sua implementação em hardware comercial ainda é limitada.
+
+\item[M]
+Adiciona suporte à operações de multiplicação e divisão de números inteiros.
+
+\item[A]
+Adiciona suporte à operações atômicas em memória.
+
+\item[F]
+Adiciona suporte a números em ponto flutuante de precisão simples (32 bits).
+
+\item[D]
+Adiciona suporte a números em ponto flutuante de precisão dupla (64 bits).
+
+\item[C]
+Adiciona suporte à instruções comprimidas de 16 bits.
+
+\item[S]
+Adiciona suporte ao modo supervisor.
+
+\item[G]
+Aglomerado geral de extensões que inclui I, M, A, F, D e C.
+
+\end{description}
+
+Para o escopo deste trabalho, serão consideradas apenas as extensões Zicsr, S e G. As estratégias adotadas para mitigar a ausência da extensão H
+serão discutidas ao longo do texto.
+
+\subsection{Níveis de Privilégio}
+\subsection{Control and Status Registers (CSRs)}

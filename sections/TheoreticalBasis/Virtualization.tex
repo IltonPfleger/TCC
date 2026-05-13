@@ -1,172 +1,181 @@
 \section{Virtualização}
 
-Para computação, virtualização é a inserção de uma camada adicional entre um \gls{mediador-de-hardware} e o \gls{hardware} físico. Quando um componente é virtualizado,
-esse recurso específico deixa de ser utilizado de forma direta e passa a ser apresentado por meio de uma abstração lógica controlada por essa camada intermediária.
-Isso permite, por exemplo, que múltiplas aplicações utilizem simultaneamente o mesmo recurso, pois a camada de virtualização fica responsável por arbitrar o acesso
-e coordenar seu compartilhamento evitando conflitos.
+A virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos sistemas operacionais em um mesmo hardware físico.
+Essa abordagem introduz uma camada de abstração entre a máquina real (Hospedeira) e os \glspl{so} (Convidados).
+Por meio dessa abstração, cada sistema operacional convidado possui a percepção de acesso exclusivo ao hardware, mesmo que os recursos
+estejam sendo compartilhados entre diferentes ambientes virtuais. 
 
-\section{Hipervisor}
-Enquanto \Glspl{so} tradicionalmente atuam como supervisores (\autoref{fig:niveis-privilegio}), um hipervisor introduz uma camada adicional de abstração.
-Ele opera um nível de privilégio abaixo dos \glspl{so} convidados, bloqueando o acesso direto deles ao hardware e virtualizando os recursos físicos para
-orquestrar múltiplos \glspl{so} de forma isolada.
-
-Para que essa estrutura funcione, o hipervisor utiliza mecanismos de interceptação. Como o \gls{so} convidado opera acreditando deter o privilégio máximo
-sobre a máquina, ele tenta executar instruções privilegiadas diretamente. No entanto, como ele não possui esse controle essas ações geram
-uma exceções que são capturadas pelo hipervisor. Este, por sua vez, traduz ou emula a operação, garantindo que o acesso aos recursos físicos ocorra
-de forma segura e isolada.
-
-Fundamentalmente, existem dois tipos de hipervisors: 1 e 2.
-
-\subsection{Tipo 1}
-
-Hipervisores de tipo 1, também conhecidos como bare-metal, são aqueles que executam diretamente sobre o hardware físico, sem a necessidade de um
-sistema operacional hospedeiro intermediário. Eles atuam como \gls{so} e como camada de virtualização apresentando maior desempenho e menor latência
-em comparação aos hipervisores do Tipo 2. Além disso, proporcionam maior controle sobre os recursos do sistema e melhor isolamento entre as máquinas virtuais,
-tornando-os especialmente adequados para ambientes críticos.
-
-\begin{figure}[htbp]
-    \centering
-    \begin{tikzpicture}[
-        pequeno/.style={
-            draw,
-            thick,
-            fill=blue!5,
-            minimum width=4cm,
-            minimum height=1.2cm,
-            outer sep=0pt
-        }
-    ]
-        \node[pequeno] (apps-so1-1) {Aplicação 1};
-        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
-        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
-
-        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
-        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
-
-        \node[
-            draw,
-            thick,
-            fill=blue!10,
-            minimum width=8.2cm,
-            minimum height=1.5cm,
-            below=0.2cm of apps-so1
-		] (SO1) {\Gls{so} 1};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!10,
-            minimum width=4cm,
-            minimum height=1.5cm,
-            below=0.2cm of apps-so2
-		] (SO2) {\Gls{so} 2};
-
-		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!15,
-            minimum width=12.4cm,
-            minimum height=1.5cm,
-            below=0.2cm of SOs
-		] (HOS) {Hipervisor};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!20,
-            minimum width=12.4cm,
-            minimum height=1.5cm,
-            below=0.2cm of HOS
-		] () {\Gls{hardware}};
-
-    \end{tikzpicture}
-    \caption{Hipervisor Tipo 1.}
-    \label{fig:hypervisor-type-1}
-\end{figure}
-
-\subsection{Tipo 2}
-
-Diferentemente da solução nativa, um hipervisor de Tipo 2 é executado como um processo dentro de um \gls{so} hospedeiro.
-Apesar de garantir o isolamento e a virtualização para diversos \glspl{so} convidados, sua arquitetura impõe mais uma camada intermediária de
-software que restringe a eficiência no acesso aos componentes físicos, gerando latência adicional e menor desempenho em operações críticas.
-
-\begin{figure}[htbp]
-    \centering
-    \begin{tikzpicture}[
-        pequeno/.style={
-            draw,
-            thick,
-            fill=blue!5,
-            minimum width=4cm,
-            minimum height=1.2cm,
-            outer sep=0pt
-        }
-    ]
-        \node[pequeno] (apps-so1-1) {Aplicação 1};
-        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
-        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
-
-        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
-        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
-
-        \node[
-            draw,
-            thick,
-            fill=blue!10,
-            minimum width=8.2cm,
-            minimum height=1.5cm,
-            below=0.2cm of apps-so1
-		] (SO1) {\Gls{so} 1};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!10,
-            minimum width=4cm,
-            minimum height=1.5cm,
-            below=0.2cm of apps-so2
-		] (SO2) {\Gls{so} 2};
-
-		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!15,
-            minimum width=12.4cm,
-            minimum height=1.5cm,
-            below=0.2cm of SOs
-		] (HOS) {Hipervisor};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!20,
-            minimum width=12.4cm,
-            minimum height=1.5cm,
-            below=0.2cm of HOS
-		] (OS) {\Gls{so}};
-
-		\node[
-            draw,
-            thick,
-            fill=blue!25,
-            minimum width=12.4cm,
-            minimum height=1.5cm,
-            below=0.2cm of OS
-		] () {\Gls{hardware}};
-
-    \end{tikzpicture}
-    \caption{Hipervisor Tipo 2.}
-    \label{fig:hypervisor-type-2}
-\end{figure}
+Históricamente virtualização sempre esteve ligada ao conceito de hipervisores que, por sua vez, tratam-se de um arcabolço software que serve
+de plataforma para essa modalidade.
 
 
-
-
-\section{Interceptação e Emulação - Trap and Emulate}
-
-
-
+%Para computação, virtualização é a inserção de uma camada adicional entre um \gls{mediador-de-hardware} e o \gls{hardware} físico. Quando um componente é virtualizado,
+%esse recurso específico deixa de ser utilizado de forma direta e passa a ser apresentado por meio de uma abstração lógica controlada por essa camada intermediária.
+%Isso permite, por exemplo, que múltiplas aplicações utilizem simultaneamente o mesmo recurso, pois a camada de virtualização fica responsável por arbitrar o acesso
+%e coordenar seu compartilhamento evitando conflitos.
+%
+%\section{Hipervisor}
+%Enquanto \Glspl{so} tradicionalmente atuam como supervisores (\autoref{fig:niveis-privilegio}), um hipervisor introduz uma camada adicional de abstração.
+%Ele opera um nível de privilégio abaixo dos \glspl{so} convidados, bloqueando o acesso direto deles ao hardware e virtualizando os recursos físicos para
+%orquestrar múltiplos \glspl{so} de forma isolada.
+%
+%Para que essa estrutura funcione, o hipervisor utiliza mecanismos de interceptação. Como o \gls{so} convidado opera acreditando deter o privilégio máximo
+%sobre a máquina, ele tenta executar instruções privilegiadas diretamente. No entanto, como ele não possui esse controle essas ações geram
+%uma exceções que são capturadas pelo hipervisor. Este, por sua vez, traduz ou emula a operação, garantindo que o acesso aos recursos físicos ocorra
+%de forma segura e isolada.
+%
+%Fundamentalmente, existem dois tipos de hipervisors: 1 e 2.
+%
+%\subsection{Tipo 1}
+%
+%Hipervisores de tipo 1, também conhecidos como bare-metal, são aqueles que executam diretamente sobre o hardware físico, sem a necessidade de um
+%sistema operacional hospedeiro intermediário. Eles atuam como \gls{so} e como camada de virtualização apresentando maior desempenho e menor latência
+%em comparação aos hipervisores do Tipo 2. Além disso, proporcionam maior controle sobre os recursos do sistema e melhor isolamento entre as máquinas virtuais,
+%tornando-os especialmente adequados para ambientes críticos.
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{tikzpicture}[
+%        pequeno/.style={
+%            draw,
+%            thick,
+%            fill=blue!5,
+%            minimum width=4cm,
+%            minimum height=1.2cm,
+%            outer sep=0pt
+%        }
+%    ]
+%        \node[pequeno] (apps-so1-1) {Aplicação 1};
+%        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
+%        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
+%
+%        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
+%        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
+%
+%        \node[
+%            draw,
+%            thick,
+%            fill=blue!10,
+%            minimum width=8.2cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of apps-so1
+%		] (SO1) {\Gls{so} 1};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!10,
+%            minimum width=4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of apps-so2
+%		] (SO2) {\Gls{so} 2};
+%
+%		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!15,
+%            minimum width=12.4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of SOs
+%		] (HOS) {Hipervisor};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!20,
+%            minimum width=12.4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of HOS
+%		] () {\Gls{hardware}};
+%
+%    \end{tikzpicture}
+%    \caption{Hipervisor Tipo 1.}
+%    \label{fig:hypervisor-type-1}
+%\end{figure}
+%
+%\subsection{Tipo 2}
+%
+%Diferentemente da solução nativa, um hipervisor de Tipo 2 é executado como um processo dentro de um \gls{so} hospedeiro.
+%Apesar de garantir o isolamento e a virtualização para diversos \glspl{so} convidados, sua arquitetura impõe uma camada intermediária a mais de
+%software que restringe a eficiência no acesso aos componentes físicos, gerando latência adicional e menor desempenho em operações críticas.
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \begin{tikzpicture}[
+%        pequeno/.style={
+%            draw,
+%            thick,
+%            fill=blue!5,
+%            minimum width=4cm,
+%            minimum height=1.2cm,
+%            outer sep=0pt
+%        }
+%    ]
+%        \node[pequeno] (apps-so1-1) {Aplicação 1};
+%        \node[pequeno, right=0.2cm of apps-so1-1] (apps-so1-2) {Aplicação 2};
+%        \node[pequeno, right=0.2cm of apps-so1-2] (apps-so2-1) {Aplicação 1};
+%
+%        \node[fit=(apps-so1-1)(apps-so1-2), inner sep=0pt] (apps-so1) {};
+%        \node[fit=(apps-so2-1), inner sep=0pt] (apps-so2) {};
+%
+%        \node[
+%            draw,
+%            thick,
+%            fill=blue!10,
+%            minimum width=8.2cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of apps-so1
+%		] (SO1) {\Gls{so} 1};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!10,
+%            minimum width=4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of apps-so2
+%		] (SO2) {\Gls{so} 2};
+%
+%		\node[fit=(SO2)(SO1), inner sep=0pt] (SOs) {};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!15,
+%            minimum width=12.4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of SOs
+%		] (HOS) {Hipervisor};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!20,
+%            minimum width=12.4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of HOS
+%		] (OS) {\Gls{so}};
+%
+%		\node[
+%            draw,
+%            thick,
+%            fill=blue!25,
+%            minimum width=12.4cm,
+%            minimum height=1.5cm,
+%            below=0.2cm of OS
+%		] () {\Gls{hardware}};
+%
+%    \end{tikzpicture}
+%    \caption{Hipervisor Tipo 2.}
+%    \label{fig:hypervisor-type-2}
+%\end{figure}
+%
+%
+%
+%
+%\section{Interceptação e Emulação - Trap and Emulate}
+%
+%
+%

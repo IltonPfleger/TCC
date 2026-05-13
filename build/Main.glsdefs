@@ -1,31 +1,3 @@
-\glsdefs@newdocentry{riscv}%
-{%
-name={RISC-V},%
-sort={RISC-V},%
-type={main},%
-first={RISC-V},%
-firstplural={RISC-V},%
-text={RISC-V},%
-plural={RISC-V},%
-description={Conjunto de instruções de máquina livre para ser usado para qualquer finalidade, permitindo a qualquer pessoa ou empresa projetar e vender chips RISC-V sem precisar pagar royalties},%
-descriptionplural={Conjunto de instruções de máquina livre para ser usado para qualquer finalidade, permitindo a qualquer pessoa ou empresa projetar e vender chips RISC-V sem precisar pagar royalties},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{cpu}%
 {%
 name={CPU},%
@@ -147,8 +119,8 @@ first={API},%
 firstplural={APIs},%
 text={API},%
 plural={APIs},%
-description={Application Programming Interface},%
-descriptionplural={Application Programming Interface},%
+description={Interface de Programação de Aplicações},%
+descriptionplural={Interface de Programação de Aplicações},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -157,8 +129,8 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Application Programming Interface},%
-longplural={Application Programming Interfaces},%
+long={Interface de Programação de Aplicações},%
+longplural={Interface de Programação de Aplicaçõess},%
 short={API},%
 shortplural={APIs},%
 counter={page},%
@@ -273,6 +245,146 @@ long={Unidade de Processamento Gráfico},%
 longplural={Unidades de Processamento Gráfico},%
 short={GPU},%
 shortplural={GPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mmu}%
+{%
+name={\acronymfont {\glsentryshort {mmu}}},%
+sort={MMU},%
+type={acronym},%
+first={MMU},%
+firstplural={MMUs},%
+text={MMU},%
+plural={MMUs},%
+description={Unidade de Gerenciamento de Memória},%
+descriptionplural={Unidade de Gerenciamento de Memória},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Unidade de Gerenciamento de Memória},%
+longplural={Unidades de Gerenciamento de Memória},%
+short={MMU},%
+shortplural={MMUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vmm}%
+{%
+name={\acronymfont {\glsentryshort {vmm}}},%
+sort={VMM},%
+type={acronym},%
+first={VMM},%
+firstplural={VMMs},%
+text={VMM},%
+plural={VMMs},%
+description={Monitor de Máquina Virtual},%
+descriptionplural={Monitor de Máquina Virtual},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Monitor de Máquina Virtual},%
+longplural={Monitores de Máquinas Virtuais},%
+short={VMM},%
+shortplural={VMMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{isa}%
+{%
+name={\acronymfont {\glsentryshort {isa}}},%
+sort={ISA},%
+type={acronym},%
+first={ISA},%
+firstplural={ISAs},%
+text={ISA},%
+plural={ISAs},%
+description={Instruction Set Architecture},%
+descriptionplural={Instruction Set Architecture},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Instruction Set Architecture},%
+longplural={Instruction Set Architectures},%
+short={ISA},%
+shortplural={ISAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{risc}%
+{%
+name={\acronymfont {\glsentryshort {risc}}},%
+sort={RISC},%
+type={acronym},%
+first={RISC},%
+firstplural={RISCs},%
+text={RISC},%
+plural={RISCs},%
+description={Reduced Instruction Set Computer},%
+descriptionplural={Reduced Instruction Set Computer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Reduced Instruction Set Computer},%
+longplural={Reduced Instruction Set Computers},%
+short={RISC},%
+shortplural={RISCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{csr}%
+{%
+name={\acronymfont {\glsentryshort {csr}}},%
+sort={CSR},%
+type={acronym},%
+first={CSR},%
+firstplural={CSRs},%
+text={CSR},%
+plural={CSRs},%
+description={Control and Status Register},%
+descriptionplural={Control and Status Register},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Control and Status Register},%
+longplural={Control and Status Registers},%
+short={CSR},%
+shortplural={CSRs},%
 counter={page},%
 parent={},%
 %
