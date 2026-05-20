@@ -8,15 +8,19 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}EPOS}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Virtualização}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Hipervisors}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Tipo 1 - Bare Metal}{5}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Hipervisors}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Tipo 1 - Bare Metal}{6}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Tipo 2}{6}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}RISC-V}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Extensões}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Níveis de Privilégio}{8}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Control and Status Registers (CSRs)}{8}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Trap And Emulate}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}VirtIO}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.4}Diferenças Entre Virtualização e Emulação}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}RISC-V}{7}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Extensões}{8}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Níveis de Privilégio}{8}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}\textit {\Glspl {csr}}}{9}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Interceptação e Emulação}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}\textit {VirtIO}}{10}{section.2.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Virtualização Baseada em Modo Máquina}{11}{section.3.1}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{9}{section*.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{13}{section*.7}%

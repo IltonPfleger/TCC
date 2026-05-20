@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.22)  13 MAY 2026 08:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.22)  20 MAY 2026 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1341,12 +1341,12 @@ l.44
 
 ] (build/Main.toc) [3
 
-] (./Glossary.tex
+] (./Glossary.tex)
+(./Acronyms.tex
 \@gls@deffile=\write8
 \openout8 = `Main.glsdefs'.
 
-)
-(./Acronyms.tex) (./sections/Introduction.tex
+) (./sections/Introduction.tex
 Cap\'{\i }tulo 1.
 ) (./sections/TheoreticalBasis/TheoreticalBasis.tex [4
 
@@ -1358,26 +1358,42 @@ Cap\'{\i }tulo 2.
 (./sections/TheoreticalBasis/Hypervisors.tex [5
 
 ])
-(./sections/TheoreticalBasis/RISC-V.tex
+(./sections/TheoreticalBasis/VirtualizationXEmulation.tex
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 6.
+(babel)             Reported on input line 1.
  [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.6 
-    
+l.1 \section
+            {Diferenças Entre Virtualização e Emulação}])
+(./sections/TheoreticalBasis/RISC-V.tex [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.6 
-    ]) (./sections/TheoreticalBasis/TrapAndEmulate.tex)
-(./sections/TheoreticalBasis/VirtIO.tex)) (build/Main.gls) (build/Main.bbl
-[7] [8]
+l.11 
+     ] [8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Glspl' on input line 106.
+
+) (./sections/TheoreticalBasis/TrapAndEmulate.tex)
+(./sections/TheoreticalBasis/VirtIO.tex [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \section
+            {\textit{VirtIO}}])) (./sections/Methodology/Methodology.tex
+[10]
+Cap\'{\i }tulo 3.
+(./sections/Methodology/MachineMode.tex) [11
+
+]) (build/Main.gls) (build/Main.bbl [12]
 bibitemlist
-) [9
+) [13
 
 ]
 \tf@lof=\write9
@@ -1393,16 +1409,36 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34914 strings out of 468981
- 672535 string characters out of 5459923
- 1210675 words of memory out of 5000000
- 63127 multiletter control sequences out of 15000+600000
- 633650 words of font info for 60 fonts, out of 8000000 for 9000
+ 35059 strings out of 468981
+ 673973 string characters out of 5459923
+ 1212106 words of memory out of 5000000
+ 63244 multiletter control sequences out of 15000+600000
+ 634009 words of font info for 61 fonts, out of 8000000 for 9000
  266 hyphenation exceptions out of 8191
- 99i,12n,107p,2487b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,2487b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{glo:csr} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:mmio} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:pmp} has been referenced but does not exist, re
 placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:mmu} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sbi} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dma} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:io} has been referenced but does not exist, rep
+laced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:risc} has been referenced but does not exist, r
@@ -1421,6 +1457,10 @@ pdfTeX warning (dest): name{glo:so} has been referenced but does not exist, rep
 laced by a fixed one
 
 
+pdfTeX warning (dest): name{glo:epos} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
 pdfTeX warning (dest): name{glo:gpos} has been referenced but does not exist, r
 eplaced by a fixed one
 
@@ -1428,15 +1468,20 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:rtos} has been referenced but does not exist, r
 eplaced by a fixed one
 
+
+pdfTeX warning (dest): name{glo:csr} has been referenced but does not exist, re
+placed by a fixed one
+
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/Main.pdf (10 pages, 103147 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on build/Main.pdf (14 pages, 134760 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

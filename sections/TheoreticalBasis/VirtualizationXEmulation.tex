@@ -1,0 +1,12 @@
+\section{Diferenças Entre Virtualização e Emulação}
+
+Algumas funcionalidades utilizadas neste trabalho serão emuladas em vez de virtualizadas, devido a limitações de hardware.
+A principal diferença entre esses dois conceitos está na forma como as operações são executadas.
+
+A emulação é realizada inteiramente por software, reproduzindo o comportamento de uma arquitetura ou dispositivo por meio da interpretação ou tradução
+de instruções. Entretanto, devido à necessidade de traduzir instruções e simular componentes de hardware, a emulação tende a apresentar menor desempenho
+em relação a virtualização.
+
+Por outro lado, embora a virtualização também introduza uma camada de software, esta atua primariamente como uma interface de controle e gerenciamento.
+Isso permite que a maior parte das instruções seja executada diretamente pelo processador físico. Contudo, essa abordagem exige suporte especializado
+por parte do hardware subjacente, um requisito que nem sempre está disponível em todas as arquiteturas e máquinas.

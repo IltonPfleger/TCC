@@ -5,6 +5,16 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Fröhlich e Schröeder-Preikschat 1999]{EPOSPaper}
+\abntrefinfo{Fröhlich e Schröeder-Preikschat}{FRöHLICH;
+  SCHRöEDER-PREIKSCHAT}{1999}
+{FRöHLICH, A.; SCHRöEDER-PREIKSCHAT, W. High performance application-oriented
+  operating systems - the epos approach. In:  \emph{Anais do XI Symposium on
+  Computer Architecture and High Performance Computing}. Porto Alegre, RS,
+  Brasil: SBC, 1999. p.~3--9.
+ISSN 0000-0000. Dispon{\'\i}vel em:
+  \url{https://sol.sbc.org.br/index.php/sbac-pad/article/view/19765}.}
+
 \bibitem[Goldberg 1973]{Goldberg}
 \abntrefinfo{Goldberg}{GOLDBERG}{1973}
 {GOLDBERG, R.~P. Architectural principles for virtual computer systems. In:  .
@@ -25,5 +35,13 @@
   v.~17, n.~7, p. 412–421, jul. 1974.
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/361011.361073}.}
+
+\bibitem[Russell 2008]{RustyRussellVirtIO}
+\abntrefinfo{Russell}{RUSSELL}{2008}
+{RUSSELL, R. virtio: towards a de-facto standard for virtual i/o devices.
+\emph{SIGOPS Oper. Syst. Rev.}, Association for Computing Machinery, New York,
+  NY, USA, v.~42, n.~5, p. 95–103, jul. 2008.
+ISSN 0163-5980.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/1400097.1400108}.}
 
 \end{thebibliography}

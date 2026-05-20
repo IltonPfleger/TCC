@@ -1,115 +1,3 @@
-\glsdefs@newdocentry{cpu}%
-{%
-name={CPU},%
-sort={CPU},%
-type={main},%
-first={CPU},%
-firstplural={CPUs},%
-text={CPU},%
-plural={CPUs},%
-description={Parte central do computador, responsável por interpretar e executar instruções, realizar cálculos e processar dados},%
-descriptionplural={Parte central do computador, responsável por interpretar e executar instruções, realizar cálculos e processar dados},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{sistema-embarcado}%
-{%
-name={Sistema Embarcado},%
-sort={Sistema Embarcado},%
-type={main},%
-first={sistema embarcado},%
-firstplural={sistemas embarcados},%
-text={sistema embarcado},%
-plural={sistemas embarcados},%
-description={Um computador pequeno feito para executar uma tarefa específica dentro de outro equipamento},%
-descriptionplural={Um computador pequeno feito para executar uma tarefa específica dentro de outro equipamento},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{hardware}%
-{%
-name={Hardware},%
-sort={Hardware},%
-type={main},%
-first={hardware},%
-firstplural={hardwares},%
-text={hardware},%
-plural={hardwares},%
-description={Parte física e tangível de um computador},%
-descriptionplural={Parte física e tangível de um computador},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{mediador-de-hardware}%
-{%
-name={Mediador de Hardware},%
-sort={Mediador de Hardware},%
-type={main},%
-first={mediador de hardware},%
-firstplural={mediadores de hardware},%
-text={mediador de hardware},%
-plural={mediadores de hardware},%
-description={Um componente de software que encapsula, gerencia e abstrai dispositivos físicos},%
-descriptionplural={Um componente de software que encapsula, gerencia e abstrai dispositivos físicos},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{api}%
 {%
 name={\acronymfont {\glsentryshort {api}}},%
@@ -385,6 +273,174 @@ long={Control and Status Register},%
 longplural={Control and Status Registers},%
 short={CSR},%
 shortplural={CSRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{epos}%
+{%
+name={\acronymfont {\glsentryshort {epos}}},%
+sort={EPOS},%
+type={acronym},%
+first={EPOS},%
+firstplural={EPOSs},%
+text={EPOS},%
+plural={EPOSs},%
+description={Embedded Parallel Operating System},%
+descriptionplural={Embedded Parallel Operating System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Embedded Parallel Operating System},%
+longplural={Embedded Parallel Operating Systems},%
+short={EPOS},%
+shortplural={EPOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{io}%
+{%
+name={\acronymfont {\glsentryshort {io}}},%
+sort={IO},%
+type={acronym},%
+first={IO},%
+firstplural={IOs},%
+text={IO},%
+plural={IOs},%
+description={Entrada e Saída},%
+descriptionplural={Entrada e Saída},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Entrada e Saída},%
+longplural={Entrada e Saídas},%
+short={IO},%
+shortplural={IOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dma}%
+{%
+name={\acronymfont {\glsentryshort {dma}}},%
+sort={DMA},%
+type={acronym},%
+first={DMA},%
+firstplural={DMAs},%
+text={DMA},%
+plural={DMAs},%
+description={Acesso Direto à Memória},%
+descriptionplural={Acesso Direto à Memória},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Acesso Direto à Memória},%
+longplural={Acesso Direto à Memórias},%
+short={DMA},%
+shortplural={DMAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sbi}%
+{%
+name={\acronymfont {\glsentryshort {sbi}}},%
+sort={SBI},%
+type={acronym},%
+first={SBI},%
+firstplural={SBIs},%
+text={SBI},%
+plural={SBIs},%
+description={Supervisor Binary Interface},%
+descriptionplural={Supervisor Binary Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Supervisor Binary Interface},%
+longplural={Supervisor Binary Interfaces},%
+short={SBI},%
+shortplural={SBIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pmp}%
+{%
+name={\acronymfont {\glsentryshort {pmp}}},%
+sort={PMP},%
+type={acronym},%
+first={PMP},%
+firstplural={PMPs},%
+text={PMP},%
+plural={PMPs},%
+description={Physical Memory Protection},%
+descriptionplural={Physical Memory Protection},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Physical Memory Protection},%
+longplural={Physical Memory Protections},%
+short={PMP},%
+shortplural={PMPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mmio}%
+{%
+name={\acronymfont {\glsentryshort {mmio}}},%
+sort={MMIO},%
+type={acronym},%
+first={MMIO},%
+firstplural={MMIOs},%
+text={MMIO},%
+plural={MMIOs},%
+description={\textit {Memory-Mapped I/O}},%
+descriptionplural={\textit {Memory-Mapped I/O}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Memory-Mapped I/O}},%
+longplural={\protect \textit  {Memory-Mapped I/O}s},%
+short={MMIO},%
+shortplural={MMIOs},%
 counter={page},%
 parent={},%
 %

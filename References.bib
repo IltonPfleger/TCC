@@ -25,9 +25,45 @@ keywords = {abstract model, formal requirements, hypervisor, operating system, p
   url={https://apps.dtic.mil/sti/tr/pdf/AD0772809.pdf}
 }
 
+@inproceedings{EPOSPaper,
+ author = {Antonio Fröhlich and Wolfgang Schröeder-Preikschat},
+ title = { High Performance Application-Oriented Operating Systems - the EPOS Approach},
+ booktitle = {Anais do XI Symposium on Computer Architecture and High Performance Computing},
+ location = {Natal},
+ year = {1999},
+ keywords = {},
+ issn = {0000-0000},
+ pages = {3--9},
+ publisher = {SBC},
+ address = {Porto Alegre, RS, Brasil},
+ doi = {10.5753/sbac-pad.1999.19765},
+ url = {https://sol.sbc.org.br/index.php/sbac-pad/article/view/19765}
+}
+
+
 @misc{RISCVUnprivilegedISA,
   author       = {RISC-V International},
   title        = {The RISC-V Instruction Set Manual, Volume I: Unprivileged ISA},
   year         = {2024},
   howpublished = {\url{https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf}},
+}
+
+@article{RustyRussellVirtIO,
+author = {Russell, Rusty},
+title = {virtio: towards a de-facto standard for virtual I/O devices},
+year = {2008},
+issue_date = {July 2008},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {5},
+issn = {0163-5980},
+url = {https://doi.org/10.1145/1400097.1400108},
+doi = {10.1145/1400097.1400108},
+abstract = {The Linux Kernel currently supports at least 8 distinct virtualization systems: Xen, KVM, VMware's VMI, IBM's System p, IBM's System z, User Mode Linux, lguest and IBM's legacy iSeries. It seems likely that more such systems will appear, and until recently each of these had its own block, network, console and other drivers with varying features and optimizations.The attempt to address this is virtio: a series of efficient, well-maintained Linux drivers which can be adapted for various different hypervisor implementations using a shim layer. This includes a simple extensible feature mechanism for each driver. We also provide an obvious ring buffer transport implementation called vring, which is currently used by KVM and lguest. This has the subtle effect of providing a path of least resistance for any new hypervisors: supporting this efficient transport mechanism will immediately reduce the amount of work which needs to be done. Finally, we provide an implementation which presents the vring transport and device configuration as a PCI device: this means guest operating systems merely need a new PCI driver, and hypervisors need only add vring support to the virtual devices they implement (currently only KVM does this).This paper will describe the virtio API layer as implemented in Linux, then the vring implementation, and finally its embodiment in a PCI device for simple adoption on otherwise fully-virtualized guests. We'll wrap up with some of the preliminary work to integrate this I/O mechanism deeper into the Linux host kernel.},
+journal = {SIGOPS Oper. Syst. Rev.},
+month = jul,
+pages = {95–103},
+numpages = {9},
+keywords = {I/O, KVM, Linux, lguest, ring buffer, virtio, virtio_pci, virtualization, vring}
 }

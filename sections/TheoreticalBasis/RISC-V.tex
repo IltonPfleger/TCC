@@ -14,8 +14,8 @@ alto desempenho.
 \begin{description}
 
 \item[I]
-Instruções básicas para operações com números inteiros. Conforme descrito em \cite{RISCVUnprivilegedISA}, essa extensão deve estar presente em
-qualquer implementação RISC-V, pois define operações fundamentais de aritmética e manipulação de registradores.
+Adiciona suporte às instruções básicas de operações com números inteiros. Conforme descrito em \cite{RISCVUnprivilegedISA}, essa extensão deve estar
+presente em qualquer implementação RISC-V, pois define as operações fundamentais de aritmética e manipulação de registradores.
 
 \item[Zicsr]
 Adiciona suporte às instruções de acesso e manipulação de \glspl{csr}.
@@ -46,8 +46,65 @@ Aglomerado geral de extensões que inclui I, M, A, F, D e C.
 
 \end{description}
 
-Para o escopo deste trabalho, serão consideradas apenas as extensões Zicsr, S e G. As estratégias adotadas para mitigar a ausência da extensão H
-serão discutidas ao longo do texto.
+Para o escopo deste trabalho, serão usadas apenas as extensões Zicsr, S e G. Os motivos e estratégias adotadas para mitigar e justificar a
+ausência da extensão H serão discutidas ao longo do texto.
 
 \subsection{Níveis de Privilégio}
-\subsection{Control and Status Registers (CSRs)}
+
+Assim como a maioria das arquiteturas modernas, a RISC-V utiliza um modelo hierárquico de privilégios para garantir a segurança
+e a estabilidade dos sistemas que funcionam sobre ela. Esses níveis de privilégio determinam quais operações e recursos de hardware podem ser acessados
+por cada contexto de execução.
+
+Por exemplo, ao executar o \gls{so} em um nível mais privilegiado, torna-se possível protegê-lo contra interferências de aplicações executadas em
+níveis inferiores. Dessa forma, o sistema operacional pode impedir tanto que aplicações comprometam seu funcionamento quanto que interfiram entre si,
+aumentando a segurança do sistema como um todo.
+
+Essa proteção é normalmente implementada por meio de mecanismos de hardware, como registradores privilegiados e regiões de memória protegidas, 
+cujo acesso é restrito de acordo com o nível de privilégio de cada contexto de execução.
+
+
+O modelo básico da arquitetura estudada neste documento, conforme mostra a \autoref{fig:niveis-de-privilegio-risc-v}, contém três níveis de privilégio.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        >=Stealth,
+        camada/.style={
+            draw,
+            thick,
+            minimum width=6cm,
+            minimum height=1.2cm,
+            outer sep=0pt
+        }
+    ]
+        \node[camada, fill=blue!10] (u) {User (U-Mode)};
+        \node[camada, fill=blue!20, below=0.2cm of u] (s) {Supervisor (S-Mode)};
+        \node[camada, fill=blue!30, below=0.2cm of s] (m) {Machine (M-Mode)};
+		\node[camada, fill=blue!40, below=0.2cm of m] (h) {Hardware};
+
+    \end{tikzpicture}
+    \caption{Níveis de Privilégio RISC-V.}
+    \label{fig:niveis-de-privilegio-risc-v}
+\end{figure}
+
+\begin{description}
+
+	\item[\textit{User Mode}]
+		Nível mais restrito de execução, destinado à operação de aplicações que não devem possuir permissões suficientes para comprometer a
+		integridade, a segurança ou o funcionamento do sistema.
+
+	\item[\textit{Supervisor Mode}]
+		Nível utilizado pela maior parte dos \glspl{so} modernos, permitindo que eles gerenciem os recursos da máquina e controlem as 
+		permissões associadas ao \textit{User Mode}.
+
+	\item[\textit{Machine Mode}]
+		Nível mais privilegiado da arquitetura, responsável pelo controle direto do hardware e pela execução de operações críticas de baixo nível.
+		Seus aspectos serão discutidos com maior profundidade ao longo deste texto.
+
+\end{description}
+
+\subsection{\textit{\Glspl{csr}}}
+
+Os \glspl{csr} são registradores especiais utilizados para controlar e monitorar o funcionamento do processador.
+Esses registradores são responsáveis por armazenar informações relacionadas ao estado da máquina, tratamento de exceções, tratamento de interrupções,
+configuração de privilégios e controle de funcionalidades específicas da arquitetura.

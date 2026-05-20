@@ -1,12 +1,27 @@
 \section{Virtualização}
 
-A virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos sistemas operacionais em um mesmo hardware físico.
-Essa abordagem introduz uma camada de abstração entre a máquina real (Hospedeira) e os \glspl{so} (Convidados).
-Por meio dessa abstração, cada sistema operacional convidado possui a percepção de acesso exclusivo ao hardware, mesmo que os recursos
-estejam sendo compartilhados entre diferentes ambientes virtuais. 
+A virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos sistemas operacionais em um mesmo hardware físico. Essa abordagem introduz uma camada de abstração entre a máquina
+hospedeira e os \glspl{so} convidados. Por meio dessa abstração, cada \gls{so} convidado possui a percepção de acesso exclusivo ao hardware, mesmo que os recursos estejam sendo compartilhados entre
+diferentes ambientes virtuais.
 
-Históricamente virtualização sempre esteve ligada ao conceito de hipervisores que, por sua vez, tratam-se de um arcabolço software que serve
-de plataforma para essa modalidade.
+Historicamente, a virtualização sempre esteve associada ao conceito de hipervisores, que consistem em um arcabouço de software responsável por gerenciar e intermediar o acesso dos sistemas convidados aos recursos físicos
+da máquina hospedeira.
+
+Na virtualização tradicional, também conhecida como \textit{full virtualization}, o \gls{so} convidado executa sem conhecimento explícito de que está em um ambiente virtualizado.
+Nesse cenário, operações privilegiadas são interceptadas pelo hipervisor e tratadas por mecanismos como \textit{trap-and-emulate}.
+
+Em contraste, a paravirtualização adota uma abordagem cooperativa entre o \gls{so} convidado e o hipervisor. Nesse modelo, o sistema convidado é modificado para reconhecer a presença do
+ambiente virtualizado e, em vez de executar diretamente instruções privilegiadas, realiza chamadas explícitas ao hipervisor, conhecidas como \textit{hypercalls}. Essa estratégia reduz a necessidade de
+emulação, diminuindo o custo associado à virtualização.
+
+
+%A virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos sistemas operacionais em um mesmo hardware físico.
+%Essa abordagem introduz uma camada de abstração entre a máquina real (Hospedeira) e os \glspl{so} (Convidados).
+%Por meio dessa abstração, cada sistema operacional convidado possui a percepção de acesso exclusivo ao hardware, mesmo que os recursos
+%estejam sendo compartilhados entre diferentes ambientes virtuais. 
+%
+%Históricamente virtualização sempre esteve ligada ao conceito de hipervisores que, por sua vez, tratam-se de um arcabolço software que serve
+%de plataforma para essa modalidade.
 
 
 %Para computação, virtualização é a inserção de uma camada adicional entre um \gls{mediador-de-hardware} e o \gls{hardware} físico. Quando um componente é virtualizado,
