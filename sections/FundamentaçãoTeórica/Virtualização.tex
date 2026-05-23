@@ -1,0 +1,15 @@
+\section{Virtualização}
+
+Virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos \glspl{so} — denominados sistemas convidados — em um mesmo hardware físico.
+Enquanto um \gls{so} convencional atua como uma interface entre o usuário e a máquina, abstraindo a complexidade da arquitetura subjacente, existem sistemas projetados
+para estender essa abstração a outros \glspl{so}. Esses sistemas são denominados hipervisores, e o mecanismo que viabiliza esse processo é chamado de virtualização.
+
+De modo geral, existem dois principais tipos de virtualização: a virtualização completa e a paravirtualização.
+
+Na virtualização completa, também conhecida como \textit{full virtualization}, o \gls{so} convidado executa sem ter conhecimento explícito de que está em um ambiente virtualizado.
+Nesse cenário, operações privilegiadas são interceptadas pelo hipervisor por meio de exceções e tratadas por mecanismos como \textit{trap-and-emulate}.
+Entretanto, esse processo pode comprometer o desempenho do sistema, devido ao custo associado às operações de salvamento e restauração de contexto realizadas a cada exceção gerada.
+
+Em contraste, a paravirtualização adota uma abordagem cooperativa entre o \gls{so} convidado e o seu hipervisor.
+Nesse modelo, o sistema convidado é modificado para reconhecer a presença do ambiente virtualizado e, em vez de executar diretamente instruções privilegiadas,
+realiza chamadas explícitas ao hipervisor, conhecidas como \textit{hypercalls}. Essa estratégia reduz a necessidade de exceções, diminuindo o custo associado ao processo de virtualização.

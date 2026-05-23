@@ -1,0 +1,14 @@
+\section{Interrupções}
+
+As interrupções constituem-se em um mecanismo fundamental de controle em arquiteturas computacionais, permitindo que o processador suspenda temporariamente a execução
+de uma tarefa para atender a eventos de alta prioridade. Este paradigma é essencial para a operação assíncrona dos sistemas modernos, viabilizando a reação imediata
+a sinais de hardware, periféricos ou condições de erro.
+
+Quando uma interrupção é disparada, o fluxo de execução é desviado para uma rotina especializada denominada \gls{isr}.
+O processo de transição ocorre geralmente em três etapas:
+
+\begin{enumerate}
+    \item \textbf{Salvamento de Contexto:} O estado atual da CPU é salvo na pilha ou em uma estrutura de dados específica.
+    \item \textbf{Execução da \gls{isr}:} O processador executa o código responsável por tratar o evento que causou a interrupção.
+    \item \textbf{Restauração do Contexto:} O estado anterior é restaurado, permitindo que a tarefa originalmente interrompida retome seu processamento a partir do ponto em que foi suspensa.
+\end{enumerate}

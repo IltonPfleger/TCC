@@ -194,6 +194,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{vm}%
+{%
+name={\acronymfont {\glsentryshort {vm}}},%
+sort={VM},%
+type={acronym},%
+first={VM},%
+firstplural={VMs},%
+text={VM},%
+plural={VMs},%
+description={Máquina Virtual},%
+descriptionplural={Máquina Virtual},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Máquina Virtual},%
+longplural={Máquinas Virtuais},%
+short={VM},%
+shortplural={VMs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{isa}%
 {%
 name={\acronymfont {\glsentryshort {isa}}},%
@@ -441,6 +469,34 @@ long={\protect \textit  {Memory-Mapped I/O}},%
 longplural={\protect \textit  {Memory-Mapped I/O}s},%
 short={MMIO},%
 shortplural={MMIOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{isr}%
+{%
+name={\acronymfont {\glsentryshort {isr}}},%
+sort={ISR},%
+type={acronym},%
+first={ISR},%
+firstplural={ISRs},%
+text={ISR},%
+plural={ISRs},%
+description={\textit {Interrupt Service Routine}},%
+descriptionplural={\textit {Interrupt Service Routine}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Interrupt Service Routine}},%
+longplural={\protect \textit  {Interrupt Service Routine}s},%
+short={ISR},%
+shortplural={ISRs},%
 counter={page},%
 parent={},%
 %

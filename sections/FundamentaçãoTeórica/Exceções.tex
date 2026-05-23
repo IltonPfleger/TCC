@@ -1,0 +1,10 @@
+\section{Exceções}
+
+Exceções são mecanismos de controle semelhantes às interrupções, pois ambos permitem que o processador suspenda temporariamente o fluxo normal de execução para tratar eventos
+específicos. No entanto, enquanto as interrupções são geralmente causadas por eventos assíncronos externos à CPU — como sinais de periféricos ou temporizadores —
+as exceções são geradas de forma síncrona pelo processador durante a execução de uma instrução.
+
+Este mecanismo é fundamental para o tratamento de condições anômalas, tais como divisões por zero, acessos inválidos à memória, estouro de pilha ou execução de instruções não suportadas.
+
+Ao detectar uma exceção, o processador desvia o fluxo para uma rotina de tratamento - geralmente a mesma das interrupções. A principal diferença operacional reside no pós-processamento:
+diferentemente das interrupções, que usualmente retomam o fluxo da tarefa original, o \gls{so} pode decidir encerrar a aplicação que causou a exceção caso ela seja classificada como fatal.

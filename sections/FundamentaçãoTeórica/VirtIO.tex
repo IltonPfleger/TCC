@@ -1,0 +1,19 @@
+\section{\textit{VirtIO}}
+
+\textit{VirtIO} \cite{Rusty-Russell-VirtIO} é um padrão para drivers de dispositivos paravirtualizados, projetado para unificar e otimizar a interface de comunicação entre os
+sistemas convidados e o hipervisor. Em vez de emular hardwares legados complexos e específicos, o hipervisor expõe uma série de dispositivos virtuais padronizados, permitindo que
+o \gls{so} convidado acesse recursos de rede, armazenamento e console de maneira eficiente e com baixa sobrecarga.
+
+Para viabilizar essa comunicação, o modelo utiliza as chamadas \textit{Virtqueues} — filas circulares compartilhadas responsáveis pelo envio e recebimento das requisições.
+Dependendo das operações suportadas, cada dispositivo virtual pode alocar uma ou mais dessas filas. Internamente, uma \textit{Virtqueue} divide-se em três componentes principais:
+uma tabela de descritores (\textit{Descriptor Table}), um anel de índices disponíveis (\textit{Available Ring}) e um anel de índices já utilizados (\textit{Used Ring}).
+
+Na prática, o ciclo de vida de uma operação de \gls{io} ocorre em duas etapas complementares. Inicialmente, quando o sistema convidado deseja realizar uma operação, o dispositivo \textit{VirtIO}
+escreve os dados na memória compartilhada, insere o descritor correspondente no \textit{Available Ring} e notifica o hipervisor sobre a nova pendência. 
+
+Em resposta, o hipervisor consome os descritores desse anel, processa a operação solicitada e registra o resultado no \textit{Used Ring}. Por fim, uma interrupção
+é enviada ao sistema convidado para sinalizar a conclusão da tarefa. Graças a esse design, múltiplas requisições podem ser tratadas de maneira assíncrona e em lote, o que minimiza
+as trocas de contexto e reduz expressivamente o custo inerente à virtualização.
+
+Desse modo, o \textit{VirtIO} consolida-se como uma solução fundamental para a infraestrutura de virtualização moderna, pois alcança um equilíbrio entre a flexibilidade de uma interface padronizada e o
+desempenho da paravirtualização.

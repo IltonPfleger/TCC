@@ -5,7 +5,7 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Fröhlich e Schröeder-Preikschat 1999]{EPOSPaper}
+\bibitem[Fröhlich e Schröeder-Preikschat 1999]{EPOS-paper}
 \abntrefinfo{Fröhlich e Schröeder-Preikschat}{FRöHLICH;
   SCHRöEDER-PREIKSCHAT}{1999}
 {FRöHLICH, A.; SCHRöEDER-PREIKSCHAT, W. High performance application-oriented
@@ -36,7 +36,7 @@ ISSN 0000-0000. Dispon{\'\i}vel em:
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/361011.361073}.}
 
-\bibitem[Russell 2008]{RustyRussellVirtIO}
+\bibitem[Russell 2008]{Rusty-Russell-VirtIO}
 \abntrefinfo{Russell}{RUSSELL}{2008}
 {RUSSELL, R. virtio: towards a de-facto standard for virtual i/o devices.
 \emph{SIGOPS Oper. Syst. Rev.}, Association for Computing Machinery, New York,
