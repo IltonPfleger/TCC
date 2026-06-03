@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.22)  23 MAY 2026 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.26)  2 JUN 2026 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1447,11 +1447,11 @@ Package: glossary-tree 2025/11/09 v4.9 (NLCT)
 \glo@main@file=\write6
 \openout6 = `Main.glo'.
 
-Package glossaries Info: Writing glossary file Main.glo on input line 15.
+Package glossaries Info: Writing glossary file Main.glo on input line 13.
 \glo@acronym@file=\write7
 \openout7 = `Main.acn'.
 
-Package glossaries Info: Writing glossary file Main.acn on input line 15.
+Package glossaries Info: Writing glossary file Main.acn on input line 13.
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 positioning.code.tex
@@ -1473,25 +1473,25 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-Package hyperref Info: Link coloring OFF on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+Package hyperref Info: Link coloring OFF on input line 29.
 \myptabbox=\box142
 \myptabboxwidth=\skip300
 
@@ -1560,7 +1560,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 
+l.33 
       [1
 
 
@@ -1568,39 +1568,50 @@ l.45
 ] (build/Main.lof) [2
 
 ] (build/Main.toc
-Overfull \hbox (18.30959pt too wide) in paragraph at lines 28--28
- [][] [][]\OT1/cmr/bx/n/12 Modelagem For-mal da Trans-forma^^Xc~ao de Even-tos 
-En-tre Dom^^S^^Pnios 
- []
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 22.
 
 ) [3
 
-] (./Glossary.tex) (./Acronyms.tex
+] [4] (./Glossary.tex) (./Acronyms.tex
 \@gls@deffile=\write8
 \openout8 = `Main.glsdefs'.
 
-) (./sections/Introduction.tex
+) (./sections/Introdução.tex
 Cap\'{\i }tulo 1.
-) (./sections/FundamentaçãoTeórica/FundamentaçãoTeórica.tex [4
+[5
 
 
 ]
+Overfull \hbox (12.61734pt too wide) in paragraph at lines 35--37
+[]\OT1/cmr/m/n/12 Projetar, im-ple-men-tar e va-li-dar uma in-fra-es-tru-tura d
+e vir-tu-a-liza^^Xc~ao de baixo overhead
+ []
+
+) (./sections/FundamentaçãoTeórica/FundamentaçãoTeórica.tex
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 1.
+ [6]
 Cap\'{\i }tulo 2.
-(./sections/FundamentaçãoTeórica/EPOS.tex)
-(./sections/FundamentaçãoTeórica/Interrupções.tex)
-(./sections/FundamentaçãoTeórica/Exceções.tex [5
+(./sections/FundamentaçãoTeórica/SistemasEmbarcados.tex)
+(./sections/FundamentaçãoTeórica/SistemasOperacionais.tex)
+(./sections/FundamentaçãoTeórica/SistemasOperacionaisDeTempoReal.tex)
+(./sections/FundamentaçãoTeórica/EPOS.tex [7
 
 ])
+(./sections/FundamentaçãoTeórica/Interrupções.tex [8])
+(./sections/FundamentaçãoTeórica/Exceções.tex [9])
 (./sections/FundamentaçãoTeórica/DriverDeDispositivo.tex)
-(./sections/FundamentaçãoTeórica/Virtualização.tex
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 13.
- [6])
-(./sections/FundamentaçãoTeórica/VirtIO.tex)
+(./sections/FundamentaçãoTeórica/Virtualização.tex [10])
+(./sections/FundamentaçãoTeórica/VirtIO.tex
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <17.28> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 1.
+)
 (./sections/FundamentaçãoTeórica/DiferençasEntreVirtualizaçãoEEmulação.
-tex [7]) (./sections/FundamentaçãoTeórica/Hipervisores.tex [8])
+tex [11]) (./sections/FundamentaçãoTeórica/Hipervisores.tex [12])
 (./sections/FundamentaçãoTeórica/InterceptaçãoEEmulação.tex)
-(./sections/FundamentaçãoTeórica/RISC-V.tex [9
+(./sections/FundamentaçãoTeórica/RISC-V.tex [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1612,35 +1623,25 @@ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1 \section
-            {RISC-V}] [10] [11
+            {RISC-V}] [14] [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.99 
-     ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Glspl' on input line 106.
-
-)) (./sections/Methodology/Methodology.tex [12]
+     ])) (./sections/MateriaisUtilizados.tex [16]
 Cap\'{\i }tulo 3.
-(./sections/Methodology/MachineMode.tex)
-(./sections/Methodology/Architecture.tex) [13
+) (./sections/Implementação/Implementação.tex [17
 
-]
-(./sections/Methodology/CommunicationBetweenDifferentDomains.tex
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Cap\'{\i }tulo 4.
+(./sections/Implementação/EstruturaDePastas.tex)
+(./sections/Implementação/Inicialização.tex [18
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\glspl' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\glspl' on input line 1.
-
-[14] [15])) (build/Main.gls) (build/Main.bbl [16]
+] [19])) (build/Main.gls)
+(build/Main.bbl [20]
 bibitemlist
-) [17
+) [21
 
 ]
 \tf@lof=\write9
@@ -1654,29 +1655,37 @@ bibitemlist
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 39938 strings out of 468981
- 802956 string characters out of 5459923
- 1414229 words of memory out of 5000000
- 68001 multiletter control sequences out of 15000+600000
- 634346 words of font info for 62 fonts, out of 8000000 for 9000
+ 40190 strings out of 468981
+ 807088 string characters out of 5459923
+ 1415779 words of memory out of 5000000
+ 68207 multiletter control sequences out of 15000+600000
+ 636354 words of font info for 69 fonts, out of 8000000 for 9000
  266 hyphenation exceptions out of 8191
  99i,13n,107p,2487b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:hic} has been referenced but does not exist, re
+placed by a fixed one
+
 
 pdfTeX warning (dest): name{glo:mmio} has been referenced but does not exist, r
 eplaced by a fixed one
 
 
-pdfTeX warning (dest): name{glo:pmp} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:soc} has been referenced but does not exist, re
 placed by a fixed one
 
 
-pdfTeX warning (dest): name{glo:mmu} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:sbc} has been referenced but does not exist, re
 placed by a fixed one
 
 
-pdfTeX warning (dest): name{glo:sbi} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:csr} has been referenced but does not exist, re
 placed by a fixed one
 
 
@@ -1688,12 +1697,28 @@ pdfTeX warning (dest): name{glo:isa} has been referenced but does not exist, re
 placed by a fixed one
 
 
+pdfTeX warning (dest): name{glo:vmm} has been referenced but does not exist, re
+placed by a fixed one
+
+
 pdfTeX warning (dest): name{glo:io} has been referenced but does not exist, rep
 laced by a fixed one
 
 
+pdfTeX warning (dest): name{glo:plic} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ipi} has been referenced but does not exist, re
+placed by a fixed one
+
+
 pdfTeX warning (dest): name{glo:so} has been referenced but does not exist, rep
 laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:clint} has been referenced but does not exist, 
+replaced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:isr} has been referenced but does not exist, re
@@ -1711,32 +1736,21 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:rtos} has been referenced but does not exist, r
 eplaced by a fixed one
 
-
-pdfTeX warning (dest): name{glo:vmm} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:vm} has been referenced but does not exist, rep
-laced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:csr} has been referenced but does not exist, re
-placed by a fixed one
-
- </home/pj/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/Main.pdf (18 pages, 186202 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on build/Main.pdf (22 pages, 207764 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

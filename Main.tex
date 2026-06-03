@@ -7,27 +7,15 @@
 \usepackage[alf]{abntex2cite}
 \usepackage{tikz-uml}
 
-% Indentar o Primeiro Parágrafo de Cada Seção
 \usepackage{indentfirst}
 
-% Glossário
 \usepackage[acronym]{glossaries}
 \makeglossaries
 
-% Margens
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 \setlength{\parindent}{1.25cm}
 
-% Font
-\renewcommand{\ABNTEXchapterfont}{\bfseries}
-\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
-\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
-\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
-\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
-
-% Images
 \usetikzlibrary{positioning, arrows.meta, fit, calc}
-
 
 \titulo{Um Hipervisor Tipo-1 Leve de Tempo Real para Sistemas Embarcados RISC-V: Projeto e Implementação em C++}
 \autor{Ilton Pfleger Júnior}
@@ -56,10 +44,13 @@
 
 \textual
 
-\input{sections/Introduction.tex}
+\input{sections/Introdução.tex}
 \input{sections/FundamentaçãoTeórica/FundamentaçãoTeórica.tex}
+\input{sections/MateriaisUtilizados.tex}
+\input{sections/Implementação/Implementação.tex}
+
 %\input{sections/TheoreticalBasis/TheoreticalBasis.tex}
-\input{sections/Methodology/Methodology.tex}
+%\input{sections/Methodology/Methodology.tex}
 %\input{sections/SystemConceptionAndDesign/SystemConceptionAndDesign.tex}
 
 \postextual

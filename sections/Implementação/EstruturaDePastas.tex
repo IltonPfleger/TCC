@@ -1,0 +1,26 @@
+\section{Estrutura de Pastas}
+
+O projeto foi organizado de forma modular, com a separação dos componentes de acordo com sua hierarquia e responsabilidade dentro do sistema.
+Essa estrutura facilita a manutenção, a evolução do código e a integração entre as diferentes camadas da aplicação, além de contribuir para a organização e otimização do processo de compilação.
+
+\begin{verbatim}
+application/
+architecture/
+build/
+include/
+machine/
+src/
+tools/
+\end{verbatim}
+
+\begin{itemize}
+    \item \textit{application/}: contém aplicações do usuário que podem ser embutidas na inicialização do sistema;
+    \item \textit{architecture/}: reúne o código genérico relacionado à arquitetura da máquina, independente de implementações específicas;
+    \item \textit{build/}: diretório gerado automaticamente durante a compilação, contendo arquivos intermediários e executáveis;
+    \item \textit{include/}: armazena os arquivos de cabeçalho em C++, responsáveis por declarações de interfaces e definições compartilhadas;
+    \item \textit{machine/}: contém o código específico de uma determinada máquina, incluindo implementações dependentes de hardware ou plataforma;
+    \item \textit{src/}: concentra o código-fonte principal em C++, com a implementação das funcionalidades do sistema;
+    \item \textit{tools/}: reúne utilitários e ferramentas auxiliares utilizados no processo de compilação, depuração e suporte ao sistema;
+\end{itemize}
+
+

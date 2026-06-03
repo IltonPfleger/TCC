@@ -51,7 +51,7 @@ ausência da extensão H serão discutidas ao longo do texto.
 
 \subsection{Níveis de Privilégio}
 
-Assim como a maioria das arquiteturas modernas, a RISC-V utiliza um modelo hierárquico de privilégios para garantir a segurança
+Assim como a maior parte das arquiteturas modernas, a RISC-V utiliza um modelo hierárquico de privilégios para garantir a segurança
 e a estabilidade dos sistemas que funcionam sobre ela. Esses níveis de privilégio determinam quais operações e recursos de hardware podem ser acessados
 por cada contexto de execução.
 
@@ -103,8 +103,13 @@ O modelo básico da arquitetura estudada neste documento, conforme mostra a \aut
 
 \end{description}
 
-\subsection{\textit{\Glspl{csr}}}
+\subsection{Registradores de Controle}
 
-Os \glspl{csr} são registradores especiais utilizados para controlar e monitorar o funcionamento do processador.
-Esses registradores são responsáveis por armazenar informações relacionadas ao estado da máquina, tratamento de exceções, tratamento de interrupções,
-configuração de privilégios e controle de funcionalidades específicas da arquitetura.
+Os \glspl{csr} são registradores especiais utilizados para controlar e monitorar o funcionamento do processador. Eles armazenam informações essenciais relacionadas 
+ao estado da máquina, ao tratamento de exceções e interrupções, à configuração de privilégios e ao controle de funcionalidades específicas da arquitetura.
+
+Esses registradores são organizados de forma segregada por nível de privilégio, sendo que cada nível dispõe do seu próprio conjunto de \glspl{csr}.
+Esse isolamento é fundamental para a segurança e a integridade do sistema, pois garante uma política rígida de acessibilidade: um nível de privilégio só
+pode acessar seus próprios registradores ou aqueles pertencentes a níveis menos privilegiados. Qualquer tentativa de acesso indevido a um \gls{csr} de nível inferior 
+resulta em uma exceção de instrução ilegal, impedindo que código menos privilegiado interfira diretamente nas camadas críticas do sistema.
+

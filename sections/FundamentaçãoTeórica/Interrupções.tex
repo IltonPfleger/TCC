@@ -1,14 +1,28 @@
 \section{Interrupções}
 
 As interrupções constituem-se em um mecanismo fundamental de controle em arquiteturas computacionais, permitindo que o processador suspenda temporariamente a execução
-de uma tarefa para atender a eventos de alta prioridade. Este paradigma é essencial para a operação assíncrona dos sistemas modernos, viabilizando a reação imediata
+de uma tarefa para atender a eventos de alta prioridade. Este paradigma é essencial para a operação assíncrona de sistemas modernos, viabilizando a reação imediata
 a sinais de hardware, periféricos ou condições de erro.
 
 Quando uma interrupção é disparada, o fluxo de execução é desviado para uma rotina especializada denominada \gls{isr}.
-O processo de transição ocorre geralmente em três etapas:
+O tratamento ocorre geralmente em três etapas:
 
 \begin{enumerate}
-    \item \textbf{Salvamento de Contexto:} O estado atual da CPU é salvo na pilha ou em uma estrutura de dados específica.
-    \item \textbf{Execução da \gls{isr}:} O processador executa o código responsável por tratar o evento que causou a interrupção.
-    \item \textbf{Restauração do Contexto:} O estado anterior é restaurado, permitindo que a tarefa originalmente interrompida retome seu processamento a partir do ponto em que foi suspensa.
+    \item Salvamento de Contexto: o estado atual da CPU é salvo na pilha ou em uma estrutura de dados específica;
+    \item Execução da \gls{isr}: o processador executa o código responsável por tratar o evento que causou a interrupção;
+    \item Restauração do Contexto: o estado anterior é restaurado, permitindo que a tarefa originalmente interrompida retome seu processamento a partir do ponto em que foi suspensa;
 \end{enumerate}
+
+\subsection{Interrupções: RISC-V}
+
+Na arquitetura RISC-V, o gerenciamento de interrupções é estruturado de forma nativa e classificado em três categorias principais:
+
+\begin{enumerate}
+	\item Interrupção Temporizada: originada por um temporizador - periférico padronizado \gls{clint}. É comumente programada para gerar eventos periódicos;
+	\item Interrupção de Software: disparada programaticamente por meio da escrita em registradores específicos. É frequentemente utilizada pelo próprio \gls{so} para possibilitar \glspl{ipi};
+	\item Interrupção Externa: gerada por periféricos independentes do núcleo. Essas interrupções são tipicamente centralizadas e roteadas para o processador por meio de um controlador de interrupções - \gls{plic}.
+\end{enumerate}
+
+
+
+

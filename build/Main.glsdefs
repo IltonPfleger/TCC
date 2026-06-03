@@ -306,6 +306,174 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{ipi}%
+{%
+name={\acronymfont {\glsentryshort {ipi}}},%
+sort={IPI},%
+type={acronym},%
+first={IPI},%
+firstplural={{IPIs} longplural},%
+text={IPI},%
+plural={{IPIs} longplural},%
+description={\textit {Inter-Processor Interrupt}},%
+descriptionplural={\textit {Inter-Processor Interrupt}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Inter-Processor Interrupt}},%
+longplural={\protect \textit  {Inter-Processor Interrupt}s},%
+short={IPI},%
+shortplural={IPIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hic}%
+{%
+name={\acronymfont {\glsentryshort {hic}}},%
+sort={HIC},%
+type={acronym},%
+first={HIC},%
+firstplural={HICs},%
+text={HIC},%
+plural={HICs},%
+description={Hypervisor Interrupt Controller},%
+descriptionplural={Hypervisor Interrupt Controller},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hypervisor Interrupt Controller},%
+longplural={Hypervisor Interrupt Controllers},%
+short={HIC},%
+shortplural={HICs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{soc}%
+{%
+name={\acronymfont {\glsentryshort {soc}}},%
+sort={SoC},%
+type={acronym},%
+first={SoC},%
+firstplural={SoCs},%
+text={SoC},%
+plural={SoCs},%
+description={System on a Chip},%
+descriptionplural={System on a Chip},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={System on a Chip},%
+longplural={System on a Chips},%
+short={SoC},%
+shortplural={SoCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sbc}%
+{%
+name={\acronymfont {\glsentryshort {sbc}}},%
+sort={SBC},%
+type={acronym},%
+first={SBC},%
+firstplural={SBCs},%
+text={SBC},%
+plural={SBCs},%
+description={Single Board Computer},%
+descriptionplural={Single Board Computer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Single Board Computer},%
+longplural={Single Board Computers},%
+short={SBC},%
+shortplural={SBCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{clint}%
+{%
+name={\acronymfont {\glsentryshort {clint}}},%
+sort={CLINT},%
+type={acronym},%
+first={CLINT},%
+firstplural={CLINTs},%
+text={CLINT},%
+plural={CLINTs},%
+description={Core Local Interrupter},%
+descriptionplural={Core Local Interrupter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Core Local Interrupter},%
+longplural={Core Local Interrupters},%
+short={CLINT},%
+shortplural={CLINTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{plic}%
+{%
+name={\acronymfont {\glsentryshort {plic}}},%
+sort={PLIC},%
+type={acronym},%
+first={PLIC},%
+firstplural={PLICs},%
+text={PLIC},%
+plural={PLICs},%
+description={Platform-Level Interrupt Controller},%
+descriptionplural={Platform-Level Interrupt Controller},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Platform-Level Interrupt Controller},%
+longplural={Platform-Level Interrupt Controllers},%
+short={PLIC},%
+shortplural={PLICs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{epos}%
 {%
 name={\acronymfont {\glsentryshort {epos}}},%

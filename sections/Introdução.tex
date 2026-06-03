@@ -1,0 +1,49 @@
+\chapter{Introdução}
+
+Sistemas embarcados estão presentes em uma ampla gama de aplicações, que vão desde dispositivos médicos e sistemas de automação industrial
+até plataformas automotivas e missões espaciais. Diferentemente da computação de propósito geral, esses sistemas operam sob rigorosos requisitos
+de tempo real, nos quais a corretude do comportamento não depende apenas da precisão lógica dos resultados produzidos, mas também do momento
+exato em que esses resultados são disponibilizados. Em muitos casos, atrasos mínimos ou falhas temporais podem comprometer a segurança, a
+confiabilidade e até mesmo a integridade física de pessoas e equipamentos.
+
+Tradicionalmente, a garantia desse determinismo esteve associada ao uso de plataformas dedicadas, nas quais \glspl{rtos} são empregados para assegurar
+previsibilidade temporal, isolamento entre tarefas e cumprimento de restrições rígidas de escalonamento. Entretanto, a evolução do software contemporâneo
+deslocou grande parte dos ecossistemas de desenvolvimento — bibliotecas, frameworks, ferramentas e serviços — para ambientes baseados em \glspl{gpos} - 
+especialmente Linux. Embora esses sistemas ofereçam grande riqueza funcional e amplo suporte da comunidade, sua adoção em contextos críticos embarcados demanda
+esforços adicionais de adaptação, validação e integração.
+
+Como resultado, cresce a necessidade de consolidar, em uma mesma plataforma computacional, cargas de trabalho com requisitos distintos e frequentemente
+conflitantes: de um lado, aplicações críticas, sensíveis a prazos temporais e dependentes de comportamento determinístico; de outro, aplicações complexas,
+orientadas a funcionalidades avançadas e dependentes de ambientes generalistas.
+
+Nesse cenário, técnicas de virtualização surgem como uma alternativa promissora, pois permitem a coexistência de múltiplos ambientes de execução sobre o
+mesmo hardware. Dessa forma, torna-se possível executar aplicações críticas e não críticas de maneira controlada, reduzindo custos de integração e
+aumentando o aproveitamento da plataforma.
+
+Paralelamente, a arquitetura aberta RISC-V vem ganhando relevância  devido à sua flexibilidade, modularidade e independência
+tecnológica. Seu conjunto de instruções extensível, aliado à ausência de barreiras proprietárias, favorece tanto a pesquisa acadêmica quanto o desenvolvimento
+industrial, especialmente em soluções customizadas e de baixo custo.
+
+Por isso, este trabalho propõe o projeto e a implementação, utilizando a linguagem C++ orientada a objetos de baixo overhead, de uma infraestrutura de virtualização para sistemas
+baseados em RISC-V. O foco principal reside na previsibilidade temporal, no isolamento rígido entre cargas de trabalho e no baixo custo de execução. Busca-se, assim, contribuir para
+a viabilização de plataformas embarcadas capazes de integrar aplicações heterogêneas sem comprometer requisitos críticos de desempenho e confiabilidade.
+
+\section{Objetivos}
+
+\subsection{Objetivos Gerais}
+
+Projetar, implementar e validar uma infraestrutura de virtualização de baixo overhead para sistemas embarcados baseados na arquitetura RISC-V, utilizando a linguagem C++,
+com foco no isolamento de cargas de trabalho, no particionamento estático de recursos e na previsibilidade temporal necessária à execução de aplicações de tempo real.
+
+\subsection{Objetivos Específicos}
+
+\begin{enumerate}
+\item Definir a arquitetura de software do hipervisor, estabelecendo os mecanismos necessários para o gerenciamento e isolamento das máquinas virtuais.
+\item Implementar o núcleo de virtualização responsável pela criação, inicialização, gerenciamento e execução das máquinas virtuais em plataformas RISC-V.
+\item Desenvolver mecanismos de virtualização de interrupções e exceções, assegurando o tratamento correto e eficiente dos eventos entre hardware, hipervisor e sistemas convidados.
+\item Implementar mecanismos de particionamento estático e isolamento de recursos computacionais, incluindo processadores, memória e dispositivos de entrada e saída.
+\item Garantir a execução isolada de aplicações com diferentes requisitos operacionais, possibilitando a coexistência de cargas de trabalho críticas e não críticas em uma mesma plataforma computacional.
+\item Validar funcionalmente a infraestrutura desenvolvida por meio da execução de sistemas convidados representativos.
+\item Avaliar o impacto da virtualização sobre métricas relacionadas ao desempenho e à previsibilidade temporal, incluindo latência, tempo de resposta e sobrecarga de execução.
+\end{enumerate}
+
