@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.26)  2 JUN 2026 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.26)  3 JUN 2026 07:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1572,9 +1572,14 @@ l.33
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 22.
 
-) [3
+[3
 
-] [4] (./Glossary.tex) (./Acronyms.tex
+]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 42.
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 45.
+) [4] (./Glossary.tex) (./Acronyms.tex
 \@gls@deffile=\write8
 \openout8 = `Main.glsdefs'.
 
@@ -1638,10 +1643,44 @@ Cap\'{\i }tulo 4.
 (./sections/Implementação/EstruturaDePastas.tex)
 (./sections/Implementação/Inicialização.tex [18
 
-] [19])) (build/Main.gls)
-(build/Main.bbl [20]
+] [19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.38 
+     ]) (./sections/Implementação/InicializaçãoDeMáquinasVirtuais.tex
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 
+    ]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 7.
+ [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.21 O
+       processo de inicialização de uma \textit{GenericVirtualMachine} seg...
+] [22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.67 
+     ] [23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.86 \end{itemize}
+                  ])) (build/Main.gls) (build/Main.bbl [24]
 bibitemlist
-) [21
+) [25
 
 ]
 \tf@lof=\write9
@@ -1661,13 +1700,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40190 strings out of 468981
- 807088 string characters out of 5459923
- 1415779 words of memory out of 5000000
- 68207 multiletter control sequences out of 15000+600000
- 636354 words of font info for 69 fonts, out of 8000000 for 9000
+ 40269 strings out of 468981
+ 808373 string characters out of 5459923
+ 1414971 words of memory out of 5000000
+ 68261 multiletter control sequences out of 15000+600000
+ 637733 words of font info for 73 fonts, out of 8000000 for 9000
  266 hyphenation exceptions out of 8191
  99i,13n,107p,2487b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:dtb} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:vm} has been referenced but does not exist, rep
+laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:pmp} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:mmu} has been referenced but does not exist, re
+placed by a fixed one
+
 
 pdfTeX warning (dest): name{glo:hic} has been referenced but does not exist, re
 placed by a fixed one
@@ -1740,17 +1795,20 @@ eplaced by a fixed one
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on build/Main.pdf (22 pages, 207764 bytes).
+ss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+si17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1200.pfb>
+Output written on build/Main.pdf (26 pages, 246303 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 452 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 389 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 536 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

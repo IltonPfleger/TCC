@@ -147,8 +147,8 @@ first={MMU},%
 firstplural={MMUs},%
 text={MMU},%
 plural={MMUs},%
-description={Unidade de Gerenciamento de Memória},%
-descriptionplural={Unidade de Gerenciamento de Memória},%
+description={Memory Management Unit},%
+descriptionplural={Memory Management Unit},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -157,8 +157,8 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Unidade de Gerenciamento de Memória},%
-longplural={Unidades de Gerenciamento de Memória},%
+long={Memory Management Unit},%
+longplural={Memory Management Units},%
 short={MMU},%
 shortplural={MMUs},%
 counter={page},%
@@ -329,6 +329,34 @@ long={\protect \textit  {Inter-Processor Interrupt}},%
 longplural={\protect \textit  {Inter-Processor Interrupt}s},%
 short={IPI},%
 shortplural={IPIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dtb}%
+{%
+name={\acronymfont {\glsentryshort {dtb}}},%
+sort={DTB},%
+type={acronym},%
+first={DTB},%
+firstplural={{DTBs} longplural},%
+text={DTB},%
+plural={{DTBs} longplural},%
+description={Device-Tree Blob},%
+descriptionplural={Device-Tree Blob},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Device-Tree Blob},%
+longplural={Device-Tree Blobs},%
+short={DTB},%
+shortplural={DTBs},%
 counter={page},%
 parent={},%
 %

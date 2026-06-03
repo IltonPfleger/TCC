@@ -35,8 +35,14 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Implementação}}{18}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Estrutura de Pastas}{18}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Inicialização}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Inicialização: RISC-V}{19}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Inicialização: Kernel}{20}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}RISC-V}{19}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Máquina}{20}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Kernel}{20}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Inicialização de Máquinas Virtuais}{21}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}\textit {GenericVirtualMachine}}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\textit {VirtualCPU}: RISC-V}{22}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Linux}{23}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}\textit {FDT\_Builder}}{24}{subsubsection.4.3.3.1}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{21}{section*.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{25}{section*.7}%

@@ -12,21 +12,24 @@ até que o sistema alcance o ponto de entrada do escalonador. O fluxo padrão de
 
 \vspace{1cm}
 
-\begin{center}
-    \begin{tikzpicture}
-        \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,0){Entry Point};
-        \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (B) at (0,2){Architecture::init()};
-        \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (C) at (0,4){Machine::init()};
-        \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (D) at (0,6){Kernel::init()};
-        \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (E) at (0,8){Scheduler};
-        \draw[->, thick] (A) -- (B);
-        \draw[->, thick] (B) -- (C);
-        \draw[->, thick] (C) -- (D);
-        \draw[->, thick] (D) -- (E);
-    \end{tikzpicture}
-\end{center}
+\begin{figure}[htbp]
+    \begin{center}
+		\begin{tikzpicture}
+    	    \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,0){Entry Point};
+    	    \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (B) at (0,2){Architecture::init()};
+    	    \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (C) at (0,4){Machine::init()};
+    	    \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (D) at (0,6){Kernel::init()};
+    	    \node[rectangle, minimum width=4cm, minimum height=1.2cm, draw, align=center] (E) at (0,8){Scheduler};
+    	    \draw[->, thick] (A) -- (B);
+    	    \draw[->, thick] (B) -- (C);
+    	    \draw[->, thick] (C) -- (D);
+    	    \draw[->, thick] (D) -- (E);
+    	\end{tikzpicture}
+		\caption{Fluxo Geral de Inicialização do Hipervisor.}
+	\end{center}
+\end{figure}
 
-\subsection{Inicialização: RISC-V}
+\subsection{RISC-V}
 
 O núcleo da plataforma de virtualização é estabelecido nesta etapa. O papel principal dessa camada de inicialização consiste em instalar os
 tratadores de interrupções para a emulação de dispositivos de \gls{mmio} e para o compartilhamento de interrupções entre a máquina hospedeira e os ambientes virtualizados.
@@ -35,39 +38,53 @@ A classe responsável por configurar esse vetor de interrupções é a \gls{hic}
 
 \vspace{1cm}
 
-\begin{center}
-    \begin{tikzpicture}
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,2){Architecture::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (B) at (0,4){TrapHandler::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (C) at (0,6){CoreContextHandler::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (D) at (0,8){HIC::init()};
-        \draw[->, thick] (A) -- (B);
-        \draw[->, thick] (B) -- (C);
-        \draw[->, thick] (C) -- (D);
-    \end{tikzpicture}
-\end{center}
+\begin{figure}[htbp]
+	\begin{center}
+	    \begin{tikzpicture}
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,2){Architecture::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (B) at (0,4){TrapHandler::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (C) at (0,6){CoreContextHandler::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (D) at (0,8){HIC::init()};
+	        \draw[->, thick] (A) -- (B);
+	        \draw[->, thick] (B) -- (C);
+	        \draw[->, thick] (C) -- (D);
+	    \end{tikzpicture}
+	\end{center}
+	\caption{Fluxo Geral de Inicialização da Arquitetura RISC-V.}
+\end{figure}
 
 
-\subsection{Inicialização: Kernel}
+\subsection{Máquina}
 
-Nesta etapa da inicialização do sistema, são executados os rotinas de configuração dos objetos gerais que serão compartilhados
-e gerenciados pelo sistema operacional. Esse processo abrange a inicialização de subsistemas críticos, tais como
-gerenciamento de memória, estruturas de dados necessárias para o escalonamento de tarefas, etc.
+Subjacente à arquitetura, a inicialização da máquina lida com as especificidades da plataforma alvo.
+Nesta etapa, a rotina \textit{Machine::init()} mapeia os periféricos essenciais para a operação global do sistema,
+tais como os controladores de console para a emissão de \textit{logs} e barramentos de comunicação específicos da placa de
+desenvolvimento utilizada.
+
+\subsection{Kernel}
+
+Nesta etapa da inicialização do sistema, são executadas as rotinas de configuração dos objetos gerais que serão
+compartilhados e gerenciados pelo sistema operacional. Esse processo abrange a inicialização de subsistemas críticos,
+tais como o gerenciamento de memória e as estruturas de dados necessárias para o controle e a organização de tarefas.
+
+Após isso, o fluxo de inicialização atinge o seu estágio final, momento no qual o sistema transfere o controle definitivo
+da CPU para o escalonador, dando início à execução das aplicações do usuário.
 
 \vspace{1cm}
 
-\begin{center}
-    \begin{tikzpicture}
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,2){Kernel::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (B) at (0,4){Memory::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (C) at (0,6){Thread::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (D) at (0,8){Application::init()};
-        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (E) at (0,10){Timer::init()};
-        \draw[->, thick] (A) -- (B);
-        \draw[->, thick] (B) -- (C);
-        \draw[->, thick] (C) -- (D);
-        \draw[->, thick] (D) -- (E);
-    \end{tikzpicture}
-\end{center}
-
-
+\begin{figure}[htbp]
+	\begin{center}
+	    \begin{tikzpicture}
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center, dashed] (A) at (0,2){Kernel::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (B) at (0,4){Memory::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (C) at (0,6){Thread::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (D) at (0,8){Timer::init()};
+	        \node[rectangle, minimum width=5cm, minimum height=1.2cm, draw, align=center] (E) at (0,10){Application::init()};
+	        \draw[->, thick] (A) -- (B);
+	        \draw[->, thick] (B) -- (C);
+	        \draw[->, thick] (C) -- (D);
+	        \draw[->, thick] (D) -- (E);
+	    \end{tikzpicture}
+	\end{center}
+	\caption{Fluxo Geral de Inicialização do Kernel.}
+\end{figure}
