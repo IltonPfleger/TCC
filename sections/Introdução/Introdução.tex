@@ -1,0 +1,51 @@
+\chapter{Introdução}
+
+Sistemas embarcados estão presentes em uma ampla gama de aplicações, que vão desde dispositivos médicos e sistemas de automação industrial
+até plataformas automotivas e missões espaciais. Diferentemente da computação de propósito geral, esses sistemas operam sob rigorosos requisitos
+temporais, nos quais a corretude do comportamento não depende apenas da precisão lógica dos resultados produzidos, mas também do momento
+exato em que esses resultados são disponibilizados. Em muitos casos, atrasos mínimos ou falhas temporais podem comprometer a segurança, a
+confiabilidade e até mesmo a integridade física de pessoas e equipamentos.
+
+Tradicionalmente, a garantia desse determinismo esteve associada ao uso de plataformas dedicadas, nas quais \glspl{rtos} são empregados para assegurar
+previsibilidade temporal, isolamento entre tarefas e cumprimento de restrições rígidas de escalonamento. Entretanto, a evolução do software contemporâneo
+deslocou grande parte dos ecossistemas de desenvolvimento — bibliotecas, frameworks, ferramentas e serviços — para ambientes baseados em \glspl{gpos} - 
+especialmente Linux. Embora esses sistemas ofereçam grande riqueza funcional e amplo suporte da comunidade, sua adoção em contextos críticos embarcados demanda
+esforços adicionais de adaptação, validação e integração.
+
+Como resultado, cresce a necessidade de consolidar, em uma mesma plataforma computacional, cargas de trabalho com requisitos distintos e frequentemente
+conflitantes: de um lado, aplicações críticas, sensíveis a prazos temporais e dependentes de comportamento determinístico; de outro, aplicações complexas,
+orientadas a funcionalidades avançadas e dependentes de ambientes generalistas.
+
+Nesse cenário, técnicas de virtualização surgem como uma alternativa promissora, pois permitem a coexistência de múltiplos ambientes de execução sobre o
+mesmo hardware. Dessa forma, torna-se possível executar aplicações críticas e não críticas de maneira controlada, reduzindo custos de integração e
+aumentando o aproveitamento da plataforma.
+
+Paralelamente, a arquitetura aberta RISC-V destaca-se por sua flexibilidade, modularidade e ausência de barreiras proprietárias, impulsionando o desenvolvimento de soluções customizadas e de
+baixo custo. Contudo, esses processadores mais simples raramente dispõem de extensões de hardware dedicadas à virtualização. Esse cenário gera um gargalo relevante, visto que a maioria das
+plataformas de virtualização atuais depende estritamente desses recursos físicos para funcionar.
+
+Por isso, este trabalho propõe o projeto e a implementação, em C++, de uma infraestrutura de virtualização voltada a sistemas embarcados
+baseados em RISC-V. A proposta tem como foco a previsibilidade temporal, o isolamento entre cargas de trabalho, o reduzido custo de execução e a possibilidade de utilização em plataformas de recursos
+computacionais limitados. Busca-se, dessa forma, contribuir para o desenvolvimento de plataformas embarcadas capazes de executar, de forma simultânea e isolada, cargas de trabalho heterogêneas,
+conciliando requisitos de desempenho, determinismo temporal e confiabilidade.
+
+\section{Objetivos}
+
+\subsection{Objetivos Gerais}
+
+Desenvolver e avaliar uma infraestrutura de virtualização em C++ para sistemas embarcados baseados na arquitetura RISC-V,
+focada no particionamento estático de recursos, no isolamento de cargas de trabalho de criticidade mista e na garantia da previsibilidade temporal para aplicações de tempo real.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Projetar e implementar em software o núcleo do hipervisor para o gerenciamento, criação, inicialização e execução de máquinas virtuais em plataformas RISC-V\@;
+    \item Implementar o particionamento estático de processadores, memória e dispositivos de \gls{io}, garantindo o isolamento espacial e temporal entre domínios;
+	\item Validar a infraestrutura funcionalmente por meio da execução de \glspl{so} convidados representativos;
+	\item Quantificar o impacto do hipervisor no desempenho do sistema, mensurando \textit{overheads} computacionais e a previsibilidade temporal sob restrições de tempo real.
+\end{itemize}
+
+\input{sections/FundamentaçãoTeórica/FundamentaçãoTeórica.tex}
+
+\input{sections/TrabalhosCorrelatos/TrabalhosCorrelatos.tex}
+

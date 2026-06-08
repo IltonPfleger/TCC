@@ -1,0 +1,27 @@
+\section{EPOS}
+
+O \gls{epos}~\cite{epos-paper} é um \gls{so} de tempo real orientado a objetos, desenvolvido em C++ e voltado para sistemas embarcados e aplicações dedicadas. Seu desenvolvimento fundamenta-se
+na metodologia \gls{adesd}, que busca automatizar a construção de sistemas a partir dos requisitos específicos de cada aplicação. Essa abordagem permite especializar o sistema para cenários
+concretos de execução, incorporando apenas os componentes estritamente necessários e eliminando \textit{overheads} e consumo desnecessários de recursos.
+
+Uma característica central do \gls{epos} é o emprego intensivo de metaprogramação e abstrações em C++ para deslocar decisões de configuração e especialização para o tempo de compilação.
+Essa estratégia possibilita a criação de componentes altamente especializados sem impor custos em tempo de execução — propriedade indispensável em sistemas embarcados com restrições severas
+de recursos.
+
+Como ilustrado na Figura~\ref{fig:epos-architecture}, a arquitetura do EPOS é organizada em modelos de classes C++, estruturadas em diferentes níveis de abstração e de responsabilidade.
+Nessa hierarquia, quanto mais alto for o nível de uma classe, mais genérica e menos especializada ela se apresenta.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{images/EPOS.pdf}
+\caption{Diagrama de Blocos da Arquitetura do EPOS}\label{fig:epos-architecture}
+\end{figure}
+
+Este trabalho fundamenta-se nos princípios arquiteturais do \gls{epos}, adotando o uso de abstrações de custo nulo e a especialização em tempo de compilação para nortear o projeto da camada
+de software de baixo nível. No entanto, o escopo de aplicação difere: enquanto o \gls{epos} foca na síntese adaptativa de \gls{so} e na co-síntese de hardware e software,
+o presente trabalho aplica essas diretrizes ao desenvolvimento de um hipervisor \textit{bare-metal} para a arquitetura RISC-V.
+Assim, em vez de sintetizar um \gls{so} sob medida para uma aplicação específica, o objetivo é fornecer uma infraestrutura de virtualização enxuta e temporalmente previsível,
+capaz de isolar múltiplos sistemas operacionais e cargas de trabalho heterogêneas.
+
+
+

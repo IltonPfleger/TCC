@@ -1,0 +1,31 @@
+\section{Virtualização da Comunicação Entre Processadores}
+
+A virtualização de interrupções de software na arquitetura RISC-V, um dos
+mecanismos utilizados para a comunicação entre processadores, baseia-se na
+intermediação das interrupções pelo hypervisor. Em uma implementação que não
+dispõe da extensão H, o acesso ao mecanismo de interrupção de software
+entre \textit{harts} é realizado em modo \textit{Machine}, por meio do
+registrador \gls{msip}. Dessa forma, o \gls{so} convidado, executando em modo
+\textit{Supervisor}, não possui acesso direto a esse registrador e,
+consequentemente, não pode gerar diretamente uma interrupção de software para
+outro processador físico. A geração e a entrega das interrupções são, portanto,
+intermediadas pelo hypervisor, que as associa às respectivas CPUs virtuais.
+
+Nessa implementação, o \gls{so} convidado solicita o envio de uma interrupção
+por meio da interface de serviços definida pelo \textit{OpenSBI}. Ao interceptar
+essa requisição, o hypervisor a direciona para a CPU virtual responsável pelo
+processamento da chamada. A CPU virtual identifica as CPUs virtuais de destino
+e encaminha a solicitação de interrupção. Quando a CPU virtual de destino está
+em execução, o hypervisor utiliza uma interrupção de software física para
+sinalizar o \textit{hart} correspondente. Após o processamento dessa
+interrupção, a CPU virtual de destino registra a interrupção como pendente e a
+entrega ao \gls{so}. Caso a CPU virtual de destino não esteja ativa, a interrupção é
+apenas marcada como pendente. Nesse caso, sua entrega é realizada quando a CPU
+virtual retomar a execução e seu estado for novamente atualizado pelo
+hypervisor.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{images/SoftwareInterruptVirtualization.pdf}
+\caption{Diagrama de Envio de uma \gls{ipi} Virtual na RISC-V}\label{fig:virtual-ipi-riscv}
+\end{figure}

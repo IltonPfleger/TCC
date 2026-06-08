@@ -1,0 +1,32 @@
+\section{Dispositivos Virtuais}
+
+Dispositivos virtuais representam, para o \gls{so} convidado, dispositivos de hardware que podem ser utilizados para comunicação com a plataforma,
+como temporizadores e dispositivos de \gls{io}. Eles abstraem os mecanismos de hardware utilizados pelo hipervisor, permitindo que o convidado interaja com esses
+recursos sem acessar diretamente os dispositivos físicos.
+
+\subsection{Comunicação: Convidado para Hardware}
+
+A comunicação do \gls{so} convidado com o hardware é intermediada pelo hipervisor. As requisições do convidado podem chegar ao hipervisor tanto por meio da interceptação de operações
+de acesso ao hardware quanto por chamadas direcionadas diretamente aos dispositivos virtuais. Em ambos os casos, o hipervisor encaminha a requisição ao objeto da \gls{vm} correspondente, que
+identifica o dispositivo virtual responsável pela operação. O dispositivo virtual, por sua vez, traduz e encaminha a requisição ao mediador de hardware correspondente,
+conforme ilustrado na Figura~\ref{fig:diagram-hosted-to-hardware}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/VirtualDeviceToHardware.pdf}
+\caption{Diagrama do Fluxo de Comunicação: Convidado para Hardware}\label{fig:diagram-hosted-to-hardware}
+\end{figure}
+
+\subsection{Comunicação: Hardware para Convidado}
+
+O fluxo de notificação de um evento de hardware para o \gls{so} convidado é ilustrado na Figura~\ref{fig:diagram-hardware-to-hosted}.
+Esse mecanismo baseia-se no padrão de projeto \textit{Observer}, no qual cada mediador de hardware atua como um elemento observável e cada dispositivo virtual funciona como um observador.
+
+Quando ocorre um evento no mediador de hardware, este notifica seus observadores cadastrados, propagando a sinalização até que o dispositivo virtual correspondente
+processe a informação e a entregue ao domínio do SO convidado.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/HardwareToVirtualDevice.pdf}
+\caption{Diagrama do Fluxo de Comunicação: Hardware para Convidado}\label{fig:diagram-hardware-to-hosted}
+\end{figure}

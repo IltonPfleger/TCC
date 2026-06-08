@@ -1,0 +1,12 @@
+\section{HSP-V}
+
+O HSP-V~\cite{hsp-v} combina os domínios do OpenSBI com a \gls{pmp} para prover ambientes de execução isolados em processadores RISC-V.
+De maneira semelhante a este trabalho, o HSP-V permite a execução de múltiplos \glspl{so} em uma mesma plataforma de hardware, mesmo na ausência da extensão H.
+
+Além do isolamento de memória, a pilha de \textit{software} do HSP-V oferece mecanismos como o particionamento e injeção direta de interrupções, particionamento de \textit{cache} e
+isolamento em nível de plataforma para dispositivos com suporte a DMA.~Contudo, o HSP-V é classificado por seus criadores como \textit{Hypervisor-Less}. Por essa razão, ele não implementa uma camada de emulação nem mecanismos para o compartilhamento ou multiplexação
+de periféricos, restringindo a arquitetura à atribuição estática e exclusiva de dispositivos entre os domínios.
+
+%Ao basear-se em mecanismos de particionamento de memória impostos por hardware, essa abordagem alcança fortes garantias de isolamento com baixo \textit{overhead} em tempo de execução.
+%No entanto, diferentemente de soluções de virtualização completa, o HSP-V não implementa uma camada de hipervisor completa capaz de gerenciar e multiplexar recursos de hardware entre múltiplos
+%ambientes. Consequentemente, recursos como processadores e dispositivos periféricos não podem ser compartilhados ou realocados dinamicamente entre domínios isolados, limitando a flexibilidade do sistema.

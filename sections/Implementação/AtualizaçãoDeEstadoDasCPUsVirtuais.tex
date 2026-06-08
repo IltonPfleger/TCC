@@ -1,0 +1,11 @@
+\section{Atualização de Estado das CPUs Virtuais}
+
+Em determinados momentos, o hipervisor pode optar por interferir de forma assíncrona na execução do convidado — analogamente à relação de interrupção entre o hardware e o \gls{so} —,
+injetando eventos na execução da CPU virtual. 
+Para evitar problemas de concorrência e reduzir a \gls{tcb}, apenas a própria CPU virtual tem permissão para alterar seu estado local. No entanto, qualquer componente do hipervisor pode
+sinalizar um evento como pendente, garantindo que ele seja lido e processado na próxima janela de atualização daquela CPU.~Esses eventos são majoritariamente representados na forma de interrupções,
+contudo também podem consistir em alterações diretas de registradores ou até desligamento da \gls{vm}.
+
+As atualizações de estado ocorrem por duas vias principais: as síncronas, disparadas quando outro componente do sistema envia uma \gls{ipi} de atualização para a CPU Virtual de destino;
+e as periódicas, executadas durante a ativação da CPU Virtual --- seja por \textit{boot} ou reescalonamento --- e a cada \textit{tick} do temporizador do sistema, caso ela esteja em execução.
+

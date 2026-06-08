@@ -1,0 +1,9 @@
+\section{Virtualização de Ociosidade}
+
+Algumas plataformas RISC-V possuem o bit \gls{tw} no registrador \textit{mstatus}, dedicado a interceptar e restringir a execução da instrução \gls{wfi} exclusivamente ao modo \textit{Machine}.
+Quando um \gls{so} convidado — em modo \textit{Supervisor} — tenta executar essa instrução com o bit \textit{TW} ativado, é gerada uma \textit{Illegal Instruction}.
+Essa instrução é capturada e emulada pelo hipervisor, que coloca a \gls{vm} em estado de repouso até o recebimento da próxima interrupção pertencente a ela.
+
+Esse mecanismo é fundamental em cenários onde múltiplas \glspl{vm} compartilham o mesmo núcleo. Sem a interceptação do estado de ociosidade, o \gls{so} convidado continuaria consumindo tempo de 
+CPU desnecessariamente até ser interrompido pelo escalonador do hipervisor. Com a virtualização de ociosidade ativa, a transição para o estado de repouso é detectada imediatamente,
+permitindo que o processador seja cedido de forma eficiente a outra unidade de execução ativa.

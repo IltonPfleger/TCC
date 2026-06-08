@@ -5,7 +5,16 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Fröhlich e Schröeder-Preikschat 1999]{EPOS-paper}
+\bibitem[Castes et al. 2024]{miralis}
+\abntrefinfo{Castes et al.}{CASTES et al.}{2024}
+{CASTES, C. et al. Kicking the firmware out of the tcb with the miralis virtual
+  firmware monitor. In:  \emph{Proceedings of the 2nd Workshop on Kernel
+  Isolation, Safety and Verification}. New York, NY, USA: Association for
+  Computing Machinery, 2024.  (KISV '24), p. 8–15.
+ISBN 9798400713019. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/3698576.3698764}.}
+
+\bibitem[Fröhlich e Schröeder-Preikschat 1999]{epos-paper}
 \abntrefinfo{Fröhlich e Schröeder-Preikschat}{FRöHLICH;
   SCHRöEDER-PREIKSCHAT}{1999}
 {FRöHLICH, A.; SCHRöEDER-PREIKSCHAT, W. High performance application-oriented
@@ -15,19 +24,46 @@
 ISSN 0000-0000. Dispon{\'\i}vel em:
   \url{https://sol.sbc.org.br/index.php/sbac-pad/article/view/19765}.}
 
-\bibitem[Goldberg 1973]{Goldberg}
-\abntrefinfo{Goldberg}{GOLDBERG}{1973}
+\bibitem[Goldberg 1973]{architectural-principles-for-virtual-computer-systems}
+\abntrefinfo{Goldberg}{GOLDBERG}{1973a}
 {GOLDBERG, R.~P. Architectural principles for virtual computer systems. In:  .
   [s.n.], 1973. Dispon{\'\i}vel em:
   \url{https://apps.dtic.mil/sti/tr/pdf/AD0772809.pdf}.}
 
-\bibitem[International 2024]{RISCVUnprivilegedISA}
+\bibitem[Goldberg 1973]{architecture-of-virtual-machines}
+\abntrefinfo{Goldberg}{GOLDBERG}{1973b}
+{GOLDBERG, R.~P. Architecture of virtual machines. In:  \emph{Proceedings of
+  the Workshop on Virtual Computer Systems}. New York, NY, USA: Association for
+  Computing Machinery, 1973. p. 74–112.
+ISBN 9781450374279. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/800122.803950}.}
+
+\bibitem[Guthaus et al. 2001]{mibench}
+\abntrefinfo{Guthaus et al.}{GUTHAUS et al.}{2001}
+{GUTHAUS, M. et al. Mibench: A free, commercially representative embedded
+  benchmark suite. In:  \emph{Proceedings of the Fourth Annual IEEE
+  International Workshop on Workload Characterization. WWC-4 (Cat.
+  No.01EX538)}. [S.l.: s.n.], 2001. p. 3--14.}
+
+\bibitem[International 2024]{isa-riscv}
 \abntrefinfo{International}{INTERNATIONAL}{2024}
 {INTERNATIONAL, R.-V. \emph{The RISC-V Instruction Set Manual, Volume I:
   Unprivileged ISA}. 2024.
   \url{https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf}.}
 
-\bibitem[Popek e Goldberg 1974]{PopekGeraldGoldberg}
+\bibitem[Martins et al. 2020]{bao-paper}
+\abntrefinfo{Martins et al.}{MARTINS et al.}{2020}
+{MARTINS, J. et al. {Bao: A Lightweight Static Partitioning Hypervisor for
+  Modern Multi-Core Embedded Systems}. In:  BERTOGNA, M.; TERRANEO, F. (Ed.).
+  \emph{Workshop on Next Generation Real-Time Embedded Systems (NG-RES 2020)}.
+  Dagstuhl, Germany: Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik,
+  2020.  (Open Access Series in Informatics (OASIcs), v.~77), p. 3:1--3:14.
+ISBN 978-3-95977-136-8.
+ISSN 2190-6807. Dispon{\'\i}vel em:
+  \url{https://drops.dagstuhl.de/entities/document/10.4230/OASIcs.NG-RES.2020.3}.}
+
+\bibitem[Popek e Goldberg
+  1974]{formal-requirements-for-virtualizable-third-generation-architectures}
 \abntrefinfo{Popek e Goldberg}{POPEK; GOLDBERG}{1974}
 {POPEK, G.~J.; GOLDBERG, R.~P. Formal requirements for virtualizable third
   generation architectures.
@@ -36,12 +72,27 @@ ISSN 0000-0000. Dispon{\'\i}vel em:
 ISSN 0001-0782.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/361011.361073}.}
 
-\bibitem[Russell 2008]{Rusty-Russell-VirtIO}
+\bibitem[Russell 2008]{rusty-virtio}
 \abntrefinfo{Russell}{RUSSELL}{2008}
 {RUSSELL, R. virtio: towards a de-facto standard for virtual i/o devices.
 \emph{SIGOPS Oper. Syst. Rev.}, Association for Computing Machinery, New York,
   NY, USA, v.~42, n.~5, p. 95–103, jul. 2008.
 ISSN 0163-5980.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/1400097.1400108}.}
+
+\bibitem[Sousa et al. 2024]{hsp-v}
+\abntrefinfo{Sousa et al.}{SOUSA et al.}{2024}
+{SOUSA, J. et al. Hsp-v: Hypervisor-less static partitioning for risc-v cots
+  platforms.
+\emph{IEEE Access}, v.~12, p. 71131--71144, 2024.}
+
+\bibitem[Stankovic 1988]{stankovic1988misconceptions}
+\abntrefinfo{Stankovic}{STANKOVIC}{1988}
+{STANKOVIC, J.~A. Misconceptions about real-time computing: A serious problem
+  for next-generation systems.
+\emph{Computer}, IEEE Computer Society Press, Washington, DC, USA, v.~21,
+  n.~10, p. 10–19, out. 1988.
+ISSN 0018-9162.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1109/2.7053}.}
 
 \end{thebibliography}

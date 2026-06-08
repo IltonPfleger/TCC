@@ -15,7 +15,8 @@ all: pdf
 pdf:
 	-mkdir -p $(BUILD)
 	$(COMPILER) -pdf -output-directory=$(BUILD) $(SRC)
-	bibtex build/Main
+	bibtex $(BUILD)/$(notdir $(basename $(SRC)))
+	makeglossaries -d $(BUILD) $(MAIN)
 	makeglossaries -d $(BUILD) $(MAIN)
 	$(COMPILER) -pdf -output-directory=$(BUILD) $(SRC)
 

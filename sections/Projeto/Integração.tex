@@ -1,0 +1,18 @@
+\section{Integração}
+
+A integração dos componentes, conforme mencionado anteriormente, ocorre por meio da agregação de todos os recursos de que uma \gls{vm} necessita em sua própria classe.
+Além disso, cada mediador virtual possui um mapeamento específico para um mediador real, como ilustrado na Figura~\ref{fig:virtual-to-real}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{images/VirtualToReal.pdf}
+\caption{Diagrama de Mapeamento de Componentes Virtuais para Reais}\label{fig:virtual-to-real}
+\end{figure}
+
+Formalizando essa estrutura, a interface mínima que a camada de virtualização fornece é apresentada na Figura~\ref{fig:virtualization-framework-uml}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/VirtualizationFrameworkUML.pdf}
+\caption{Diagrama de Classes Relacionadas ao Processo de Virtualização}\label{fig:virtualization-framework-uml}
+\end{figure}

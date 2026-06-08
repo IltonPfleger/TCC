@@ -1,31 +1,3 @@
-\glsdefs@newdocentry{api}%
-{%
-name={\acronymfont {\glsentryshort {api}}},%
-sort={API},%
-type={acronym},%
-first={API},%
-firstplural={APIs},%
-text={API},%
-plural={APIs},%
-description={Interface de Programação de Aplicações},%
-descriptionplural={Interface de Programação de Aplicações},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Interface de Programação de Aplicações},%
-longplural={Interface de Programação de Aplicaçõess},%
-short={API},%
-shortplural={APIs},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{so}%
 {%
 name={\acronymfont {\glsentryshort {so}}},%
@@ -357,6 +329,34 @@ long={Device-Tree Blob},%
 longplural={Device-Tree Blobs},%
 short={DTB},%
 shortplural={DTBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{iot}%
+{%
+name={\acronymfont {\glsentryshort {iot}}},%
+sort={IoT},%
+type={acronym},%
+first={IoT},%
+firstplural={IoTs},%
+text={IoT},%
+plural={IoTs},%
+description={\textit {Internet das Coisas}},%
+descriptionplural={\textit {Internet das Coisas}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Internet das Coisas}},%
+longplural={\protect \textit  {Internet das Coisas}s},%
+short={IoT},%
+shortplural={IoTs},%
 counter={page},%
 parent={},%
 %
@@ -861,6 +861,510 @@ long={\protect \textit  {Wait For Interrupt}},%
 longplural={\protect \textit  {Wait For Interrupt}s},%
 short={WFI},%
 shortplural={WFIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wcet}%
+{%
+name={\acronymfont {\glsentryshort {wcet}}},%
+sort={WCET},%
+type={acronym},%
+first={WCET},%
+firstplural={WCETs},%
+text={WCET},%
+plural={WCETs},%
+description={\textit {Worst-Case Execution Time}},%
+descriptionplural={\textit {Worst-Case Execution Time}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Worst-Case Execution Time}},%
+longplural={\protect \textit  {Worst-Case Execution Time}s},%
+short={WCET},%
+shortplural={WCETs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{edf}%
+{%
+name={\acronymfont {\glsentryshort {edf}}},%
+sort={EDF},%
+type={acronym},%
+first={EDF},%
+firstplural={EDFs},%
+text={EDF},%
+plural={EDFs},%
+description={\textit {Earliest Deadline First}},%
+descriptionplural={\textit {Earliest Deadline First}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Earliest Deadline First}},%
+longplural={\protect \textit  {Earliest Deadline First}s},%
+short={EDF},%
+shortplural={EDFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rm}%
+{%
+name={\acronymfont {\glsentryshort {rm}}},%
+sort={RM},%
+type={acronym},%
+first={RM},%
+firstplural={RMs},%
+text={RM},%
+plural={RMs},%
+description={\textit {Rate-Monotonic}},%
+descriptionplural={\textit {Rate-Monotonic}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Rate-Monotonic}},%
+longplural={\protect \textit  {Rate-Monotonic}s},%
+short={RM},%
+shortplural={RMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dm}%
+{%
+name={\acronymfont {\glsentryshort {dm}}},%
+sort={DM},%
+type={acronym},%
+first={DM},%
+firstplural={DMs},%
+text={DM},%
+plural={DMs},%
+description={\textit {Deadline-Monotonic}},%
+descriptionplural={\textit {Deadline-Monotonic}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Deadline-Monotonic}},%
+longplural={\protect \textit  {Deadline-Monotonic}s},%
+short={DM},%
+shortplural={DMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{simd}%
+{%
+name={\acronymfont {\glsentryshort {simd}}},%
+sort={SIMD},%
+type={acronym},%
+first={SIMD},%
+firstplural={SIMDs},%
+text={SIMD},%
+plural={SIMDs},%
+description={\textit {Single Instruction, Multiple Data}},%
+descriptionplural={\textit {Single Instruction, Multiple Data}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Single Instruction, Multiple Data}},%
+longplural={\protect \textit  {Single Instruction, Multiple Data}s},%
+short={SIMD},%
+shortplural={SIMDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tor}%
+{%
+name={\acronymfont {\glsentryshort {tor}}},%
+sort={TOR},%
+type={acronym},%
+first={TOR},%
+firstplural={TORs},%
+text={TOR},%
+plural={TORs},%
+description={\textit {Top of Range}},%
+descriptionplural={\textit {Top of Range}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Top of Range}},%
+longplural={\protect \textit  {Top of Range}s},%
+short={TOR},%
+shortplural={TORs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{na4}%
+{%
+name={\acronymfont {\glsentryshort {na4}}},%
+sort={NA4},%
+type={acronym},%
+first={NA4},%
+firstplural={NA4s},%
+text={NA4},%
+plural={NA4s},%
+description={\textit {Naturally Aligned 4-Byte}},%
+descriptionplural={\textit {Naturally Aligned 4-Byte}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Naturally Aligned 4-Byte}},%
+longplural={\protect \textit  {Naturally Aligned 4-Byte}s},%
+short={NA4},%
+shortplural={NA4s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{napot}%
+{%
+name={\acronymfont {\glsentryshort {napot}}},%
+sort={NAPOT},%
+type={acronym},%
+first={NAPOT},%
+firstplural={NAPOTs},%
+text={NAPOT},%
+plural={NAPOTs},%
+description={\textit {Naturally Aligned Power-of-Two}},%
+descriptionplural={\textit {Naturally Aligned Power-of-Two}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Naturally Aligned Power-of-Two}},%
+longplural={\protect \textit  {Naturally Aligned Power-of-Two}s},%
+short={NAPOT},%
+shortplural={NAPOTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{satp}%
+{%
+name={\acronymfont {\glsentryshort {satp}}},%
+sort={SATP},%
+type={acronym},%
+first={SATP},%
+firstplural={SATPs},%
+text={SATP},%
+plural={SATPs},%
+description={\textit {Supervisor Address Translation and Protection}},%
+descriptionplural={\textit {Supervisor Address Translation and Protection}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Supervisor Address Translation and Protection}},%
+longplural={\protect \textit  {Supervisor Address Translation and Protection}s},%
+short={SATP},%
+shortplural={SATPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adesd}%
+{%
+name={\acronymfont {\glsentryshort {adesd}}},%
+sort={ADESD},%
+type={acronym},%
+first={ADESD},%
+firstplural={ADESDs},%
+text={ADESD},%
+plural={ADESDs},%
+description={\textit {Application-Driven Embedded System Design}},%
+descriptionplural={\textit {Application-Driven Embedded System Design}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Application-Driven Embedded System Design}},%
+longplural={\protect \textit  {Application-Driven Embedded System Design}s},%
+short={ADESD},%
+shortplural={ADESDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ecu}%
+{%
+name={\acronymfont {\glsentryshort {ecu}}},%
+sort={ECU},%
+type={acronym},%
+first={ECU},%
+firstplural={ECUs},%
+text={ECU},%
+plural={ECUs},%
+description={\textit {Electronic Control Unit}},%
+descriptionplural={\textit {Electronic Control Unit}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Electronic Control Unit}},%
+longplural={\protect \textit  {Electronic Control Unit}s},%
+short={ECU},%
+shortplural={ECUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{stip}%
+{%
+name={\acronymfont {\glsentryshort {stip}}},%
+sort={STIP},%
+type={acronym},%
+first={STIP},%
+firstplural={STIPs},%
+text={STIP},%
+plural={STIPs},%
+description={\textit {Supervisor Timer Interrupt Pending}},%
+descriptionplural={\textit {Supervisor Timer Interrupt Pending}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Supervisor Timer Interrupt Pending}},%
+longplural={\protect \textit  {Supervisor Timer Interrupt Pending}s},%
+short={STIP},%
+shortplural={STIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{seip}%
+{%
+name={\acronymfont {\glsentryshort {seip}}},%
+sort={SEIP},%
+type={acronym},%
+first={SEIP},%
+firstplural={SEIPs},%
+text={SEIP},%
+plural={SEIPs},%
+description={\textit {Supervisor External Interrupt Pending}},%
+descriptionplural={\textit {Supervisor External Interrupt Pending}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Supervisor External Interrupt Pending}},%
+longplural={\protect \textit  {Supervisor External Interrupt Pending}s},%
+short={SEIP},%
+shortplural={SEIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mip}%
+{%
+name={\acronymfont {\glsentryshort {mip}}},%
+sort={MIP},%
+type={acronym},%
+first={MIP},%
+firstplural={MIPs},%
+text={MIP},%
+plural={MIPs},%
+description={\textit {Machine Interrupt Pending}},%
+descriptionplural={\textit {Machine Interrupt Pending}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Machine Interrupt Pending}},%
+longplural={\protect \textit  {Machine Interrupt Pending}s},%
+short={MIP},%
+shortplural={MIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{msip}%
+{%
+name={\acronymfont {\glsentryshort {msip}}},%
+sort={MSIP},%
+type={acronym},%
+first={MSIP},%
+firstplural={MSIPs},%
+text={MSIP},%
+plural={MSIPs},%
+description={\textit {Machine Software Interrupt Pending}},%
+descriptionplural={\textit {Machine Software Interrupt Pending}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Machine Software Interrupt Pending}},%
+longplural={\protect \textit  {Machine Software Interrupt Pending}s},%
+short={MSIP},%
+shortplural={MSIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tw}%
+{%
+name={\acronymfont {\glsentryshort {tw}}},%
+sort={TW},%
+type={acronym},%
+first={TW},%
+firstplural={TWs},%
+text={TW},%
+plural={TWs},%
+description={\textit {Timeout Wait}},%
+descriptionplural={\textit {Timeout Wait}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Timeout Wait}},%
+longplural={\protect \textit  {Timeout Wait}s},%
+short={TW},%
+shortplural={TWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tcb}%
+{%
+name={\acronymfont {\glsentryshort {tcb}}},%
+sort={TCB},%
+type={acronym},%
+first={TCB},%
+firstplural={TCBs},%
+text={TCB},%
+plural={TCBs},%
+description={\textit {Trusted Computing Base}},%
+descriptionplural={\textit {Trusted Computing Base}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Trusted Computing Base}},%
+longplural={\protect \textit  {Trusted Computing Base}s},%
+short={TCB},%
+shortplural={TCBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{meip}%
+{%
+name={\acronymfont {\glsentryshort {meip}}},%
+sort={MEIP},%
+type={acronym},%
+first={MEIP},%
+firstplural={MEIPs},%
+text={MEIP},%
+plural={MEIPs},%
+description={\textit {Machine External Interrupt Pending}},%
+descriptionplural={\textit {Machine External Interrupt Pending}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Machine External Interrupt Pending}},%
+longplural={\protect \textit  {Machine External Interrupt Pending}s},%
+short={MEIP},%
+shortplural={MEIPs},%
 counter={page},%
 parent={},%
 %

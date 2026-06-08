@@ -1,15 +1,30 @@
 \section{Virtualização}
 
-Virtualização é uma técnica computacional que permite a execução simultânea e isolada de múltiplos \glspl{so} — denominados sistemas convidados — em um mesmo hardware físico.
-Enquanto um \gls{so} convencional atua como uma interface entre o usuário e a máquina, abstraindo a complexidade da arquitetura subjacente, existem sistemas projetados
-para estender essa abstração a outros \glspl{so}. Esses sistemas são denominados hipervisores, e o mecanismo que viabiliza esse processo é chamado de virtualização.
+A virtualização é uma técnica computacional que abstrai recursos físicos — como capacidade de processamento, memória, armazenamento e infraestrutura de rede —,
+separando a camada de hardware das aplicações e ambientes de execução. Por meio do gerenciamento por uma camada intermediária, ela permite criar instâncias virtuais isoladas
+e independentes que compartilham a mesma infraestrutura física de forma transparente, otimizando o uso de recursos e aumentando a flexibilidade do sistema.
 
-De modo geral, existem dois principais tipos de virtualização: a virtualização completa e a paravirtualização.
+No âmbito da virtualização de sistemas e hardware, destacam-se duas abordagens principais para o gerenciamento de execução: a virtualização completa e a paravirtualização.
 
-Na virtualização completa, também conhecida como \textit{full virtualization}, o \gls{so} convidado executa sem ter conhecimento explícito de que está em um ambiente virtualizado.
-Nesse cenário, operações privilegiadas são interceptadas pelo hipervisor por meio de exceções e tratadas por mecanismos como \textit{trap-and-emulate}.
-Entretanto, esse processo pode comprometer o desempenho do sistema, devido ao custo associado às operações de salvamento e restauração de contexto realizadas a cada exceção gerada.
+Na virtualização completa ou \textit{full virtualization}, o sistema convidado executa sem ter conhecimento explícito de que reside em um ambiente virtualizado.
+Nesse cenário, instruções privilegiadas são interceptadas pelo virtualizador por meio de exceções de hardware. Embora essa abordagem garanta total compatibilidade sem a
+necessidade de modificar o sistema convidado, a constante alternância e o salvamento de contexto associados às exceções podem impactar o desempenho geral.
 
-Em contraste, a paravirtualização adota uma abordagem cooperativa entre o \gls{so} convidado e o seu hipervisor.
-Nesse modelo, o sistema convidado é modificado para reconhecer a presença do ambiente virtualizado e, em vez de executar diretamente instruções privilegiadas,
-realiza chamadas explícitas ao hipervisor, conhecidas como \textit{hypercalls}. Essa estratégia reduz a necessidade de exceções, diminuindo o custo associado ao processo de virtualização.
+Em contrapartida, a paravirtualização estabelece uma relação cooperativa entre o sistema convidado e a camada de virtualização. O sistema convidado é modificado para
+reconhecer a presença do virtualizador e, em vez de executar instruções privilegiadas diretamente, realiza chamadas explícitas: reduzindo o custo de processamento e aumentando a
+eficiência das operações.
+
+Independentemente da abordagem adotada, a base de um virtualizador de hardware fundamenta-se no mapeamento de recursos. Segundo~\cite{architecture-of-virtual-machines},
+essa dinâmica é formalizada por uma função $f: V \to R \cup \{\Omega\}$, responsável por traduzir elementos do domínio virtual --- $V$ --- para o domínio físico --- $R$, retornando $\Omega$
+quando um recurso não está mapeado. Para operacionalizar essa abstração, o virtualizador deve possuir quatro características essenciais:
+
+\begin{enumerate}
+    \item \textbf{Banco de dados para armazenar $f$:} Estrutura onde o virtualizador mantém o estado das correspondências entre os recursos virtuais e físicos.
+    \item \textbf{Mecanismo para invocar $f$:} Componente de hardware ou software encarregado de consultar e disparar a função $f$ quando necessário.
+    \item \textbf{Mecânica da composição de mapeamentos:} Lógica que combina a tradução interna do sistema convidado --- $\phi$ --- com a do virtualizador --- $f$.
+    \item \textbf{Ação diante de uma interceptação:} Procedimento acionado quando $f(v) = \Omega$ ou ao interceptar instruções privilegiadas.
+\end{enumerate}
+
+Em suma, a virtualização consolida-se como um paradigma que desvincula os programas do hardware físico subjacente. Ao atuar de forma transparente como uma camada intermediária,
+o virtualizador orquestra essa comunicação e gerencia livremente os recursos, viabilizando o compartilhamento seguro e eficiente de um mesmo dispositivo físico entre múltiplos
+ambientes de execução.

@@ -1,0 +1,9 @@
+\section{Miralis}
+
+O Miralis~\cite{miralis} adota uma abordagem alternativa ao empregar mecanismos computacionais semelhantes aos deste trabalho para estabelecer uma camada posicionada abaixo do firmware.
+A premissa central do Miralis fundamenta-se na constatação de que raramente os fabricantes disponibilizarão firmwares formalmente verificados para o modo de máquina.
+Para mitigar essa vulnerabilidade, o Miralis rebaixa a execução do firmware tradicional para o modo usuário, mantendo uma interface segura, padronizada e formalmente verificada no nível mais
+privilegiado. Para isso, utiliza puramente o mecanismo de \textit{trap-and-emulate} a fim de interceptar e emular com segurança as instruções privilegiadas.
+Adicionalmente, o Miralis é capaz de emular a extensão de hypervisor via software de forma transparente, viabilizando a execução de hipervisores como o Bao~\cite{bao-paper}
+mesmo em plataformas desprovidas desse suporte em hardware.
+

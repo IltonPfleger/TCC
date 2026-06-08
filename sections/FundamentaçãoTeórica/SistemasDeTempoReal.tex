@@ -1,0 +1,36 @@
+\section{Sistemas De Tempo Real}
+
+Sistemas que operam sob restrições de tempo real são sistemas nos quais a reatividade temporal é extremamente importante para a corretude ou até mesmo para a
+segurança do ambiente de execução. Nesses sistemas, não é suficiente que uma operação produza um resultado correto ou que seja extremamente rápida, sendo também necessário que esse resultado
+seja produzido dentro de um intervalo de tempo determinado \cite{stankovic1988misconceptions}. 
+
+Para atender a esses requisitos, são empregados \glspl{rtos}, projetados para fornecer mecanismos de gerenciamento de tarefas e recursos que favoreçam a previsibilidade e o cumprimento de
+restrições temporais. Diferentemente de \glspl{gpos}, nos quais o objetivo principal geralmente está relacionado ao aumento do desempenho médio, da utilização dos
+recursos ou da responsividade percebida pelo usuário, um \gls{rtos} prioriza a capacidade de determinar e controlar os tempos envolvidos na execução das tarefas.
+
+Os conceitos centrais associados aos \glspl{rtos} são o \textit{deadline} e o determinismo. O \textit{deadline} - ou prazo limite - refere-se ao instante máximo em que a execução de uma
+determinada tarefa deve ser concluída, cabendo ao \gls{rtos} gerenciar os recursos para assegurar o cumprimento desta restrição. Por sua vez, o determinismo — frequentemente associado
+à previsibilidade do sistema — garante que o comportamento temporal do software seja conhecido e limitado, com a determinação do tempo de execução no pior caso ou \gls{wcet}.
+
+O elemento central do núcleo de um \gls{rtos} que viabiliza essa previsibilidade é o algoritmo de escalonamento de tarefas  - adaptado para tempo real.
+Entre os algoritmos mais consolidados na literatura, destacam-se o \gls{edf}, utilizado em cenários com prioridades dinâmicas — nos quais o conjunto de tarefas ou seus prazos podem
+variar em tempo de execução —, e o \gls{rm}, voltado a cenários estáticos, onde as tarefas e seus períodos de ativação são totalmente conhecidos em fase de projeto.
+
+\subsection{Classificação De Sistemas De Tempo Real}
+
+Tais sistemas são classificados de acordo com as consequências do não cumprimento dos requisitos temporais definidos em sua elaboração.
+Sistemas nos quais a perda de um prazo pode causar danos catastróficos, como a perda de vidas humanas ou a destruição de equipamentos de alto valor, são classificados como Hard Real-Time.
+Por outro lado, sistemas nos quais o atraso temporal não é desejável, mas também não é fatal ou crítico — como o atraso na entrega de quadros em serviços de vídeo —, são chamados de Soft Real-Time.
+
+\subsection{Outros Aspectos De Previsibilidade Temporal}
+
+\begin{itemize}
+    \item \textbf{Latência:} intervalo de tempo entre a ocorrência de um evento e o início da ação correspondente do sistema.
+
+    \item \textbf{\textit{Jitter}:} variação temporal observada na latência ou no instante de ocorrência de eventos em relação ao comportamento esperado.
+
+    \item \textbf{\textit{Overhead}:} custo computacional adicional introduzido por algum mecanismo.
+\end{itemize}
+
+
+

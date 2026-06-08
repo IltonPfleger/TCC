@@ -1,0 +1,16 @@
+\section{Virtualização Baseada em Modo \textit{Machine}}
+
+Originalmente, o modo \textit{Machine} da RISC-V foi projetado para ser o nível de privilégio mais elevado da arquitetura, sendo responsável pela execução de firmwares
+e pelo controle direto dos recursos de hardware. Sua função primária consiste na inicialização da plataforma e na configuração dos subsistemas fundamentais antes da transferência
+de controle para o \gls{so} hospedeiro.
+
+Dada a natureza restritiva do acesso a determinados recursos de hardware — muitas vezes limitados exclusivamente a esse modo —, a arquitetura define camadas de
+abstração como a \gls{sbi}. Essa interface atua como uma ponte padronizada, permitindo que níveis menos privilegiados solicitem serviços ao firmware residente no modo \textit{Machine}.
+
+No contexto deste trabalho, o modo \textit{Machine} é utilizado de forma não convencional: em vez de empregá-lo apenas para prover a \gls{sbi}, ele é utilizado como a base para a implementação
+de um hipervisor completo.
+
+Essa abordagem explora o fato de que o modo \textit{Machine} possui autoridade irrestrita sobre os demais níveis de privilégio, permitindo interceptar, controlar e gerenciar a execução dos
+sistemas convidados. Para viabilizar esse controle, o hipervisor emprega os recursos exclusivos desse modo, incluindo seu conjunto dedicado de \glspl{csr}, além de mecanismos próprios para
+tratamento de interrupções, proteção de memória e gerenciamento de temporização. Dessa forma, o modo \textit{Machine} fornece a soberania necessária para emular por software funcionalidades
+que, em cenários convencionais, exigiriam suporte de hardware por meio de extensões de virtualização dedicadas.

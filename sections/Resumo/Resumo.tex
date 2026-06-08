@@ -1,0 +1,9 @@
+\chapter{Resumo}
+
+
+Este trabalho apresenta um hipervisor Tipo-1 leve e de tempo real em C++ para a arquitetura RISC-V, projetado para sistemas embarcados de criticidade mista sem
+exigir suporte nativo da extensão H de virtualização. Executando em modo Machine, a solução garante o isolamento temporal e espacial de CPU, memória e E/S
+por meio do mapeamento de vCPUs e da emulação de dispositivos, temporizadores e interrupções, aproveitando metaprogramação em C++ para minimizar o overhead.
+Em testes no SoC StarFive JH7110, o hipervisor obteve um overhead de processamento inferior a 2\% com a suíte MiBench.
+
+Palavras-chave: Virtualização; Sistemas Embarcados de Tempo Real; RISC-V;~Hipervisor; Sistemas de Criticalidade Mista.

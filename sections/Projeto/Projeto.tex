@@ -1,0 +1,20 @@
+\chapter{Projeto}
+
+Assim como o EPOS, este trabalho baseia-se no conceito de especialização de classes C++. O sistema é estruturado fundamentalmente em duas camadas principais: a camada de mediadores de hardware,
+composta por classes altamente especializadas e dedicadas à interação direta com os componentes físicos, e a camada de abstração, que utiliza os mediadores para implementar as
+funcionalidades do sistema. Adicionalmente, há a camada de virtualização, que atua como ponte entre os sistemas virtualizados, os mediadores e as próprias abstrações da plataforma.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/BlocksArchitecture.pdf}
+\caption{Diagrama de Blocos das Classes do Projeto}\label{fig:blocks-architecture}
+\end{figure}
+
+Como ilustrado na Figura~\ref{fig:blocks-architecture}, o hipervisor desenvolvido neste trabalho — a exemplo de grande parte dos \gls{so} modernos — suporta dois tipos de aplicações:
+aquelas executadas sobre máquinas virtuais e aquelas mapeadas para rodar no próprio hipervisor sem a necessidade de uma \gls{vm}. Essa abordagem é vantajosa em diversos cenários,
+como na execução de tarefas em que a latência deve ser mínima e o desempenho máximo, além de cenários focados em verificação e auditoria de segurança.
+
+\input{sections/Projeto/MáquinasVirtuais.tex}
+\input{sections/Projeto/CPU_Virtual.tex}
+\input{sections/Projeto/DispositivosVirtuais.tex}
+\input{sections/Projeto/Integração.tex}

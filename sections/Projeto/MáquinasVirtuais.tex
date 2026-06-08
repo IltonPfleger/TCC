@@ -1,0 +1,12 @@
+\section{\Glspl{vm}}
+
+\Glspl{vm} são a correspondência em software --- em nível de virtualização --- de máquinas físicas, podendo conter CPUs virtuais, memória e dispositivos periféricos.
+Em correspondência com \glspl{so} modernos, \glspl{vm} funcionam de forma análoga a processos no projeto. Por definição, a criação de uma \gls{vm} deve receber uma porção
+de memória alocada para si; esta será a região delimitada e autorizada a ser acessada pelo convidado. Além disso, para cada núcleo esperado pelo convidado, a \gls{vm} criará uma CPU virtual,
+ficando também responsável por criar e gerenciar os dispositivos virtuais.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/SimplifiedVirtualMachine.pdf}
+\caption{Diagrama de Classes Simplificado de \glspl{vm}}\label{fig:simplified-virtual-machine}
+\end{figure}

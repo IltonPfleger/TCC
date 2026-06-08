@@ -1,0 +1,21 @@
+\section{Materiais}
+
+Todos os experimentos deste trabalho foram realizados na plataforma \textit{VisionFive 2}. As principais características de hardware relevantes para o estudo são apresentadas a seguir:
+
+\begin{itemize}
+    \item \gls{soc}: StarFive JH7110;
+    \item Memória DRAM:~8~GB LPDDR4;
+    \item Interface Gigabit Ethernet: Synopsys DesignWare DWMAC 5.20;
+    \item PMIC:~X-Powers AXP15060.
+\end{itemize}
+
+O \gls{soc} StarFive JH7110 opera em frequências de até 1,5~GHz e conta com uma arquitetura heterogênea composta por seis núcleos de processamento:
+
+\begin{itemize}
+    \item 4 núcleos U74 (64 bits), compatíveis com a ISA RISC-V RV64GC;
+    \item 1 núcleo S7 (64 bits), compatível com a ISA RISC-V RV64IMAC;
+    \item 1 núcleo E24 (32 bits), compatível com a ISA RISC-V RV32IMAFCB.
+\end{itemize}
+
+Apesar da heterogeneidade do \gls{soc}, as avaliações restringiram-se aos quatro núcleos U74. Os núcleos S7 e E24 foram desconsiderados por não suportarem o modo supervisor, requisito indispensável
+para a execução dos mecanismos de virtualização analisados.

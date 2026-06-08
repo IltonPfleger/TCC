@@ -1,0 +1,21 @@
+\section{Virtualização de Temporizador}
+
+Por definição da arquitetura RISC-V, na ausência de extensões específicas de hardware, os recursos de temporizador — especificamente os registradores \textit{mtime} e \textit{mtimecmp} —
+são exclusivos e gerenciados pelo modo \textit{Machine}.
+
+Para contornar essa restrição em ambientes virtualizados, os \glspl{so} convidados --- executados em modo S ou VS --- utilizam a \gls{sbi} para gerenciar eventos temporais.
+Dessa forma, não é necessária nenhuma adaptação estrutural no \gls{so} convidado, uma vez que a própria especificação padrão da arquitetura prevê o uso da \gls{sbi} para essa finalidade.
+
+\subsection{Leitura do Temporizador}
+
+A leitura do tempo atual pelo convidado é feita por meio do \gls{csr} \textit{time}, acessado comumente através da pseudo-instrução \textit{rdtime}.
+
+Quando um modo com menor privilégio tenta realizar essa leitura sem que o acesso direto tenha sido liberado, o processador dispara uma \textit{Illegal Instruction}. O hipervisor intercepta essa exceção
+calcula o tempo virtualizado correspondente e devolve o valor correto ao registrador de destino do convidado.
+
+\subsection{Programação de Temporizador}
+
+Como o convidado não possui acesso direto de escrita ao registrador \textit{mtimecmp}, o agendamento de interrupções é realizado por chamadas \gls{sbi} --- extensão \textit{TIME}.
+
+Quando o \gls{so} convidado precisa agendar um evento futuro, ele realiza uma chamada de sistema solicitando o registro do próximo limite temporal. O firmware
+recebe a requisição e ao atingir o tempo programado, injeta a interrupção sinalizando o bit \gls{stip} do registrador \gls{mip} da CPU virtual correspondente.

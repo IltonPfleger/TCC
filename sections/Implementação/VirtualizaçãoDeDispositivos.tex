@@ -1,0 +1,35 @@
+\section{Virtualização De Dispositivos}
+
+Dispositivos externos em sistemas RISC-V são, em sua maioria, acessados por meio de \gls{mmio}, no qual registradores de controle e dados dos dispositivos são mapeados em endereços do
+espaço de memória. Dessa forma, uma operação de leitura ou escrita em um determinado endereço pode representar uma operação sobre um dispositivo, em vez de um acesso à memória convencional.
+A virtualização desses dispositivos pode, portanto, ser realizada interceptando as operações de memória destinadas às regiões correspondentes aos dispositivos virtuais e emulando seu comportamento.
+
+Cada máquina virtual possui uma região de memória própria. Os acessos do convidado a essa região são permitidos pela \gls{pmp}, enquanto as demais regiões de memória permanecem protegidas. Assim,
+quando o sistema convidado tenta acessar um endereço que não pertence à sua região de memória, o processador gera uma exceção de acesso, como \textit{Load Access Fault} ou \textit{Store Access Fault},
+e transfere o controle para o hipervisor.
+
+O hipervisor utiliza essas exceções para distinguir acessos inválidos à memória de acessos destinados a dispositivos virtuais. Quando o endereço acessado corresponde à região de \gls{mmio} de
+um dispositivo virtual, o hipervisor decodifica a instrução que originou a exceção e identifica o tipo da operação, o endereço acessado, seu tamanho e, no caso de uma escrita,
+o valor que deveria ser armazenado.
+
+No caso de uma operação de leitura, o hipervisor solicita ao dispositivo virtual correspondente que realize a operação. O dispositivo virtual processa a requisição de
+acordo com seu estado interno e retorna o valor correspondente. O hipervisor então escreve esse valor no registrador de destino do contexto do convidado e ajusta o
+contador de programa para que a instrução que causou a exceção não seja executada novamente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/LoadAccessFault.pdf}
+\caption{Emulação de Dispositivos via \textit{Load Access Fault}}\label{fig:emulate-load-access-fault}
+\end{figure}
+
+Para operações de escrita, o processo é semelhante. O hipervisor identifica o valor que seria escrito pelo convidado e o encaminha ao dispositivo virtual correspondente.
+O dispositivo pode atualizar seu estado interno, produzir efeitos colaterais ou encaminhar a operação para o mediador de hardware correspondente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\textwidth]{images/StoreAccessFault.pdf}
+\caption{Emulação de Dispositivos via \textit{Store Access Fault}}\label{fig:emulate-store-access-fault}
+\end{figure}
+
+Caso o endereço não corresponda a nenhum dispositivo virtual ou a operação solicitada não seja suportada pelo dispositivo, o acesso não pode ser emulado.
+Nesse caso, o hipervisor pode tratar a operação como um acesso inválido e encaminhar uma exceção ao sistema convidado ou, dependendo da política adotada, encerrar a \gls{vm}.

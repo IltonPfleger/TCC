@@ -3,7 +3,6 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usepackage{tikz-uml}
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -19,15 +18,8 @@
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 \setlength{\parindent}{1.25cm}
 
-\usetikzlibrary{positioning, arrows.meta, fit, calc}
-\tikzset{
-  initial/.style={circle, fill},
-  decision/.style={diamond, black, draw},
-  action/.style={rectangle, draw, rounded corners},
-  arrow/.style={draw, -{Latex[length=3mm]}, thick}
-}
-
-\titulo{Um Hipervisor Tipo-1 Leve de Tempo Real para Sistemas Embarcados RISC-V: Projeto e Implementação em C++}
+%\titulo{Um Hipervisor Tipo-1 Leve de Tempo Real para Sistemas Embarcados RISC-V: Projeto e Implementação em C++}
+\titulo{Virtualização de Recursos Heterogenios Para Sistemas Críticos Embarcados}
 \autor{Ilton Pfleger Júnior}
 \local{Florianópolis}
 \data{2027}
@@ -54,16 +46,13 @@
 
 \textual
 
-\input{sections/Introdução.tex}
-\input{sections/FundamentaçãoTeórica/FundamentaçãoTeórica.tex}
-\input{sections/MateriaisUtilizados.tex}
-\input{sections/Metodologia/Metodologia.tex}
+\input{sections/Resumo/Resumo.tex}
+\input{sections/Introdução/Introdução.tex}
+\input{sections/Projeto/Projeto.tex}
 \input{sections/Implementação/Implementação.tex}
 \input{sections/Resultados/Resultados.tex}
+\input{sections/Conclusões/Conclusões.tex}
 
-%\input{sections/TheoreticalBasis/TheoreticalBasis.tex}
-%\input{sections/Methodology/Methodology.tex}
-%\input{sections/SystemConceptionAndDesign/SystemConceptionAndDesign.tex}
 
 \postextual
 \printglossary

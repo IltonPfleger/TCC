@@ -1,0 +1,18 @@
+\section{Virtualização de Interrupções Externas}
+
+A virtualização de interrupções é realizada por meio de uma \gls{plic} virtual, exposta ao \gls{so} convidado como um dispositivo mapeado em memória. Para o convidado, a \gls{plic}
+é acessada da mesma forma que o mecanismo original de hardware, pois é virtualizada por meio da interceptação de instruções de memória descritas na seção anterior.
+
+Quando dispositivos virtuais enviam requisições de interrupção para a \gls{plic} virtual, esta atualiza seus estados internos para que o \gls{so} convidado possa identificar e ler a interrupção recebida.
+Em seguida, a \gls{plic} virtual sinaliza a interrupção às CPUs virtuais pertencentes à mesma \gls{vm}, definindo o bit \gls{seip} como 1. O bit permanece ativo até que a interrupção seja tratada e a
+\gls{plic} virtual o redefina para 0.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/VirtualPLIC.pdf}
+\caption{Diagrama de Virtualização de Interrupções Externas na RISC-V}\label{fig:virtual-sei-riscv}
+\end{figure}
+
+
+
+

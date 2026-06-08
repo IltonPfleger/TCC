@@ -1,9 +1,87 @@
 \section{Sistemas Operacionais}
 
-Um sistema operacional é um software responsável por gerenciar os recursos de hardware de um sistema computacional e fornecer serviços para a execução de aplicações.
-Atuando como uma camada de abstração entre o hardware e os programas, o sistema operacional simplifica o desenvolvimento de software ao oferecer mecanismos padronizados
-para acessar o processador, memória, dispositivos de entrada e saída, dispositivos armazenamento de dados, etc.
+Um \gls{so} é um software responsável por gerenciar os recursos de hardware de um sistema computacional e fornecer serviços para a execução de aplicações.
+Atuando como uma camada de abstração entre o hardware e os programas, o \gls{so} simplifica o desenvolvimento de software ao oferecer mecanismos padronizados
+para acessar o processador, memória, dispositivos de \gls{io}, dispositivos armazenamento de dados, etc. A evolução dos sistemas operacionais permitiu o
+surgimento de plataformas cada vez mais complexas, capazes de executar múltiplas aplicações simultaneamente e fornecer diversos serviços ao usuário.
 
-A evolução dos sistemas operacionais permitiu o surgimento de plataformas cada vez mais complexas, capazes de executar múltiplas aplicações simultaneamente e
-fornecer diversos serviços ao usuário. Entretanto, dependendo dos requisitos da aplicação, características como previsibilidade temporal, confiabilidade e isolamento podem
-se tornar tão importantes quanto o desempenho, motivando o desenvolvimento de sistemas operacionais especializados.
+Nas subseções seguintes, são apresentados os principais mecanismos empregados pelos sistemas operacionais:
+
+\subsection{Gerenciamento de Processos e Threads}
+
+Um processo é a instância de um programa em execução, responsável por reservar os recursos do sistema e disponibilizar o ambiente de processamento.
+Dentro dele, as threads atuam como unidades independentes de execução, cada uma mantendo seu próprio contexto exclusivo — composto por estado, registradores e pilha.
+Ao abrigar múltiplas threads, o processo habilita a execução concorrente de tarefas. Em CPUs multinúcleo, o sistema distribui essas threads entre os núcleos físicos,
+alcançando o paralelismo real: a execução simultânea de instruções para maximizar o desempenho.
+
+O gerenciamento da execução dessas threads é atribuído ao escalonador do sistema operacional. Essa unidade é responsável por coordenar a distribuição do tempo de CPU
+e alternar a execução entre as threads por meio da troca de contexto — processo no qual o estado atual dos registradores de uma thread é salvo para que outra possa ser
+executada sem perda de dados.
+
+Essa orquestração contínua dita a movimentação da thread ao longo de seu ciclo de vida, composto costumeiramente pelos estados: pronta, executando, esperando e finalizada.
+No estado pronta, a thread aguarda na fila do escalonador a sua vez de assumir o processador. Ao obter a posse da CPU, ela passa para o estado de execução.
+Quando necessita aguardar um evento externo, a thread transita para o estado de espera até que possa retornar à fila de prontos. Esse bloqueio é fundamental para
+a eficiência energética do sistema, pois, caso todas as threads estejam ociosas ou bloqueadas, a plataforma pode entrar em modo de baixo consumo --- idle.
+Por fim, a thread finalizada encerra seu fluxo e aguarda a desalocação definitiva de seus recursos pelo sistema operacional.
+
+\subsection{Gerenciamento de Memória}
+
+Aplicações, de modo geral, demandam diferentes tamanhos e tipos de memória. No entanto, elas não podem acessar livremente todo o espaço disponível na plataforma,
+pois isso comprometeria a estabilidade do sistema. Por isso, os \glspl{so} ficam responsáveis por alocar porções específicas de memória para cada aplicação e privá-las de
+todo o resto. Dessa forma, se uma aplicação tentar acessar uma região que não lhe pertence, o sistema gerará uma exceção que resultará no seu encerramento.
+Caso a memória previamente alocada se torne insuficiente, a aplicação pode solicitar porções adicionais ao \gls{so}.
+
+A memória previamente alocada para operações gerais e alocações de objetos locais é chamada de pilha --- \textit{stack}.
+Todavia, toda a memória extra alocada é chamada de memória dinâmica --- \textit{heap}.
+
+Para proteger as porções de memória que não pertencem a um determinado processo, o \gls{so} precisa de algum mecanismo de \gls{mmu}.~\Glspl{mmu} primitivas eram capazes
+apenas de proteger porções estáticas da memória. Porém, com a evolução dos sistemas computacionais, esse mecanismo foi melhorado e hoje emprega a responsabilidade de
+separar memória física da memória virtual — um conceito que consiste em um espaço de endereçamento abstraído e independente para cada processo, permitindo que o \gls{so}
+gerencie e traduza esses endereços virtuais em posições reais dos dispositivos de hardware de forma dinâmica e segura.
+
+\subsection{Gerenciamento de Dispositivos de Entrada e Saída}
+
+Dispositivos de \gls{io} constituem mecanismos que viabilizam a troca de dados e sinais de controle entre o sistema computacional e o meio externo.
+O controle e a operação desses dispositivos são intermediados por \textit{device drivers}, componentes do software básico responsáveis por implementar a comunicação e
+o gerenciamento específico de cada dispositivo.
+
+Durante seu ciclo de execução, praticamente todas as aplicações necessitam, em algum momento, interagir com dispositivos de \gls{io}, seja para exibir informações em
+uma interface serial ou em um monitor de vídeo, seja para armazenar ou recuperar dados. Entretanto, diferentes plataformas podem possuir dispositivos distintos, com características
+e interfaces de comunicação próprias. Dessa forma, as aplicações não são responsáveis por implementar diretamente os mecanismos de comunicação com o hardware. Essa responsabilidade
+é atribuída ao \gls{so}, que fornece uma camada de abstração capaz de ocultar as particularidades dos dispositivos e oferecer uma interface uniforme às aplicações.
+
+Além de fornecer essa abstração, o \gls{so} atua como mediador no acesso aos dispositivos, coordenando seu compartilhamento entre as diferentes aplicações. Esse
+gerenciamento permite controlar o acesso concorrente aos recursos de \gls{io}, evitando conflitos e garantindo que sua utilização ocorra de forma segura e consistente.
+
+\subsection{Interrupções e Exceções}
+
+As interrupções constituem-se em um mecanismo fundamental de controle em arquiteturas computacionais, permitindo que o processador suspenda temporariamente a execução
+de uma tarefa para atender a eventos de alta prioridade. Este paradigma é essencial para a operação assíncrona de sistemas modernos, viabilizando a reação imediata
+a sinais de hardware, periféricos ou condições de erro.
+
+Quando uma interrupção é disparada, o fluxo de execução é desviado para uma rotina especializada denominada \gls{isr}.
+O tratamento ocorre geralmente em três etapas:
+
+\begin{enumerate}
+    \item Salvamento de Contexto: o estado atual da CPU é salvo na pilha ou em uma estrutura de dados específica;
+    \item Execução da \gls{isr}: o processador executa o código responsável por tratar o evento que causou a interrupção;
+    \item Restauração do Contexto: o estado anterior é restaurado, permitindo que a tarefa originalmente interrompida retome seu processamento a partir do ponto em que foi suspensa;
+\end{enumerate}
+
+Nessa mesma lógica, exceções são mecanismos de controle semelhantes às interrupções, pois ambos permitem que o processador suspenda temporariamente o fluxo normal de execução para tratar eventos
+específicos. No entanto, enquanto as interrupções são geralmente causadas por eventos assíncronos externos à CPU — como sinais de periféricos ou temporizadores —
+as exceções são geradas de forma síncrona pelo processador durante a execução de uma instrução.
+Este mecanismo é fundamental para o tratamento de condições anômalas, tais como divisões por zero, acessos inválidos à memória, estouro de pilha ou execução de instruções não suportadas.
+
+Ao detectar uma exceção, o processador desvia o fluxo para uma rotina de tratamento --- geralmente a mesma das interrupções.
+A principal diferença operacional reside no pós-processamento: diferentemente das interrupções, que usualmente retomam o fluxo da tarefa original,
+o \gls{so} pode decidir encerrar a aplicação que causou a exceção caso ela seja classificada como fatal.
+
+\subsection{Proteção e Isolamento}
+
+Além de fornecer suas abstrações, um \gls{so} deve garantir a proteção do próprio sistema contra processos defeituosos e o isolamento entre diferentes aplicações.
+Em sistemas críticos, essas propriedades são fundamentais para evitar falhas em cascata e assegurar a previsibilidade e a confiabilidade da execução.
+Essa separação entre o núcleo do sistema e as aplicações fundamenta-se em mecanismos de hardware, destacando-se os níveis de privilégio de execução — que restringem operações
+sensíveis apenas a códigos autorizados — e a proteção de memória, que delimita as regiões de memória acessíveis por cada processo. Dessa forma, o \gls{so} opera em um nível mais
+privilegiado, mantendo as aplicações contidas e restritas aos seus próprios ambientes estabelecendo uma separação entre o núcleo do sistema e os processos que ele executa.
+

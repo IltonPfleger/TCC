@@ -1,0 +1,31 @@
+\chapter{Conclusões}
+
+Este trabalho apresentou o projeto, a implementação em C++ e a avaliação experimental de um hipervisor Tipo-1 de tempo real voltado para sistemas embarcados baseados na arquitetura RISC-V.
+A solução desenvolvida responde aos desafios impostos pela computação de criticidade mista, viabilizando a coexistência e o isolamento seguro entre cargas de trabalho determinísticas
+e \gls{gpos}, como o Linux, sobre uma mesma plataforma de hardware.
+
+Uma das principais contribuições desta pesquisa consiste na superação da dependência de extensões de hardware dedicadas à virtualização. Diante da escassez da extensão H em diversos
+processadores embarcados RISC-V de menor custo, a infraestrutura proposta utilizou de forma não convencional o modo \textit{Machine} como camada soberana de execução,
+sintetizando via \textit{software} os mecanismos de interceptação, emulação, proteção de memória e gerenciamento de máquinas virtuais. Adotando os princípios arquiteturais do EPOS,
+o projeto empregou de forma intensiva metaprogramação em C++ e especialização em tempo de compilação, alcançando abstrações de custo nulo e reduzindo a sobrecarga em tempo de execução.
+
+Os resultados obtidos na plataforma experimental VisionFive 2 comprovaram a eficiência, a previsibilidade temporal e o grau de isolamento providos pelo hipervisor:
+
+\begin{itemize}
+    \item \textbf{Baixo Overhead Computacional:} A avaliação com dez \textit{benchmarks} da suíte MiBench demonstrou que a camada de virtualização impõe um \textit{overhead}
+    inferior a 2\% em relação à execução nativa, assegurando desempenho próximo ao do \textit{hardware} real.
+
+    \item \textbf{Isolamento Temporal e Determinismo:} No experimento focado em um cenário veicular de criticidade mista — composto por quatro instâncias do RTOS EPOS executando sob forte
+    interferência do Linux em segundo plano —, a variação observada nos tempos de execução das tarefas críticas manteve-se abaixo de 2\%.
+
+    \item \textbf{Mitigação de Contagência em Memória:} Ao aplicar o mecanismo de particionamento da \textit{cache} L2 disponibilizado pela plataforma, a interferência máxima
+    entre os domínios foi reduzida para menos de 1,5\%, confirmando que a interferência residual decorre precipuamente da competição pelo barramento de memória e que a previsibilidade das
+    tarefas de tempo real é preservada.
+\end{itemize}
+
+Em síntese, o trabalho demonstra que é viável atingir alto desempenho, determinismo temporal e isolamento estrito em arquiteturas RISC-V sem suporte nativo à virtualização em hardware,
+fornecendo uma base sólida para a consolidação de sistemas embarcados críticos de recursos limitados.
+
+Além dos resultados técnicos alcançados, a realização deste projeto de Iniciação Científica (PIBIC) desempenhou um papel divisor de águas na minha formação acadêmica e profissional.
+A pesquisa permitiu conectar conceitos teóricos de arquitetura de computadores, sistemas operacionais e programação em baixo nível à prática da engenharia de software, enfrentando desafios reais no
+ecossistema RISC-V.
