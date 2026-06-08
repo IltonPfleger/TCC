@@ -1,0 +1,14 @@
+\section{Detecção e Tratamento de \glspl{vm} em Idle na RISC-V}
+
+Em plataformas RISC-V, existe uma instrução específica - \gls{wfi}, utilizada para colocar um núcleo da CPU em estado de \textit{idle}. Ao executá-la, o processador suspende a execução normal até a
+ocorrência de uma interrupção, reduzindo o consumo de energia enquanto não há tarefas a serem processadas.
+
+Em ambientes virtualizados, é necessário que o hipervisor intercepte essa instrução para gerenciar corretamente o comportamento dos sistemas convidados.
+
+Para isso, a arquitetura disponibiliza um mecanismo de controle de acesso a essa instrução por meio do bit 21 (\textit{Timeout Wait}) do \gls{csr} \textit{mstatus}.
+
+Esse bit de configuração permite tratar a instrução \gls{wfi} como uma \textit{illegal instruction}.
+Ou seja, quando esse bit está ativado, a execução de uma \gls{wfi} não resulta diretamente
+no estado de espera do processador; em vez disso, uma exceção é gerada.
+Esta exceção é então detectada pelo hipervisor, que - em seguida - faz com que essa \gls{vm} se afaste do controle da CPU, permitindo que outra ocupe seu lugar. No fim, somente se nenhuma outra
+\textit{Thread} estiver disponível, a CPU entrará verdadeiramente em \textit{idle}.

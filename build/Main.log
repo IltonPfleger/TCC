@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.26)  3 JUN 2026 07:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.26)  7 JUN 2026 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,57 +925,26 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/usr/share/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count387
-\float@exts=\toks39
-\float@box=\box70
-\@float@everytoks=\toks40
-\@floatcapt=\box71
-)
-(/usr/share/texmf-dist/tex/latex/abntex2/abntex2cite.sty
-Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
-
-(/usr/share/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip258
-\ABCIauxlen=\skip259
-\c@ABCIaux=\count388
-\c@ABCImax=\count389
-
-(/usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-)
-(/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-\biblabelsep=\skip260
-LaTeX Info: Redefining \newblock on input line 591.
-LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks41
-)
-(/usr/share/texmf-dist/tex/latex/tikz-uml/tikz-uml.sty
+))) (/usr/share/texmf-dist/tex/latex/tikz-uml/tikz-uml.sty
 Package: tikz-uml 2011/01/26
 
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count390
-\xs_countb=\count391
+\xs_counta=\count387
+\xs_countb=\count388
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks42
-\pgfopts@list@add@b@toks=\toks43
+\pgfopts@list@add@a@toks=\toks39
+\pgfopts@list@add@b@toks=\toks40
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 backgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@layerbox@background=\box72
-\pgf@layerboxsaved@background=\box73
+\pgf@layerbox@background=\box70
+\pgf@layerboxsaved@background=\box71
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 arrows.code.tex
@@ -1032,26 +1001,26 @@ File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multip
 art.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodepartlowerbox=\box74
-\pgfnodeparttwobox=\box75
-\pgfnodepartthreebox=\box76
-\pgfnodepartfourbox=\box77
-\pgfnodeparttwentybox=\box78
-\pgfnodepartnineteenbox=\box79
-\pgfnodeparteighteenbox=\box80
-\pgfnodepartseventeenbox=\box81
-\pgfnodepartsixteenbox=\box82
-\pgfnodepartfifteenbox=\box83
-\pgfnodepartfourteenbox=\box84
-\pgfnodepartthirteenbox=\box85
-\pgfnodeparttwelvebox=\box86
-\pgfnodepartelevenbox=\box87
-\pgfnodeparttenbox=\box88
-\pgfnodepartninebox=\box89
-\pgfnodeparteightbox=\box90
-\pgfnodepartsevenbox=\box91
-\pgfnodepartsixbox=\box92
-\pgfnodepartfivebox=\box93
+\pgfnodepartlowerbox=\box72
+\pgfnodeparttwobox=\box73
+\pgfnodepartthreebox=\box74
+\pgfnodepartfourbox=\box75
+\pgfnodeparttwentybox=\box76
+\pgfnodepartnineteenbox=\box77
+\pgfnodeparteighteenbox=\box78
+\pgfnodepartseventeenbox=\box79
+\pgfnodepartsixteenbox=\box80
+\pgfnodepartfifteenbox=\box81
+\pgfnodepartfourteenbox=\box82
+\pgfnodepartthirteenbox=\box83
+\pgfnodeparttwelvebox=\box84
+\pgfnodepartelevenbox=\box85
+\pgfnodeparttenbox=\box86
+\pgfnodepartninebox=\box87
+\pgfnodeparteightbox=\box88
+\pgfnodepartsevenbox=\box89
+\pgfnodepartsixbox=\box90
+\pgfnodepartfivebox=\box91
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 fit.code.tex
@@ -1078,146 +1047,389 @@ decorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen320
 \pgfdecoratedinputsegmentremainingdistance=\dimen321
 \pgf@decorate@distancetomove=\dimen322
-\pgf@decorate@repeatstate=\count392
+\pgf@decorate@repeatstate=\count389
 \pgfdecorationsegmentamplitude=\dimen323
 \pgfdecorationsegmentlength=\dimen324
 )
-\tikz@lib@dec@box=\box94
+\tikz@lib@dec@box=\box92
 )
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
 ons.markings.code.tex))
-\c@tikzumlPackageLayers=\count393
-\pgf@layerbox@package0=\box95
-\pgf@layerboxsaved@package0=\box96
-\pgf@layerbox@package1=\box97
-\pgf@layerboxsaved@package1=\box98
-\pgf@layerbox@package2=\box99
-\pgf@layerboxsaved@package2=\box100
-\pgf@layerbox@package3=\box101
-\pgf@layerboxsaved@package3=\box102
-\c@tikzumlFragmentLayers=\count394
-\pgf@layerbox@fragment0=\box103
-\pgf@layerboxsaved@fragment0=\box104
-\pgf@layerbox@fragment1=\box105
-\pgf@layerboxsaved@fragment1=\box106
-\pgf@layerbox@fragment2=\box107
-\pgf@layerboxsaved@fragment2=\box108
-\pgf@layerbox@fragment3=\box109
-\pgf@layerboxsaved@fragment3=\box110
-\c@tikzumlStateLayers=\count395
-\pgf@layerbox@state0=\box111
-\pgf@layerboxsaved@state0=\box112
-\pgf@layerbox@state1=\box113
-\pgf@layerboxsaved@state1=\box114
-\pgf@layerbox@state2=\box115
-\pgf@layerboxsaved@state2=\box116
-\pgf@layerbox@state3=\box117
-\pgf@layerboxsaved@state3=\box118
-\c@tikzumlComponentLayers=\count396
-\pgf@layerbox@component0=\box119
-\pgf@layerboxsaved@component0=\box120
-\pgf@layerbox@component1=\box121
-\pgf@layerboxsaved@component1=\box122
-\pgf@layerbox@component2=\box123
-\pgf@layerboxsaved@component2=\box124
-\pgf@layerbox@component3=\box125
-\pgf@layerboxsaved@component3=\box126
-\pgf@layerbox@lifelines=\box127
-\pgf@layerboxsaved@lifelines=\box128
-\pgf@layerbox@activity=\box129
-\pgf@layerboxsaved@activity=\box130
-\pgf@layerbox@connections=\box131
-\pgf@layerboxsaved@connections=\box132
-\c@tikzumlPackageClassNum=\count397
-\c@tikzumlPackageSubPackageNum=\count398
-\c@tikzumlRelationNum=\count399
-\c@tikzumlNoteNum=\count400
-\c@pos=\count401
-\c@posT=\count402
-\c@posStereo=\count403
-\c@tikzumlPackageLevel=\count404
+\c@tikzumlPackageLayers=\count390
+\pgf@layerbox@package0=\box93
+\pgf@layerboxsaved@package0=\box94
+\pgf@layerbox@package1=\box95
+\pgf@layerboxsaved@package1=\box96
+\pgf@layerbox@package2=\box97
+\pgf@layerboxsaved@package2=\box98
+\pgf@layerbox@package3=\box99
+\pgf@layerboxsaved@package3=\box100
+\c@tikzumlFragmentLayers=\count391
+\pgf@layerbox@fragment0=\box101
+\pgf@layerboxsaved@fragment0=\box102
+\pgf@layerbox@fragment1=\box103
+\pgf@layerboxsaved@fragment1=\box104
+\pgf@layerbox@fragment2=\box105
+\pgf@layerboxsaved@fragment2=\box106
+\pgf@layerbox@fragment3=\box107
+\pgf@layerboxsaved@fragment3=\box108
+\c@tikzumlStateLayers=\count392
+\pgf@layerbox@state0=\box109
+\pgf@layerboxsaved@state0=\box110
+\pgf@layerbox@state1=\box111
+\pgf@layerboxsaved@state1=\box112
+\pgf@layerbox@state2=\box113
+\pgf@layerboxsaved@state2=\box114
+\pgf@layerbox@state3=\box115
+\pgf@layerboxsaved@state3=\box116
+\c@tikzumlComponentLayers=\count393
+\pgf@layerbox@component0=\box117
+\pgf@layerboxsaved@component0=\box118
+\pgf@layerbox@component1=\box119
+\pgf@layerboxsaved@component1=\box120
+\pgf@layerbox@component2=\box121
+\pgf@layerboxsaved@component2=\box122
+\pgf@layerbox@component3=\box123
+\pgf@layerboxsaved@component3=\box124
+\pgf@layerbox@lifelines=\box125
+\pgf@layerboxsaved@lifelines=\box126
+\pgf@layerbox@activity=\box127
+\pgf@layerboxsaved@activity=\box128
+\pgf@layerbox@connections=\box129
+\pgf@layerboxsaved@connections=\box130
+\c@tikzumlPackageClassNum=\count394
+\c@tikzumlPackageSubPackageNum=\count395
+\c@tikzumlRelationNum=\count396
+\c@tikzumlNoteNum=\count397
+\c@pos=\count398
+\c@posT=\count399
+\c@posStereo=\count400
+\c@tikzumlPackageLevel=\count401
 \tikzumlNestingSymbolSize=\dimen325
-\c@tikzumlSystemUseCaseNum=\count405
-\c@tikzumlSystemLevel=\count406
-\c@tikzumlUseCaseNum=\count407
-\c@tikzumlActorNum=\count408
-\c@tikzumlStateJoinNum=\count409
-\c@tikzumlStateDecisionNum=\count410
-\c@tikzumlStateInitialNum=\count411
-\c@tikzumlStateFinalNum=\count412
-\c@tikzumlStateEnterNum=\count413
-\c@tikzumlStateExitNum=\count414
-\c@tikzumlStateEndNum=\count415
-\c@tikzumlStateHistoryNum=\count416
-\c@tikzumlStateDeepHistoryNum=\count417
-\c@tikzumlStateLevel=\count418
-\c@tikzumlStateSubStateNum=\count419
-\c@tikzumlStateText=\count420
-\c@tikzumlObjectNum=\count421
-\c@tikzumlCallLevel=\count422
-\c@tikzumlCallNum=\count423
-\c@tikzumlFragmentLevel=\count424
-\c@tikzumlFragmentLevelNum=\count425
-\c@tikzumlFragmentNum=\count426
-\c@tikzumlFragmentPartNum=\count427
-\c@tikzumlCallStartFragmentNum=\count428
-\c@tikzumlCallEndFragmentNum=\count429
-\c@tikzumlSDNodeNum=\count430
-\tikzumlCall@xa=\skip261
-\tikzumlCall@xb=\skip262
-\c@tikzumlComponentLevel=\count431
-\c@tikzumlComponentSubComponentNum=\count432
-\c@tikzumlConnectorNum=\count433
-\tikzuml@AC@xa=\skip263
-\tikzuml@AC@ya=\skip264
-\tikzuml@AC@xb=\skip265
-\tikzuml@AC@yb=\skip266
-\tikzuml@AC@xi=\skip267
-\tikzuml@AC@yi=\skip268
-\tikzuml@AC@xic=\skip269
-\tikzuml@AC@yic=\skip270
-\tikzuml@AC@xio=\skip271
-\tikzuml@AC@yio=\skip272
-\tikzuml@AC@AB=\skip273
-\tikzuml@AC@lambda=\skip274
-\tikzuml@AC@xtrc=\skip275
-\tikzuml@AC@ytrc=\skip276
-\tikzuml@AC@xtlc=\skip277
-\tikzuml@AC@ytlc=\skip278
-\tikzuml@AC@xblc=\skip279
-\tikzuml@AC@yblc=\skip280
-\tikzuml@AC@xbrc=\skip281
-\tikzuml@AC@ybrc=\skip282
-\tikzuml@AC@middleArm=\skip283
-) (/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2025/11/09 v4.9 (NLCT)
+\c@tikzumlSystemUseCaseNum=\count402
+\c@tikzumlSystemLevel=\count403
+\c@tikzumlUseCaseNum=\count404
+\c@tikzumlActorNum=\count405
+\c@tikzumlStateJoinNum=\count406
+\c@tikzumlStateDecisionNum=\count407
+\c@tikzumlStateInitialNum=\count408
+\c@tikzumlStateFinalNum=\count409
+\c@tikzumlStateEnterNum=\count410
+\c@tikzumlStateExitNum=\count411
+\c@tikzumlStateEndNum=\count412
+\c@tikzumlStateHistoryNum=\count413
+\c@tikzumlStateDeepHistoryNum=\count414
+\c@tikzumlStateLevel=\count415
+\c@tikzumlStateSubStateNum=\count416
+\c@tikzumlStateText=\count417
+\c@tikzumlObjectNum=\count418
+\c@tikzumlCallLevel=\count419
+\c@tikzumlCallNum=\count420
+\c@tikzumlFragmentLevel=\count421
+\c@tikzumlFragmentLevelNum=\count422
+\c@tikzumlFragmentNum=\count423
+\c@tikzumlFragmentPartNum=\count424
+\c@tikzumlCallStartFragmentNum=\count425
+\c@tikzumlCallEndFragmentNum=\count426
+\c@tikzumlSDNodeNum=\count427
+\tikzumlCall@xa=\skip258
+\tikzumlCall@xb=\skip259
+\c@tikzumlComponentLevel=\count428
+\c@tikzumlComponentSubComponentNum=\count429
+\c@tikzumlConnectorNum=\count430
+\tikzuml@AC@xa=\skip260
+\tikzuml@AC@ya=\skip261
+\tikzuml@AC@xb=\skip262
+\tikzuml@AC@yb=\skip263
+\tikzuml@AC@xi=\skip264
+\tikzuml@AC@yi=\skip265
+\tikzuml@AC@xic=\skip266
+\tikzuml@AC@yic=\skip267
+\tikzuml@AC@xio=\skip268
+\tikzuml@AC@yio=\skip269
+\tikzuml@AC@AB=\skip270
+\tikzuml@AC@lambda=\skip271
+\tikzuml@AC@xtrc=\skip272
+\tikzuml@AC@ytrc=\skip273
+\tikzuml@AC@xtlc=\skip274
+\tikzuml@AC@ytlc=\skip275
+\tikzuml@AC@xblc=\skip276
+\tikzuml@AC@yblc=\skip277
+\tikzuml@AC@xbrc=\skip278
+\tikzuml@AC@ybrc=\skip279
+\tikzuml@AC@middleArm=\skip280
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count431
+\float@exts=\toks41
+\float@box=\box131
+\@float@everytoks=\toks42
+\@floatcapt=\box132
+)
+(/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks43
+\c@algorithm=\count432
+)
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count433
+\c@ALG@rem=\count434
+\c@ALG@nested=\count435
+\ALG@tlm=\skip281
+\ALG@thistlm=\skip282
+\c@ALG@Lnr=\count436
+\c@ALG@blocknr=\count437
+\c@ALG@storecount=\count438
+\c@ALG@tmpcounter=\count439
+\ALG@tmplength=\skip283
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count440
+\l__siunitx_number_exponent_fixed_int=\count441
+\l__siunitx_number_min_decimal_int=\count442
+\l__siunitx_number_min_integer_int=\count443
+\l__siunitx_number_round_precision_int=\count444
+\l__siunitx_number_lower_threshold_int=\count445
+\l__siunitx_number_upper_threshold_int=\count446
+\l__siunitx_number_group_first_int=\count447
+\l__siunitx_number_group_size_int=\count448
+\l__siunitx_number_group_minimum_int=\count449
+\l__siunitx_angle_tmp_dim=\dimen326
+\l__siunitx_angle_marker_box=\box133
+\l__siunitx_angle_unit_box=\box134
+\l__siunitx_compound_count_int=\count450
+
+(/usr/share/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks44
+\ex@=\dimen327
+))
+\l__siunitx_table_tmp_box=\box135
+\l__siunitx_table_tmp_dim=\dimen328
+\l__siunitx_table_column_width_dim=\dimen329
+\l__siunitx_table_integer_box=\box136
+\l__siunitx_table_decimal_box=\box137
+\l__siunitx_table_uncert_box=\box138
+\l__siunitx_table_before_box=\box139
+\l__siunitx_table_after_box=\box140
+\l__siunitx_table_before_dim=\dimen330
+\l__siunitx_table_carry_dim=\dimen331
+\l__siunitx_unit_tmp_int=\count451
+\l__siunitx_unit_position_int=\count452
+\l__siunitx_unit_total_int=\count453
+)
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
+
+(/usr/share/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip284
+\ABCIauxlen=\skip285
+\c@ABCIaux=\count454
+\c@ABCImax=\count455
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip286
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks45
+)
+(/usr/share/texmf-dist/tex/lualatex/plantuml/plantuml.sty
+Package: plantuml 2025/05/13 v0.6.0 Embed PlantUML diagrams in latex documents.
+
+
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count456
+\FV@InFile=\read5
+\FV@TabBox=\box141
+\c@FancyVerbLine=\count457
+\FV@StepNumber=\count458
+\FV@OutFile=\write5
+)
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
 
 (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks44
-\XKV@tempa@toks=\toks45
-\XKV@tempb@toks=\toks46
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
+\XKV@tempb@toks=\toks48
 )
-\XKV@depth=\count434
+\XKV@depth=\count459
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box142
+)
+\tc@llx=\dimen332
+\tc@lly=\dimen333
+\tc@urx=\dimen334
+\tc@ury=\dimen335
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen336
+\adjbox@Height=\dimen337
+\adjbox@Depth=\dimen338
+\adjbox@Totalheight=\dimen339
+\adjbox@pwidth=\dimen340
+\adjbox@pheight=\dimen341
+\adjbox@pdepth=\dimen342
+\adjbox@ptotalheight=\dimen343
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count460
+LaTeX Info: Redefining \checkoddpage on input line 45.
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box143
+\sift@deathcycles=\count461
+\@vwid@loff=\dimen344
+\@vwid@roff=\dimen345
+)
+==> First Aid for varwidth.sty applied!
+)
+\c@PlantUmlFigureNumberSVG=\count462
+\c@PlantUmlFigureNumber=\count463
+ (/usr/share/texmf-dist/tex/latex/pythontex/pythontex.sty
+Package: pythontex 2026/02/15 v0.19 execute and typeset Python code and other l
+anguages
+
+(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2026/02/25 v1.14.0 fvextra - extensions and patches for fancyv
+rb
+
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2026/02/16 line numbers on paragraphs v5.7
+\linenopenalty=\count464
+\output=\toks49
+\linenoprevgraf=\count465
+\linenumbersep=\dimen346
+\linenumberwidth=\dimen347
+\c@linenumber=\count466
+\c@pagewiselinenumber=\count467
+\c@LN@truepage=\count468
+\c@internallinenumber=\count469
+\c@internallinenumbers=\count470
+\quotelinenumbersep=\dimen348
+\bframerule=\dimen349
+\bframesep=\dimen350
+\bframebox=\box144
+)
+\c@FancyVerbWriteLine=\count471
+\c@FancyVerbBufferLine=\count472
+\c@FV@TrueTabGroupLevel=\count473
+\c@FV@TrueTabCounter=\count474
+\FV@TabBox@Group=\box145
+\FV@bgcolorstructbox=\box146
+\FV@TmpLength=\skip287
+\c@FV@HighlightLinesStart=\count475
+\c@FV@HighlightLinesStop=\count476
+\FV@LoopCount=\count477
+\FV@NCharsBox=\box147
+\FV@BreakIndent=\dimen351
+\FV@BreakIndentNChars=\count478
+\FV@BreakSymbolSepLeft=\dimen352
+\FV@BreakSymbolSepLeftNChars=\count479
+\FV@BreakSymbolSepRight=\dimen353
+\FV@BreakSymbolSepRightNChars=\count480
+\FV@BreakSymbolIndentLeft=\dimen354
+\FV@BreakSymbolIndentLeftNChars=\count481
+\FV@BreakSymbolIndentRight=\dimen355
+\FV@BreakSymbolIndentRightNChars=\count482
+\c@FancyVerbLineBreakLast=\count483
+\FV@LineBox=\box148
+\FV@LineIndentBox=\box149
+\c@FV@BreakBufferDepth=\count484
+\FV@LineWidth=\dimen356
+)
+(/usr/share/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+)
+(/usr/share/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2024/03/14 v1.0 Provides the file path elements of the curren
+t input file
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+
+(/usr/share/texmf-dist/tex/latex/filehook/filehook-2020.sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count485
+)
+\pytx@codefile=\write6
+\openout6 = `Main.pytxcode'.
+
+\c@pytx@FancyVerbLineTemp=\count486
+\c@pytx@py@default@default=\count487
+\c@pytx@pycon@default@default=\count488
+\c@pytx@sympy@default@default=\count489
+\c@pytx@sympycon@default@default=\count490
+\c@pytx@pylab@default@default=\count491
+\c@pytx@pylabcon@default@default=\count492
+\c@pytx@bash@default@default=\count493
+)
+Restricted shell escape. PlantUML cannot be called. Start pdflatex/lualatex wit
+h -shell-escape.) (/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2025/11/09 v4.9 (NLCT)
+
 (/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks47
-\@glsmrest=\toks48
+\@glsmfirst=\toks50
+\@glsmrest=\toks51
 )
 (/usr/share/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks49
-\ex@=\dimen326
 )
 (/usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
@@ -1243,103 +1455,101 @@ Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip284
+\@mathmargin=\skip288
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2024/11/17 v2.01 AMS text
-)
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen327
+\pmbraise@=\dimen357
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count435
+\inf@bad=\count494
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count436
-\leftroot@=\count437
+\uproot@=\count495
+\leftroot@=\count496
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count438
-\DOTSCASE@=\count439
+\classnum@=\count497
+\DOTSCASE@=\count498
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box133
-\strutbox@=\box134
+\Mathstrutbox@=\box150
+\strutbox@=\box151
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen328
+\big@size=\dimen358
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count440
+\macc@depth=\count499
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count441
+\c@MaxMatrixCols=\count500
 \dotsspace@=\muskip18
-\c@parentequation=\count442
-\dspbrk@lvl=\count443
-\tag@help=\toks50
-\row@=\count444
-\column@=\count445
-\maxfields@=\count446
-\andhelp@=\toks51
-\eqnshift@=\dimen329
-\alignsep@=\dimen330
-\tagshift@=\dimen331
-\tagwidth@=\dimen332
-\totwidth@=\dimen333
-\lineht@=\dimen334
-\@envbody=\toks52
-\multlinegap=\skip285
-\multlinetaggap=\skip286
-\mathdisplay@stack=\toks53
+\c@parentequation=\count501
+\dspbrk@lvl=\count502
+\tag@help=\toks52
+\row@=\count503
+\column@=\count504
+\maxfields@=\count505
+\andhelp@=\toks53
+\eqnshift@=\dimen359
+\alignsep@=\dimen360
+\tagshift@=\dimen361
+\tagwidth@=\dimen362
+\totwidth@=\dimen363
+\lineht@=\dimen364
+\@envbody=\toks54
+\multlinegap=\skip289
+\multlinetaggap=\skip290
+\mathdisplay@stack=\toks55
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-\l__datatool_tmpa_int=\count447
-\l__datatool_tmpb_int=\count448
-\l__datatool_tmpc_int=\count449
-\l__datatool_tmpd_int=\count450
-\l__datatool_count_int=\count451
-\l__datatool_tmp_datatype_int=\count452
-\l__datatool_tmpa_dim=\dimen335
-\l__datatool_tmpb_dim=\dimen336
+\@LN@amsmath@ams@eqpen=\count506
+\l__datatool_tmpa_int=\count507
+\l__datatool_tmpb_int=\count508
+\l__datatool_tmpc_int=\count509
+\l__datatool_tmpd_int=\count510
+\l__datatool_count_int=\count511
+\l__datatool_tmp_datatype_int=\count512
+\l__datatool_tmpa_dim=\dimen365
+\l__datatool_tmpb_dim=\dimen366
 
 (/usr/share/texmf-dist/tex/latex/datatool/datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@toks=\toks54
-\@dtl@tmpcount=\count453
-\dtl@tmplength=\skip287
-\l__datatool_measure_box=\box135
-\dtl@sortresult=\count454
+\@dtl@toks=\toks56
+\@dtl@tmpcount=\count513
+\dtl@tmplength=\skip291
+\l__datatool_measure_box=\box152
+\dtl@sortresult=\count514
 
 (/usr/share/texmf-dist/tex/latex/datatool/datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count455
-\c_datatool_unknown_int=\count456
-\l__datatool_year_int=\count457
-\l__datatool_month_int=\count458
-\l__datatool_day_int=\count459
-\l__datatool_hour_int=\count460
-\l__datatool_minute_int=\count461
-\l__datatool_second_int=\count462
-\l__datatool_tzhour_int=\count463
-\l__datatool_tzminute_int=\count464
-\l__datatool_julian_int=\count465
-\l__datatool_local_julian_int=\count466
-\l__datatool_prefix_int=\count467
-\l__datatool_suffix_int=\count468
-\@dtl@foreach@level=\count469
+\@dtl@datatype=\count515
+\c_datatool_unknown_int=\count516
+\l__datatool_year_int=\count517
+\l__datatool_month_int=\count518
+\l__datatool_day_int=\count519
+\l__datatool_hour_int=\count520
+\l__datatool_minute_int=\count521
+\l__datatool_second_int=\count522
+\l__datatool_tzhour_int=\count523
+\l__datatool_tzminute_int=\count524
+\l__datatool_julian_int=\count525
+\l__datatool_local_julian_int=\count526
+\l__datatool_prefix_int=\count527
+\l__datatool_suffix_int=\count528
+\@dtl@foreach@level=\count529
 
 (/usr/share/texmf-dist/tex/latex/datatool-english/datatool-english.ldf
 File: datatool-english.ldf 2025/03/12 v1.1 (NLCT)
@@ -1355,103 +1565,103 @@ put line 9924.
 Package tracklang Warning: No `datatool' support for dialect `brazilian'  on in
 put line 9924.
 
-\dtl@codeA=\count470
-\dtl@codeB=\count471
+\dtl@codeA=\count530
+\dtl@codeB=\count531
 )
-\gls@level=\count472
-\@gls@tmpb=\toks55
-\gls@tmplen=\skip288
+\gls@level=\count532
+\@gls@tmpb=\toks57
+\gls@tmplen=\skip292
 
 
 Package glossaries Warning: Overriding \printglossary on input line 6495.
 
-\l__glossaries_tmpa_dim=\dimen337
-\l__glossaries_tmpb_dim=\dimen338
+\l__glossaries_tmpa_dim=\dimen367
+\l__glossaries_tmpb_dim=\dimen368
 
 Package glossaries Warning: Overriding `theglossary' environment on input line 
 7694.
 
-\glskeylisttok=\toks56
-\glslabeltok=\toks57
-\glsshorttok=\toks58
-\glslongtok=\toks59
+\glskeylisttok=\toks58
+\glslabeltok=\toks59
+\glsshorttok=\toks60
+\glslongtok=\toks61
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2025/11/09 v4.9 (NLCT)
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2025/11/09 v4.9 (NLCT)
-\glslistdottedwidth=\skip289
+\glslistdottedwidth=\skip293
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2025/11/09 v4.9 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip290
-\LTright=\skip291
-\LTpre=\skip292
-\LTpost=\skip293
-\LTchunksize=\count473
-\LTcapwidth=\dimen339
-\LT@head=\box136
-\LT@firsthead=\box137
-\LT@foot=\box138
-\LT@lastfoot=\box139
-\LT@gbox=\box140
-\LT@cols=\count474
-\LT@rows=\count475
-\c@LT@tables=\count476
-\c@LT@chunks=\count477
-\LT@p@ftn=\toks60
+\LTleft=\skip294
+\LTright=\skip295
+\LTpre=\skip296
+\LTpost=\skip297
+\LTchunksize=\count533
+\LTcapwidth=\dimen369
+\LT@head=\box153
+\LT@firsthead=\box154
+\LT@foot=\box155
+\LT@lastfoot=\box156
+\LT@gbox=\box157
+\LT@cols=\count534
+\LT@rows=\count535
+\c@LT@tables=\count536
+\c@LT@chunks=\count537
+\LT@p@ftn=\toks62
 )
-\glsdescwidth=\skip294
-\glspagelistwidth=\skip295
+\glsdescwidth=\skip298
+\glspagelistwidth=\skip299
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2025/11/09 v4.9 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count478
-\ST@wd=\dimen340
-\ST@rightskip=\skip296
-\ST@leftskip=\skip297
-\ST@parfillskip=\skip298
-\ST@pageleft=\dimen341
-\ST@headht=\dimen342
-\ST@tailht=\dimen343
-\ST@pagesofar=\dimen344
-\ST@pboxht=\dimen345
-\ST@rowht=\dimen346
-\ST@prevht=\dimen347
-\ST@toadd=\dimen348
-\ST@dimen=\dimen349
-\ST@pbox=\box141
+\c@tracingst=\count538
+\ST@wd=\dimen370
+\ST@rightskip=\skip300
+\ST@leftskip=\skip301
+\ST@parfillskip=\skip302
+\ST@pageleft=\dimen371
+\ST@headht=\dimen372
+\ST@tailht=\dimen373
+\ST@pagesofar=\dimen374
+\ST@pboxht=\dimen375
+\ST@rowht=\dimen376
+\ST@prevht=\dimen377
+\ST@toadd=\dimen378
+\ST@dimen=\dimen379
+\ST@pbox=\box158
 ))
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2025/11/09 v4.9 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count479
-\l__glossaries_tree_offset_dim=\dimen350
-\l__glossaries_tree_namewidth_dim=\dimen351
-\l__glossaries_tree_symbolwidth_dim=\dimen352
-\l__glossaries_tree_prenamesym_width_dim=\dimen353
-\l__glossaries_tree_presubnamesym_width_dim=\dimen354
-\l__glossaries_tree_namewidth_padding_dim=\dimen355
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen356
-\l__glossaries_tree_namesymbolwidth_dim=\dimen357
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen358
-\l__glossaries_tree_level_int=\count480
-\glstreeindent=\skip299
+\l__glossaries_tree_max_known_level_int=\count539
+\l__glossaries_tree_offset_dim=\dimen380
+\l__glossaries_tree_namewidth_dim=\dimen381
+\l__glossaries_tree_symbolwidth_dim=\dimen382
+\l__glossaries_tree_prenamesym_width_dim=\dimen383
+\l__glossaries_tree_presubnamesym_width_dim=\dimen384
+\l__glossaries_tree_namewidth_padding_dim=\dimen385
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen386
+\l__glossaries_tree_namesymbolwidth_dim=\dimen387
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen388
+\l__glossaries_tree_level_int=\count540
+\glstreeindent=\skip303
 ))
-\glswrite=\write5
-\glo@main@file=\write6
-\openout6 = `Main.glo'.
+\glswrite=\write7
+\glo@main@file=\write8
+\openout8 = `Main.glo'.
 
-Package glossaries Info: Writing glossary file Main.glo on input line 13.
-\glo@acronym@file=\write7
-\openout7 = `Main.acn'.
+Package glossaries Info: Writing glossary file Main.glo on input line 17.
+\glo@acronym@file=\write9
+\openout9 = `Main.acn'.
 
-Package glossaries Info: Writing glossary file Main.acn on input line 13.
+Package glossaries Info: Writing glossary file Main.acn on input line 17.
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 positioning.code.tex
@@ -1459,41 +1669,41 @@ File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen359
-\pgfarrowlength=\dimen360
-\pgfarrowwidth=\dimen361
-\pgfarrowlinewidth=\dimen362
+\pgfarrowinset=\dimen389
+\pgfarrowlength=\dimen390
+\pgfarrowwidth=\dimen391
+\pgfarrowlinewidth=\dimen392
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 calc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (build/Main.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 19.
+(babel)             Reported on input line 20.
 )
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-Package hyperref Info: Link coloring OFF on input line 29.
-\myptabbox=\box142
-\myptabboxwidth=\skip300
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+Package hyperref Info: Link coloring OFF on input line 39.
+\myptabbox=\box159
+\myptabboxwidth=\skip304
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1531,17 +1741,17 @@ Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count481
-\scratchdimen=\dimen363
-\scratchbox=\box143
-\nofMPsegments=\count482
-\nofMParguments=\count483
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count484
-\MPscratchDim=\dimen364
-\MPnumerator=\count485
-\makeMPintoPDFobject=\count486
-\everyMPtoPDFconversion=\toks62
+\scratchcounter=\count541
+\scratchdimen=\dimen393
+\scratchbox=\box160
+\nofMPsegments=\count542
+\nofMParguments=\count543
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count544
+\MPscratchDim=\dimen394
+\MPnumerator=\count545
+\makeMPintoPDFobject=\count546
+\everyMPtoPDFconversion=\toks64
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1551,21 +1761,63 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-bra
+zil.trsl
+File: translations-basic-dictionary-brazil.trsl (brazil translation file `trans
+lations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `brazil'. on input line 39.
+
+(/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-eng
+lish.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 39.
+Package newfloat Info: `float' package detected.
+
+No file pythontex-files-Main/Main.pytxmcr.
+Run PythonTeX to create it.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
+ut line 39.
+\c@listing=\count547
+Package newfloat Info: float type `listing'=8 on input line 39.
+\c@lopytxdepth=\count548
 (build/Main.glsdefs) [1
 
-\openout5 = `Main.ist'.
+\openout7 = `Main.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 
+l.43 
       [1
 
 
 
-] (build/Main.lof) [2
+] (build/Main.lof
+Overfull \hbox (3.85408pt too wide) in paragraph at lines 23--23
+ [][] [][]\OT1/cmr/m/n/12 Tempos de Execu^^Xc~ao Das Itera^^Xc~oes de Uma [][]V
+M[] Com Carga em Mem^^Soria 
+ []
+
+
+Overfull \hbox (3.85408pt too wide) in paragraph at lines 25--25
+ [][] [][]\OT1/cmr/m/n/12 Tempos de Execu^^Xc~ao Das Itera^^Xc~oes de Uma [][]V
+M[] Com Carga em Mem^^Soria 
+ []
+
+
+Overfull \hbox (3.85408pt too wide) in paragraph at lines 27--27
+ [][] [][]\OT1/cmr/m/n/12 Tempos de Execu^^Xc~ao Das Itera^^Xc~oes de Uma [][]V
+M[] Com Carga em Mem^^Soria 
+ []
+
+) [2
 
 ] (build/Main.toc
 
@@ -1576,12 +1828,12 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 42.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 45.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 60.
 ) [4] (./Glossary.tex) (./Acronyms.tex
-\@gls@deffile=\write8
-\openout8 = `Main.glsdefs'.
+\@gls@deffile=\write10
+\openout10 = `Main.glsdefs'.
 
 ) (./sections/Introdução.tex
 Cap\'{\i }tulo 1.
@@ -1634,60 +1886,204 @@ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.99 
-     ])) (./sections/MateriaisUtilizados.tex [16]
+     ]) (./sections/FundamentaçãoTeórica/PreempçãoEEscalonamento.tex
+[16])) (./sections/MateriaisUtilizados.tex [17]
 Cap\'{\i }tulo 3.
-) (./sections/Implementação/Implementação.tex [17
+) (./sections/Metodologia/Metodologia.tex [18
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Cap\'{\i }tulo 4.
-(./sections/Implementação/EstruturaDePastas.tex)
-(./sections/Implementação/Inicialização.tex [18
+(./sections/Metodologia/VirtualizaçãoBaseadaEmMachineMode.tex))
+(./sections/Implementação/Implementação.tex [19
 
-] [19
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) 
+]
+Cap\'{\i }tulo 5.
+(./sections/Implementação/EstruturaDePastas.tex)
+(./sections/Implementação/Inicialização.tex [20
+
+] [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.38 
-     ]) (./sections/Implementação/InicializaçãoDeMáquinasVirtuais.tex
-[20
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
+     ]) (./sections/Implementação/MáquinasVirtuais.tex [22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) 
 has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.5 
+    ] [23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.38 \end{figure}
+                 ]
+LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 48.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
+2.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 72.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.82 
+     ]) (./sections/Implementação/CPUsVirtuais.tex [25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.7 
+    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.7 
+    ] [26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 
+     ]) (./sections/Implementação/TrocaDeContextoEntreMáquinasVirtuais.tex
+[27] [28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.11})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 
+     ]) (./sections/Implementação/CamadaDeEmulação.tex [29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.12})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.6 
-    ]
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 7.
- [21
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
-has been already used, duplicate ignored
+    ] [30] [31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.21 O
-       processo de inicialização de uma \textit{GenericVirtualMachine} seg...
-] [22
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) 
-has been already used, duplicate ignored
+l.174 \end{figure}
+                  ])
+(./sections/Implementação/DetecçãoETratamentoDeVMsEmIdleNaRISC-V.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\glspl' on input line 1.
+
+)) (./sections/Resultados/Resultados.tex [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.14})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.67 
-     ] [23
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.86 \end{itemize}
-                  ])) (build/Main.gls) (build/Main.bbl [24]
-bibitemlist
-) [25
+l.1 \chapter
+            {Resultados}] [33]
+Cap\'{\i }tulo 6.
+(./sections/Resultados/PrimeiroExperimento.tex
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 15.
+ [34
 
 ]
-\tf@lof=\write9
-\openout9 = `Main.lof'.
+Overfull \hbox (11.34364pt too wide) in paragraph at lines 74--77
+\OT1/cmr/m/n/12 carga com-pu-ta-ci-o-nal. Em-bora exista com-par-ti-lha-mento d
+os n^^Sucleos f^^S^^Psicos en-tre as m^^Saquinas
+ []
 
-\tf@toc=\write10
-\openout10 = `Main.toc'.
+[35]
+<images/16_without_linux.pdf, id=601, 1387.58403pt x 791.35652pt>
+File: images/16_without_linux.pdf Graphic file (type pdf)
+<use images/16_without_linux.pdf>
+Package pdftex.def Info: images/16_without_linux.pdf  used on input line 96.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+<images/23_without_linux.pdf, id=604, 1387.58403pt x 791.35652pt>
+File: images/23_without_linux.pdf Graphic file (type pdf)
+<use images/23_without_linux.pdf>
+Package pdftex.def Info: images/23_without_linux.pdf  used on input line 103.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+<images/16_with_linux.pdf, id=607, 1387.58403pt x 791.35652pt>
+File: images/16_with_linux.pdf Graphic file (type pdf)
+<use images/16_with_linux.pdf>
+Package pdftex.def Info: images/16_with_linux.pdf  used on input line 110.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+<images/23_with_linux.pdf, id=610, 1387.58403pt x 791.35652pt>
+File: images/23_with_linux.pdf Graphic file (type pdf)
+<use images/23_with_linux.pdf>
+Package pdftex.def Info: images/23_with_linux.pdf  used on input line 117.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+<images/16_with_linux_bandwidth.pdf, id=613, 1387.58403pt x 791.35652pt>
+File: images/16_with_linux_bandwidth.pdf Graphic file (type pdf)
+<use images/16_with_linux_bandwidth.pdf>
+Package pdftex.def Info: images/16_with_linux_bandwidth.pdf  used on input line
+ 125.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+<images/23_with_linux_bandwidth.pdf, id=616, 1387.58403pt x 791.35652pt>
+File: images/23_with_linux_bandwidth.pdf Graphic file (type pdf)
+<use images/23_with_linux_bandwidth.pdf>
+Package pdftex.def Info: images/23_with_linux_bandwidth.pdf  used on input line
+ 132.
+(pdftex.def)             Requested size: 432.48051pt x 246.64624pt.
+)) (build/Main.gls) (build/Main.bbl [36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                   <./images/16_without_linux.p
+df>] [37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.16})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.17})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                   <./images/23_without_linux.p
+df> <./images/16_with_linux.pdf>] [38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.18})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.19})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                   <./images/23_with_linux.pdf>
+ <./images/16_with_linux_bandwidth.pdf>] [39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.20})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                   <./images/23_with_linux_band
+width.pdf>]
+bibitemlist
+) [40
+
+]
+\tf@lof=\write11
+\openout11 = `Main.lof'.
+
+\tf@toc=\write12
+\openout12 = `Main.toc'.
 
  (build/Main.aux)
  ***********
@@ -1700,20 +2096,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40269 strings out of 468981
- 808373 string characters out of 5459923
- 1414971 words of memory out of 5000000
- 68261 multiletter control sequences out of 15000+600000
- 637733 words of font info for 73 fonts, out of 8000000 for 9000
+ 49298 strings out of 468981
+ 1043561 string characters out of 5459923
+ 1622487 words of memory out of 5000000
+ 77108 multiletter control sequences out of 15000+600000
+ 639859 words of font info for 80 fonts, out of 8000000 for 9000
  266 hyphenation exceptions out of 8191
- 99i,13n,107p,2487b,766s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,107p,2487b,1325s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{glo:dtb} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:wfi} has been referenced but does not exist, re
 placed by a fixed one
 
 
-pdfTeX warning (dest): name{glo:vm} has been referenced but does not exist, rep
-laced by a fixed one
+pdfTeX warning (dest): name{glo:fpu} has been referenced but does not exist, re
+placed by a fixed one
 
 
 pdfTeX warning (dest): name{glo:pmp} has been referenced but does not exist, re
@@ -1724,12 +2120,28 @@ pdfTeX warning (dest): name{glo:mmu} has been referenced but does not exist, re
 placed by a fixed one
 
 
+pdfTeX warning (dest): name{glo:sei} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sip} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sti} has been referenced but does not exist, re
+placed by a fixed one
+
+
 pdfTeX warning (dest): name{glo:hic} has been referenced but does not exist, re
 placed by a fixed one
 
 
 pdfTeX warning (dest): name{glo:mmio} has been referenced but does not exist, r
 eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sbi} has been referenced but does not exist, re
+placed by a fixed one
 
 
 pdfTeX warning (dest): name{glo:soc} has been referenced but does not exist, re
@@ -1791,24 +2203,31 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:rtos} has been referenced but does not exist, r
 eplaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-si17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1200.pfb>
-Output written on build/Main.pdf (26 pages, 246303 bytes).
+
+pdfTeX warning (dest): name{glo:vm} has been referenced but does not exist, rep
+laced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmssi17.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
+.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on build/Main.pdf (41 pages, 426203 bytes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 437 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1207 PDF objects out of 1440 (max. 8388607)
+ 870 compressed objects within 9 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 619 words of extra memory for PDF output out of 10000 (max. 10000000)
 

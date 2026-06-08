@@ -362,6 +362,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{sei}%
+{%
+name={\acronymfont {\glsentryshort {sei}}},%
+sort={SEI},%
+type={acronym},%
+first={SEI},%
+firstplural={SEIs},%
+text={SEI},%
+plural={SEIs},%
+description={Supervisor External Interrupt},%
+descriptionplural={Supervisor External Interrupt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Supervisor External Interrupt},%
+longplural={Supervisor External Interrupts},%
+short={SEI},%
+shortplural={SEIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sti}%
+{%
+name={\acronymfont {\glsentryshort {sti}}},%
+sort={STI},%
+type={acronym},%
+first={STI},%
+firstplural={STIs},%
+text={STI},%
+plural={STIs},%
+description={Supervisor Timer Interrupt},%
+descriptionplural={Supervisor Timer Interrupt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Supervisor Timer Interrupt},%
+longplural={Supervisor Timer Interrupts},%
+short={STI},%
+shortplural={STIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sip}%
+{%
+name={\acronymfont {\glsentryshort {sip}}},%
+sort={SIP},%
+type={acronym},%
+first={SIP},%
+firstplural={SIPs},%
+text={SIP},%
+plural={SIPs},%
+description={Supervisor Interrupt Pending},%
+descriptionplural={Supervisor Interrupt Pending},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Supervisor Interrupt Pending},%
+longplural={Supervisor Interrupt Pendings},%
+short={SIP},%
+shortplural={SIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{hic}%
 {%
 name={\acronymfont {\glsentryshort {hic}}},%
@@ -693,6 +777,90 @@ long={\protect \textit  {Interrupt Service Routine}},%
 longplural={\protect \textit  {Interrupt Service Routine}s},%
 short={ISR},%
 shortplural={ISRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{esr}%
+{%
+name={\acronymfont {\glsentryshort {esr}}},%
+sort={ESR},%
+type={acronym},%
+first={ESR},%
+firstplural={ESRs},%
+text={ESR},%
+plural={ESRs},%
+description={\textit {Exception Service Routine}},%
+descriptionplural={\textit {Exception Service Routine}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Exception Service Routine}},%
+longplural={\protect \textit  {Exception Service Routine}s},%
+short={ESR},%
+shortplural={ESRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fpu}%
+{%
+name={\acronymfont {\glsentryshort {fpu}}},%
+sort={FPU},%
+type={acronym},%
+first={FPU},%
+firstplural={FPUs},%
+text={FPU},%
+plural={FPUs},%
+description={\textit {Floating-Point Unit}},%
+descriptionplural={\textit {Floating-Point Unit}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Floating-Point Unit}},%
+longplural={\protect \textit  {Floating-Point Unit}s},%
+short={FPU},%
+shortplural={FPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wfi}%
+{%
+name={\acronymfont {\glsentryshort {wfi}}},%
+sort={WFI},%
+type={acronym},%
+first={WFI},%
+firstplural={WFIs},%
+text={WFI},%
+plural={WFIs},%
+description={\textit {Wait For Interrupt}},%
+descriptionplural={\textit {Wait For Interrupt}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit  {Wait For Interrupt}},%
+longplural={\protect \textit  {Wait For Interrupt}s},%
+short={WFI},%
+shortplural={WFIs},%
 counter={page},%
 parent={},%
 %

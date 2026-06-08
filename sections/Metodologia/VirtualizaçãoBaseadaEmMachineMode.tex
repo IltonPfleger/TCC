@@ -1,0 +1,20 @@
+\section{Virtualização Baseada \textit{Machine Mode}}
+
+Originalmente, o \textit{Machine Mode} (M-mode) foi projetado para ser  o nível de privilégio mais elevado da arquitetura RISC-V, sendo
+responsável pela execução do firmware base e pelo controle direto dos recursos de hardware.
+Sua função primária consiste na inicialização da plataforma e na configuração dos subsistemas fundamentais antes da
+transferência de controle para o \gls{so} hospedeiro.
+
+Dada a natureza restritiva do acesso a determinados recursos de hardware — muitas vezes limitados exclusivamente ao M-mode —, a
+arquitetura define camadas de abstração como a \gls{sbi}. Essa interface atua como uma ponte padronizada e segura, permitindo que
+níveis de privilégio inferiores solicitem serviços privilegiados ao firmware residente no M-mode.
+
+No contexto deste trabalho, o M-mode é utilizado de forma não convencional. Para isso, deixamos de usar o M-Mode como um simples
+\gls{sbi} e passamos a usalo para dar suporte a implementação de um hipervisor completo.
+
+Essa abordagem explora o fato de que o M-mode possui autoridade irrestrita sobre todos os demais níveis de privilégio, permitindo
+interceptar, controlar e gerenciar a execução dos sistemas convidados. Para viabilizar esse controle, o hipervisor utiliza
+os recursos exclusivos disponibilizados nesse modo, incluindo seu conjunto dedicado de \glspl{csr}, além de mecanismos próprios
+para tratamento de interrupções e gerenciamento de temporização. Dessa forma, o M-mode fornece a soberania necessária
+para reproduzir, por software, e as vezes até em hardware, funcionalidades que normalmente só seriam oferecidas por
+hardwares especializados compatíveis com as extensões de virtualização.

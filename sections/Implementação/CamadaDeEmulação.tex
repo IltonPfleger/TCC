@@ -1,0 +1,174 @@
+\section{Camada de Emulação}
+
+Os recursos que não podem ser virtualizados neste trabalho são, por consequência, emulados. Como discutido anteriormente, a
+emulação apresenta um custo computacional superior ao da virtualização. Em contrapartida, oferece maior versatilidade,
+pois sua execução ocorre inteiramente em software.
+
+A camada de emulação proposta baseia-se na técnica de \textit{trap-and-emulate}. Dessa forma, toda operação emulada é precedida por
+uma exceção e, em algum grau, depende das características da arquitetura subjacente. Quando uma exceção ocorre, a camada de
+emulação verifica se ela foi causada por uma tentativa de acesso a um recurso passível de emulação.
+Em caso afirmativo, a operação correspondente é realizada em software. Caso contrário, a exceção é tratada como um erro
+crítico, podendo resultar na desativação completa da \gls{vm}.
+
+\subsection{RISC-V}
+
+Em RISC-V, para viabilizar esse recurso, foi introduzida uma camada intermediária entre o mecanismo de tratamento de erros críticos do sistema e a exceção originalmente
+gerada. Essa camada permite identificar situações passíveis de emulação antes que sejam encaminhadas ao tratador de erros críticos. Atualmente, as seguintes exceções
+podem representar erros emuláveis:
+
+\begin{itemize}
+    \item \textit{Illegal Instruction}
+    \item \textit{Load Access Fault}
+    \item \textit{Store Access Fault}
+\end{itemize}
+
+\subsubsection{\textit{Illegal Instruction}}
+
+A exceção \textit{Illegal Instruction} é gerada quando o processador encontra uma instrução não suportada, ou não permitida em determinado contexto.
+Esse mecanismo é amplamente utilizado para emular extensões ausentes, possibilitando que a semântica da instrução seja reproduzida por software de forma transparente para o sistema em execução.
+Neste trabalho, usaremos esse mecanismo para detectar leituras no \gls{csr} \textit{mtime}, alterações no estado da \gls{fpu} e para detecção de \textit{idle} que será melhor explicada na seção
+de escalonamento.
+
+\subsubsection{\textit{Load Access Fault}}
+A exceção \textit{Load Access Fault} é gerada durante uma operação de leitura em uma região de memória que não pode ser acessada diretamente pelo contexto de execução atual.
+No mecanismo de emulação, essa exceção permite interceptar a tentativa de leitura e fornecer os dados por meio de uma rotina de software, sendo utilizada principalmente na
+emulação de dispositivos \gls{mmio}.
+Quando a exceção é disparada, o hipervisor verifica inicialmente se o endereço acessado pertence a algum dispositivo \gls{mmio} associado à \gls{vm}.
+Caso o endereço corresponda a um dispositivo emulado, são realizadas validações adicionais para determinar se a operação solicitada é suportada e válida para aquele dispositivo.
+Somente após a conclusão dessas verificações a operação de leitura é efetivamente emulada e seu resultado retornado à \gls{vm}. O fluxo de tratamento dessa exceção no sistema
+é ilustrado na Figura \ref{fig:load_access_fault_flow}.
+
+\vspace{1cm}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    node distance=1.4cm,
+    >=stealth,
+    block/.style={rectangle, draw, minimum width=5cm, minimum height=1cm, align=center},
+    decision/.style={diamond, draw, aspect=1, align=center},
+    line/.style={draw, ->, thick}
+]
+
+\node[block, dashed] (fault) {Load Access Fault};
+\node[block, below of=fault] (handler) {TrapHandler};
+\node[block, below of=handler] (vcpu) {VirtualCPU};
+\node[block, below of=vcpu] (vm) {VirtualMachine};
+\node[block, below of=vm] (device) {Virtual Device};
+\node[block, dashed, right=1cm of fault] (error) {Load Access Fault - Error};
+
+\node[decision, right=1cm of vm] (valid) {};
+\node[decision, below=1cm of device] (valid2) {};
+
+\draw[line] (fault) -- (handler);
+\draw[line] (handler) -- (vcpu);
+\draw[line] (vcpu) -- (vm);
+\draw[line] (vm) -- (valid);
+\draw[line] (device) -- (valid2);
+
+\draw[line] (valid) |- node[right, align=center] {Address\\Belongs\\to Device} (device);
+\draw[line] (valid) -| node[right, align=center] {Address\\Does Not\\Belong\\to Any\\Device} (error.south);
+
+\draw[line]
+    (valid2.west)
+	-- node[fill=white, inner sep=2pt] {Valid Operation} ++(-5,0)
+    -- node[draw, dotted, fill=white,inner sep=5pt] {Read Value} ++(0,4)
+    |- (handler.west);
+
+\draw[line]
+    (valid2.east)
+    -- ++(1,0)
+    -- node[fill=white,inner sep=2pt] {Invalid Operation} ++(8,0)
+    |- (error.east);
+
+\end{tikzpicture}
+\caption{Fluxo de Tratamento de um \textit{Load Access Fault} - RISC-V.}
+\label{fig:load_access_fault_flow}
+\end{figure}
+
+\subsubsection{\textit{Store Access Fault}}
+
+A exceção \textit{Store Access Fault} é gerada durante uma operação de escrita em uma região de memória que não pode ser acessada diretamente pelo contexto de execução atual.
+No mecanismo de emulação, essa exceção permite interceptar a tentativa de escrita e tratar a operação por meio de uma rotina de software, sendo
+utilizada também na emulação de dispositivos \gls{mmio}.
+Quando a exceção é disparada, o hipervisor verifica inicialmente se o endereço acessado pertence a algum dispositivo \gls{mmio} associado à \gls{vm}.
+Caso o endereço corresponda a um dispositivo emulado, são realizadas validações adicionais para determinar se a operação solicitada é suportada e válida para aquele dispositivo.
+Somente após a conclusão dessas verificações a operação de escrita é efetivamente emulada. O fluxo de tratamento dessa exceção no sistema é ilustrado na Figura \ref{fig:store_access_fault_flow}.
+
+\vspace{1cm}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    node distance=1.4cm,
+    >=stealth,
+    block/.style={
+        rectangle,
+        draw,
+        minimum width=5cm,
+        minimum height=1cm,
+        align=center
+    },
+    decision/.style={
+        diamond,
+        draw,
+        aspect=1,
+        align=center
+    },
+    line/.style={
+        draw,
+        ->,
+        thick
+    }
+]
+
+\node[block, dashed] (fault) {Store Access Fault};
+\node[block, below=of fault] (handler) {TrapHandler};
+\node[block, below=of handler] (vcpu) {VirtualCPU};
+\node[block, below=of vcpu] (vm) {VirtualMachine};
+\node[block, below=of vm] (device) {Virtual Device};
+
+\node[block, dashed, right=1cm of fault] (error)
+    {Store Access Fault -- Error};
+
+\node[decision, right=1cm of vm] (valid) {};
+\node[decision, below=1cm of device] (valid2) {};
+
+	\node[block, dashed, below=2cm of valid2] (write)
+    {Emulate Write};
+
+\draw[line] (fault) -- (handler);
+\draw[line] (handler) -- (vcpu);
+\draw[line] (vcpu) -- (vm);
+\draw[line] (vm) -- (valid);
+\draw[line] (device) -- (valid2);
+
+\draw[line]
+    (valid)
+    |- node[right, align=center]
+       {Address\\Belongs\\to Device}
+    (device);
+
+\draw[line]
+    (valid)
+    -| node[right, align=center]
+       {Address\\Does Not\\Belong\\to Any\\Device}
+    (error.south);
+
+\draw[line]
+    (valid2) -- ++(0,-2)
+    node[midway, fill=white, inner sep=2pt] {Valid Operation}
+    -- (write);
+
+\draw[line]
+    (valid2.east)
+    -- ++(1,0)
+    -- node[fill=white, inner sep=2pt]
+       {Invalid Operation}
+    ++(8,0)
+    |- (error.east);
+
+\end{tikzpicture}
+\caption{Fluxo de Tratamento de um \textit{Store Access Fault} -- RISC-V.}
+\label{fig:store_access_fault_flow}
+\end{figure}

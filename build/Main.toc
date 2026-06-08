@@ -29,20 +29,41 @@
 \contentsline {subsection}{\numberline {2.13.1}Extensões}{14}{subsection.2.13.1}%
 \contentsline {subsection}{\numberline {2.13.2}Níveis de Privilégio}{15}{subsection.2.13.2}%
 \contentsline {subsection}{\numberline {2.13.3}Registradores de Controle}{16}{subsection.2.13.3}%
+\contentsline {section}{\numberline {2.14}Preempção e Escalonamento}{16}{section.2.14}%
+\contentsline {subsection}{\numberline {2.14.1}Escalonamento Involuntário}{16}{subsection.2.14.1}%
+\contentsline {subsection}{\numberline {2.14.2}Escalonamento Voluntário}{17}{subsection.2.14.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Materiais Utilizados}}{17}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Materiais Utilizados}}{18}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Implementação}}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Estrutura de Pastas}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Inicialização}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}RISC-V}{19}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Máquina}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Kernel}{20}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Inicialização de Máquinas Virtuais}{21}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}\textit {GenericVirtualMachine}}{21}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}\textit {VirtualCPU}: RISC-V}{22}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Linux}{23}{subsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.3.1}\textit {FDT\_Builder}}{24}{subsubsection.4.3.3.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Metodologia}}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Virtualização Baseada \textit {Machine Mode}}{19}{section.4.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Implementação}}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estrutura de Pastas}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Inicialização}{21}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}RISC-V}{21}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Máquina}{22}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Kernel}{22}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Máquinas Virtuais}{23}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Inicialização}{24}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}\textit {GenericVirtualMachine}}{24}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Inicialização}{25}{subsubsection.5.3.2.1}%
+\contentsline {section}{\numberline {5.4}CPUs Virtuais}{25}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}RISC-V}{26}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}Virtualização de Interrupções Temporais}{26}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}Virtualização de Interrupções Externas}{27}{subsubsection.5.4.1.2}%
+\contentsline {subsubsection}{\numberline {5.4.1.3}Inicialização}{27}{subsubsection.5.4.1.3}%
+\contentsline {section}{\numberline {5.5}Troca de Contexto Entre Máquinas Virtuais}{28}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}RISC-V}{28}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Camada de Emulação}{30}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}RISC-V}{30}{subsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.1.1}\textit {Illegal Instruction}}{30}{subsubsection.5.6.1.1}%
+\contentsline {subsubsection}{\numberline {5.6.1.2}\textit {Load Access Fault}}{30}{subsubsection.5.6.1.2}%
+\contentsline {subsubsection}{\numberline {5.6.1.3}\textit {Store Access Fault}}{31}{subsubsection.5.6.1.3}%
+\contentsline {section}{\numberline {5.7}Detecção e Tratamento de \glspl {vm} em Idle na RISC-V}{32}{section.5.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Resultados}}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Primeiro Experimento - Interferência Via Cache}{34}{section.6.1}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{25}{section*.7}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{40}{section*.7}%
